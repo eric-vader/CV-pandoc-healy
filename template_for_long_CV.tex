@@ -1,4 +1,4 @@
-\documentclass[11pt, letter]{article}
+\documentclass[11pt, a4paper]{article}
 
 % This is a tex file to make Ben Schmidt's CV.
 % The content is 
@@ -14,15 +14,12 @@
 \name{$name$}
 % I guess postnoms is like junior? I dunno.
 \postnoms{}
-\address{
-$for(address)$
-  $address$\\
-$endfor$
-}
+\address{$address$}
 \www{$www$}
 \email{$email$}
 \tel{$tel$}
 \twitter{$twitter$}
+\github{$github$}
 \subject{}
 
 
@@ -37,9 +34,11 @@ $endfor$
 
 $for(appointment)$
 \subsection{$appointment.place$}
-$for(appointment.items)$
-$appointment.items.item$. $appointment.items.date$. \\
-$endfor$
+\begin{separator}
+  $for(appointment.items)$
+  \entry{\today}{\justifying{\textbf{$appointment.items.item$}: $appointment.items.description$}}\\
+  $endfor$
+\end{separator}
 $endfor$
 
 \section{education}
@@ -103,7 +102,7 @@ $endfor$
 \section{grants and fellowships}
 
 $for(grants)$
-$grants$\\[.15cm]
+$grants.description$\\[.15cm]
 $endfor$
 
 \section{invited talks}

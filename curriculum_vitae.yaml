@@ -1,28 +1,23 @@
 ---
-name: Benjamin MacDonald Schmidt
+name: Han Liang Wee, Eric
 title: ""
-address:
-    - 20 Cooper Square, Room 538
-    - New York University
-    - New York, NY 10003
-email: bs145@nyu.edu
-twitter: benmschmidt
-www: benschmidt.org
-tel: 609.619.0629
+address: Singapore
+email: mail@eric-han.com
+twitter: eric_vader
+github: eric-vader
+www: eric-han.com
+tel: +65 92982927
 bibliography: tmp.bib
 
 appointment:
   -
-    place: New York University
+    place: National University of Singapore
     items:
       -
-        item: Clinical Associate Professor of History
+        item: Graduate Tutor
         date: September 2019-Present
         description: |
-           Teach and research at intersection of history and data science. Published articles in
-           *Journal of Information Science and Technology*, *Proceedings of the National 
-           Academy of Sciences*.
-           Co-directed Humanities Lab group detailing issues around data collection and migrant records.
+           Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools.
       -
         item: Director of Digital Humanities
         date: September 2019-Present

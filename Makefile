@@ -1,5 +1,5 @@
 
-all: validate_yaml long_CV.pdf short_CV.pdf federal_CV.pdf
+all: validate_yaml long_CV.pdf short_CV.pdf resume.pdf
 
 SchmidtCV.pdf:
 	cp long_CV.pdf $@
@@ -7,8 +7,8 @@ SchmidtCV.pdf:
 validate_yaml:
 	@python3 -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < curriculum_vitae.yaml
 
-%_CV.pdf: curriculum_vitae.yaml vc.tex
-	echo "" | pandoc -f markdown --template template_for_$*_CV.tex --metadata-file curriculum_vitae.yaml --pdf-engine xelatex -o $@
+%.pdf: curriculum_vitae.yaml vc.tex
+	echo "" | pandoc -f markdown --template template_for_$*.tex --metadata-file curriculum_vitae.yaml --pdf-engine xelatex -o $@
 
 vc.tex: curriculum_vitae.yaml
 	sh vc.sh
@@ -19,5 +19,5 @@ hrm:
 	perl -pi -e 'if ($$_=~/cite\{/) {s/\\_/_/g}; s/(\d{4})-([Pp]resent|\d{4})/$$1--$$2/g' $@;
 
 clean:
-	-rm -f *CV.aux *CV.bcf *CV.log *CV.out *CV.run.xml *CV.pdf short_CV.tex long_CV.tex *CV.bbl *CV.blg *yaml_CV.md
+	-rm -f resume.pdf *CV.aux *CV.bcf *CV.log *CV.out *CV.run.xml *CV.pdf short_CV.tex long_CV.tex *CV.bbl *CV.blg *yaml_CV.md
 
