@@ -1,0 +1,27 @@
+@inproceedings{pmlr-v162-han22f,
+  title     = {Adversarial Attacks on {G}aussian Process Bandits},
+  author    = {Han, Eric and Scarlett, Jonathan},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+  pages     = {8304--8329},
+  year      = {2022},
+  editor    = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume    = {162},
+  series    = {Proceedings of Machine Learning Research},
+  month     = {17--23 Jul},
+  publisher = {PMLR},
+  pdf       = {https://proceedings.mlr.press/v162/han22f/han22f.pdf},
+  url       = {https://proceedings.mlr.press/v162/han22f.html},
+  abstract  = {Gaussian processes (GP) are a widely-adopted tool used to sequentially optimize black-box functions, where evaluations are costly and potentially noisy. Recent works on GP bandits have proposed to move beyond random noise and devise algorithms robust to adversarial attacks. This paper studies this problem from the attacker’s perspective, proposing various adversarial attack methods with differing assumptions on the attacker’s strength and prior information. Our goal is to understand adversarial attacks on GP bandits from theoretical and practical perspectives. We focus primarily on targeted attacks on the popular GP-UCB algorithm and a related elimination-based algorithm, based on adversarially perturbing the function f to produce another function f&nbsp; whose optima are in some target region. Based on our theoretical analysis, we devise both white-box attacks (known f) and black-box attacks (unknown f), with the former including a Subtraction attack and Clipping attack, and the latter including an Aggressive subtraction attack. We demonstrate that adversarial attacks on GP bandits can succeed in forcing the algorithm towards the target region even with a low attack budget, and we test our attacks’ effectiveness on a diverse range of objective functions.}
+}
+@article{Han_Arora_Scarlett_2021,
+  title        = {High-Dimensional Bayesian Optimization via Tree-Structured Additive Models},
+  volume       = {35},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/16933},
+  abstractnote = {Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets.},
+  number       = {9},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  author       = {Han, Eric and Arora, Ishank and Scarlett, Jonathan},
+  year         = {2021},
+  month        = {May},
+  pages        = {7630-7638}
+}

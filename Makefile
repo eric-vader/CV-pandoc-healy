@@ -8,7 +8,7 @@ validate_yaml:
 	@python3 -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < curriculum_vitae.yaml
 
 %.pdf: curriculum_vitae.yaml vc.tex
-	echo "" | pandoc -f markdown --template template_for_$*.tex --metadata-file curriculum_vitae.yaml --pdf-engine xelatex -o $@
+	echo "" | pandoc -f markdown --template template_for_$*.tex --metadata-file curriculum_vitae.yaml  --pdf-engine xelatex -o $@
 
 vc.tex: curriculum_vitae.yaml
 	sh vc.sh

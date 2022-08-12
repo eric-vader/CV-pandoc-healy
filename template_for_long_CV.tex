@@ -4,13 +4,17 @@
 % The content is 
 
 \usepackage{jk-vita}
-\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
 
-%\usepackage{biblatex}
+
+% \usepackage{biblatex}
 
 % Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
 
-\title{}
+\title{$title$}
 \name{$name$}
 % I guess postnoms is like junior? I dunno.
 \postnoms{}
@@ -27,95 +31,112 @@
 
 \maketitle
 
-
-
-
-\section{appointments}
-%
-% \textit{$appointment.items.item$}\hfill\sdate\today\,-\,\sydate\today\newline\justifying{\small $appointment.items.description$}\\
+\section{experience}
 $for(appointment)$
-\subsection{\textbf{$appointment.place$}}
+\subsection{$appointment.place$}
 \begin{separator}
-  $for(appointment.items/allbutlast)$
-    \entry{\today}{\today}{\textit{$appointment.items.item$}
+  $for(appointment.items)$
+    \entry{$appointment.items.dates$}{\textit{$appointment.items.item$}
       $if(appointment.items.description)$
         \\\justifying{\noindent\small $appointment.items.description$}
       $endif$
     }\\
-    \vspace{.5em}
-  $endfor$
-  $for(appointment.items/last)$
-    \entry{\today}{\today}{\textit{$appointment.items.item$}
-      $if(appointment.items.description)$
-        \\\justifying{\noindent\small $appointment.items.description$}
-      $endif$
-    }
+    \vspace{.75ex}
   $endfor$
 \end{separator}
 $endfor$
 
+% /allbutlast
+
+% $for(appointment.items/last)$
+% \entry{$appointment.items.dates$}{\textit{$appointment.items.item$}
+%   $if(appointment.items.description)$
+%     \\\justifying{\noindent\small $appointment.items.description$}
+%   $endif$
+% }
+% $endfor$
+
 \section{education}
 % Education uses a different field called ``items.''
 $for(education)$
-\subsection{$education.place$, $education.item$, $education.date$}
-$if(education.info)$
-$for(education.info)$
-$if(education.info.text)$
-% Store certain things in a field called 'text' to allow another field
-% for priority.
-$education.info.text$ \\
-$else$
-$education.info$ \\
-$endif$
+\subsection{$education.item$, $education.place$}
+\begin{separator}
+  \entry{$education.date$}{\textit{$education.grade$}
+    $if(education.info)$
+      \\\justifying{\noindent\small
+      $for(education.info)$
+        $if(education.info.text)$
+          % Store certain things in a field called 'text' to allow another field
+          % for priority.
+          $education.info.text$
+        $else$
+          $education.info$
+        $endif$
+      $endfor$}
+    $endif$
+  }\\
+  \vspace{.75ex}
+\end{separator}
 $endfor$
-$endif$
+
+\section{achievement}
+\subsection{Awards}
+\begin{separator}
+$for(awards)$
+  \entry{$awards.date$}{\textit{$awards.item$, $awards.place$}
+    \\\justifying{\noindent\small $awards.info$}
+  }\\
+  \vspace{.75ex}
 $endfor$
+\end{separator}
+\subsection{Scholarships}
+\begin{separator}
+$for(scholarships)$
+  \entry{$scholarships.date$}{\textit{$scholarships.item$, $scholarships.place$}
+    \\\justifying{\noindent\small $scholarships.info$}
+  }\\
+  \vspace{.75ex}
+$endfor$
+\end{separator}
 
 % A little wonky. I want my publications divided up based on tags.
 % (Yes, it would be better to just do this with bib file). That's for later.
 
 \section{publications}
 
-\subsection{Academic Publications}
-
+\subsection{Peer-Reviewed Conference Publications}
+\begin{separator}
 $for(publication)$
 $if(publication.academic)$
-$if(publication.citekey)$
-\cite{$publication.citekey$}.\\[.15cm]
-$else$
-$if(publication.author)$$publication.author$,$endif$
-``$publication.title$.'' $if(publication.journal)$\textit{$publication.journal$}$if(publication.journal_info)$, $publication.journal_info$$endif$.$endif$ $publication.date$$if(publication.description)$. $publication.description$$endif$.\\[.15cm]
-% End of block for academic publications
-$endif$ 
-$else$
-
-$if(publication.public)$
-$else$
-% Raise an error if some publication is neither public nor academic;
-% otherwise I'll lose some out of stupidity.
-\error{$publication.title$}
-$endif$
+  $if(publication.citekey)$
+    (\cite{$publication.citekey$}).\\[.15cm]
+  $else$
+    \entry{$publication.date$}{\textit{$publication.title$} 
+      \\\justifying{\noindent\small $publication.author$\\ $publication.journal$
+      $if(publication.summary)$
+        \\ $publication.summary$ 
+      $endif$}
+    }\\
+    \vspace{.75ex}
+  $endif$
 $endif$
 $endfor$
+\end{separator}
 
-\subsection{General Audience Publications}
 
-$for(publication)$
-$if(publication.public)$
-$if(publication.citekey)$
-\cite{$publication.citekey$}.\\[.15cm]
-$else$
-$if(publication.author)$$publication.author$,$endif$
-``$publication.title$.'' $if(publication.journal)$\textit{$publication.journal$}$if(publication.journal_info)$, $publication.journal_info$$endif$.$endif$ $publication.date$$if(publication.description)$. $publication.description$$endif$.\\[.15cm]
-$endif$
-% End of block for general publications
-$endif$
-$endfor$
-
-\section{grants and fellowships}
-
-$for(grants)$
-$grants.description$\\[.15cm]
+\section{service}
+$for(service)$
+  \subsection{$service.type$}
+  \begin{separator}
+  $for(service.gigs)$
+    \entry{$service.gigs.date$}{\textit{$service.gigs.item$}
+      $if(service.gigs.info)$
+        \\\justifying{\noindent\small $service.gigs.info$ }
+      $endif$
+    }\\
+    \vspace{.75ex}
+  $endfor$
+  \end{separator}
 $endfor$
 
 \section{invited talks}
@@ -142,7 +163,7 @@ $conference.place$.
 $conference.date$.\\[.15cm]
 $endfor$
 
-\section{courses taught}
+\section{teaching}
 
 $for(teaching)$
 ``$teaching.title$.'' $teaching.date$. ($teaching.type$)\\[.15cm]
@@ -171,13 +192,6 @@ $endif$
 $endfor$
 
 
-\section{service}
-$for(service)$
-\subsection{$service.type$}
-$for(service.gigs)$
-$service.gigs.item$. $service.gigs.date$.\\[.15cm]
-$endfor$
-$endfor$
 
 
 \section{research competencies}
@@ -187,7 +201,5 @@ $for(competencies.items)$
 $competencies.items$\\[.15cm]
 $endfor$
 $endfor$
-
-
 
 \end{document}

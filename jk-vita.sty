@@ -16,7 +16,7 @@
 \usepackage{calculator}
 \usepackage{fancyhdr,enumitem,color}
 \usepackage[hidelinks]{hyperref}
-\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in]{geometry}
+\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.2in,lmargin=1.2in]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fontawesome5}
@@ -39,18 +39,44 @@
   \MODULO{\twodigit{#1}}{100}{\ModuloResult}%
   \twodigit{\ModuloResult}%
 }
-
-\newdateformat{sdate}{\twodigit{\THEDAY}\,\shortmonthname[\THEMONTH]}
-\newdateformat{sydate}{\twodigit{\THEDAY}\,\shortmonthname[\THEMONTH]\,{\THEYEAR}}
+\renewcommand*{\shortmonthnameenglish}[1][\month]{%
+  \@orgargctr=#1\relax
+  \ifcase\@orgargctr
+  \PackageError{datetime}{Invalid Month number \the\@orgargctr}{Month
+  numbers should go from 1 (jan) to 12 (dec)}%
+  \or jan%
+  \or feb%
+  \or mar%
+  \or apr%
+  \or may%
+  \or jun%
+  \or jul%
+  \or aug%
+  \or sept%
+  \or oct%
+  \or nov%
+  \or dec%
+  \else%
+  \PackageError{datetime}%
+  {Invalid Month number \the\@orgargctr}%
+  {Month numbers should go from 1 (jan) to 12 (dec)}%
+\fi
+}
+\newdateformat{ddate}{{\THEDAY}}
+\newdateformat{ydate}{{\THEYEAR}}
+\newdateformat{mdate}{\shortmonthname[\THEMONTH]}
+\newdateformat{mydate}{\shortmonthname[\THEMONTH]\,{\shortyear\THEYEAR}}
+\newdateformat{dmdate}{\THEDAY\,\shortmonthname[\THEMONTH]}
+\newdateformat{dmydate}{\THEDAY\,\shortmonthname[\THEMONTH]\,{\shortyear\THEYEAR}}
 
 % https://tex.stackexchange.com/questions/290933/how-to-draw-a-vertical-line-for-separating-specific-section-and-content/329227
 % https://tex.stackexchange.com/questions/317445/a-title-command-that-lists-the-date-in-the-margin
 
-\newcommand{\entry}[3]{% \entry{<date>}{<title>}
+\newcommand{\entry}[2]{% \entry{<date>}{<title>}
   \noindent\leavevmode
   % \addcontentsline{toc}{section}{#2}% Add to ToC
-  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut \sdate#1\,-\,\sydate#2\hspace*{.1\baselineskip}}}\hspace{\datedist}}%
-  {\@titlefont #3}%
+  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut#1\hspace*{.1\baselineskip}}}\hspace{\datedist}}%
+  {\@titlefont #2}%
   \vspace{\titleskip}
   \leavevmode\noindent
 }
@@ -169,7 +195,7 @@
     plainpages=false,
     pdfpagelabels,
     bookmarksnumbered,
-    pdftitle={Vita},
+    pdftitle={\@name},
     pagebackref,
     pdfauthor={\@name},
     pdfkeywords={\keywords}
@@ -184,14 +210,14 @@
   %% Name 
   \begin{minipage}[t]{\textwidth}
     \centering
-    {\noindent{\huge\scshape{\@title\@name}} {\scriptsize \textsc{\@postnoms}}}
+    {\noindent{\Huge\scshape{\@title\@name}} {\footnotesize \textsc{\@postnoms}}}
     \begin{center}
-      \scriptsize
-      {\faPhone~\texttt{\@tel}}\qquad
-      {\faEnvelope~\texttt{\href{mailto:\@email}{\@email}}}\qquad
-      {\faGlobe~\texttt{\href{http://\@www}{\@www}}}\qquad
-      {\faTwitter~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\qquad
-      {\faGithub~\texttt{\href{http://github.com/\@github}{\@github}}}
+      \footnotesize
+      {\raisebox{-0.1\height}{\faPhone}~~\texttt{\@tel}}\quad\enspace
+      {\raisebox{-0.1\height}{\faEnvelope}~~\texttt{\href{mailto:\@email}{\@email}}}\quad\enspace
+      {\raisebox{-0.1\height}{\faGlobe}~~\texttt{\href{http://\@www}{\@www}}}\quad\enspace
+      {\raisebox{-0.1\height}{\faTwitter}~~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\quad\enspace
+      {\raisebox{-0.1\height}{\faGithub}~~\texttt{\href{http://github.com/\@github}{\@github}}}
     \end{center}
   \end{minipage}
   % \begin{minipage}[t]{0.194\textwidth}
@@ -255,12 +281,12 @@
   \global\aftersecfalse}
 
 % Section styling
-\titleformat{\section}[leftmargin]{\raggedleft\sffamily\footnotesize}{}{0pt}{}[\setsubskip]
-\titlespacing*{\section}{2cm}{2.5ex}{0.5cm}
+\titleformat{\section}[leftmargin]{\raggedleft\sffamily\scriptsize\bfseries}{}{0pt}{}[\setsubskip]
+\titlespacing*{\section}{2cm}{2ex}{0.2cm}
 
 % Subsection styling
-\titleformat{\subsection}{\subskip}{}{0pt}{}[] % \itshape \bfseries
-\titlespacing*{\subsection}{0pt}{2ex}{1ex}
+\titleformat{\subsection}{\subskip\bfseries}{}{0pt}{}[] % \itshape \bfseries
+\titlespacing*{\subsection}{0pt}{1ex}{1ex}
 
 \raggedbottom
 \makeatother

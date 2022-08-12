@@ -1,274 +1,186 @@
 ---
 name: Han Liang Wee, Eric
 title: ""
-address: Singapore
+address: SGP
 email: mail@eric-han.com
 twitter: eric_vader
 github: eric-vader
 www: eric-han.com
-tel: +65 92982927
-bibliography: tmp.bib
+tel: '+6592982927'
+bibliography: ./eric.bib
 
 appointment:
   -
-    place: National University of Singapore
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
     items:
       -
         item: Graduate Tutor
-        date: September 2019-Present
+        dates: \dmydate\formatdate{8}{8}{2018} - current
         description: |
+           Tutor for Junior and Senior Undergraduate modules.
            Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools.
-      -
-        item: Director of Digital Humanities
-        date: September 2019-Present
-        description: |
-          Launched and oversaw first three years of 10-year, $1,000,000 seed grant program.
-          Launched and secured funding for new summer graduate fellowship.
-          Direct Graduate Certificate program in Digital Humanities inside 
-          Graduate School of Arts and Sciences.
-          Serve on research computing faculty advisory board setting university-wide technology policy.
   -
-    place: Northeastern University
+    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
     items:
       -
-        item: Assistant Professor of History
-        date: August 2013–June 2019
-        description: |
-          Taught and supervised staff in large lecture classes and graduate students. Constructed 
-          data visualizations and research under grants and fellowships.
+        item: Section Commander - First Sergeant (1SG)
+        dates: NSmen
       -
-        item: Core Faculty, NuLab for Texts, Maps, and Networks
-        date: August 2013–June 2019
-        description: Developed graduate curriculum in digital humanities.
-      -
-        item: Affiliate Faculty, Program in Information Design and Visualization
-        date: November 2014–June 2019
-      -
-        item: Affiliate Faculty, Program in Information Design and Visualization
-        date: November 2014–June 2019
+        item: Combat Engineer, Specialist Trainer
+        dates: \dmydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
+        description: National Service; Managed and trained men/cadets.
   -
-    place: Harvard University, School of Engineering and Applied Sciences
+    place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
     items:
       -
-        item: Graduate Fellow, Cultural Observatory @ Harvard
-        date: 2011–2013
-        description: Led group building data visualization and analysis software *Bookworm* and conducted
-           independent research in digital humanities.
-  - place: American Academy of Arts and Sciences
-    items: 
-    -
-      item: Program Assistant/Program Associate
-      date: November 2003-August 2005
-      description: |
-         Researched, performed data analysis, and wrote descriptions
-         of quantitative data for prototype edition of the Academy's now-
-         successful *Humanities Indicators*.  
+        item: Software Engineering Intern
+        dates: \ddate\formatdate{27}{5}{2016} - \dmydate\formatdate{19}{8}{2016}
+        description: Designed and deployed Church Management System (CHMS).
+  -
+    place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
+    items:
+      -
+        item: Research Intern
+        dates: \ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
+        description: A Cloud-based Collaborative Model Building Platform.
+      -
+        item: Research Intern
+        dates: \dmydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
+        description: Autonomous Machine Learning using HPC Approaches.
+      -
+        item: Research Intern
+        dates: \dmydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
+        description: Route My Day (Recommendation System) -- Recommends routes and point-of-interests.
+
+  #     -
+  #       item: Director of Digital Humanities
+  #       date: September 2019-Present
+  #       description: |
+  #         Launched and oversaw first three years of 10-year, $1,000,000 seed grant program.
+  #         Launched and secured funding for new summer graduate fellowship.
+  #         Direct Graduate Certificate program in Digital Humanities inside 
+  #         Graduate School of Arts and Sciences.
+  #         Serve on research computing faculty advisory board setting university-wide technology policy.
+  # -
+  #   place: Northeastern University
+  #   items:
+  #     -
+  #       item: Assistant Professor of History
+  #       date: August 2013–June 2019
+  #       description: |
+  #         Taught and supervised staff in large lecture classes and graduate students. Constructed 
+  #         data visualizations and research under grants and fellowships.
+  #     -
+  #       item: Core Faculty, NuLab for Texts, Maps, and Networks
+  #       date: August 2013–June 2019
+  #       description: Developed graduate curriculum in digital humanities.
+  #     -
+  #       item: Affiliate Faculty, Program in Information Design and Visualization
+  #       date: November 2014–June 2019
+  #     -
+  #       item: Affiliate Faculty, Program in Information Design and Visualization
+  #       date: November 2014–June 2019
+  # -
+  #   place: Harvard University, School of Engineering and Applied Sciences
+  #   items:
+  #     -
+  #       item: Graduate Fellow, Cultural Observatory @ Harvard
+  #       date: 2011–2013
+  #       description: Led group building data visualization and analysis software *Bookworm* and conducted
+  #          independent research in digital humanities.
+  # - place: American Academy of Arts and Sciences
+  #   items: 
+  #   -
+  #     item: Program Assistant/Program Associate
+  #     date: November 2003-August 2005
+  #     description: |
+  #        Researched, performed data analysis, and wrote descriptions
+  #        of quantitative data for prototype edition of the Academy's now-
+  #        successful *Humanities Indicators*.  
        
 education:
   -
-    place: Princeton University
-    item: Ph.D. in History
-    date: November 2013
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Doctor of Philosophy (PhD) in Computer Science
+    grade: Current Cumulative Average Point (4.92/5.00)
+    date: \mydate\formatdate{8}{8}{2018} - \mydate\formatdate{7}{8}{2023}
     info:
-      -
-        text: 'Dissertation: "Paying Attention: The psychological subject in advertising, education, and culture, 1890–1960."'
-        twopage: true
-      - 'Committee: Daniel Rodgers (advisor), Emily Thompson (first reader), Anthony Grafton (second reader), Daniel Cohen (outside reader).'
+      - "PhD Student, expected to graduate in 2023."
+      - "Advised by Asst. Prof. Scarlett Jonathan"
   -
-    place: Princeton University
-    item: M.A. in History
-    date: June 2007
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Bachelor of Computing (Computer Science)
+    grade: Graduated With Honours (Highest Distinction) in Computer Science
+    date: \mydate\formatdate{12}{8}{2013} - \mydate\formatdate{31}{1}{2018}
     info:
-      - Major field in U.S. History 1865–2000.
-      - Minor fields in European intellectual history 1870–2000 and American intellectual and cultural history.
+      - Completed the Turing Programme.
+      - Minor in Mathematics.
   -
-    place: Harvard University
-    item: A.B. in Social Studies, magna cum laude
-    date: June 2003
-    info:
-      - 'Honors thesis: "Adorno on the Air: Theodor Adorno and the Princeton Radio Research Project." Advisor: Peter Eli Gordon.'
+    place: "[USC Viterbi School of Engineering](https://www.usc.edu/)"
+    item: Student Exchange
+    grade: "Grade Point Average (4.0/4.0); Best student in CSCI 420."
+    date: \mdate\formatdate{11}{1}{2016} - \mydate\formatdate{11}{5}{2016}
+
+awards:
+  -
+    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+    item: NS Excellence Award (NSEA)
+    date: \dmydate\formatdate{14}{4}{2022}
+    info: Top 10% of performers during ICT and training courses.
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Certificate of Accomplishment
+    date: \dmydate\formatdate{1}{2}{2022}
+    info: Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
+  -
+    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+    item: NS Excellence Award (NSEA)
+    date: \dmydate\formatdate{14}{11}{2019}
+    info: Top 10% of performers during ICT and training courses.
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Outstanding Undergraduate Researcher Prize 2017/2018
+    date: \dmydate\formatdate{21}{6}{2018}
+    info: Individual prize; For Final Year Project - Feature Subset Selection using Reinforcement Learning.
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Certificate of Merit in Algorithms \& Theory Focus Area
+    date: \dmydate\formatdate{29}{1}{2018}
+    info: Awarded for meritorious performance in the focus area.
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Dean's List Recipient
+    date: \dmydate\formatdate{15}{1}{2018}
+    info: Named to Dean’s List for meritorious performance in S1 AY2017/18.
+
+
+scholarships:
+  -
+    place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/)"
+    item: A*STAR Undergraduate Scholarship
+    date: \dmydate\formatdate{25}{7}{2012}
+    info: Prestigious scholarship awarded to budding scientists.
 
 publication:
   -
-    title: "Uncontrolled corpus composition drives an apparent surge in cognitive distortions. Benjamin Schmidt, Steven T. Piantadosi, Kyle Mahowald. Proceedings of the National Academy of Sciences Nov 2021, 118 (45) e2115010118; DOI: 10.1073/pnas.2115010118."
-    journal: "Proceedings of the National Academy of Sciences"
-    date: 2021-11
+    title: Adversarial Attacks on Gaussian Process Bandits
+    author: "**Eric Han**, Jonathan Scarlett"
+    journal: Proceedings of the 39th International Conference on Machine Learning
+    date: \mydate\formatdate{17}{7}{2022}
     twopage: true
     academic: true
     resume: true
-  - 
-    author: "Organisciak, P., Schmidt, B. M., & Downie, J. S."
-    title: "Giving shape to large digital libraries through exploratory data analysis."
-    journal: "Journal of the Association for Information Science and Technology, 73( 2), 317– 332."
-    doi: "https://doi.org/10.1002/asi.24547"
-    date: 2021-09
+    fcitekey: pmlr-v162-han22f
+  -
+    title: High-Dimensional Bayesian Optimization via Tree-Structured Additive Models
+    author: "***Eric Han***, Ishank Arora, Jonathan Scarlett"
+    journal: Proceedings of the 35th AAAI Conference on Artificial Intelligence
+    date: \mydate\formatdate{2}{2}{2021}
+    fsummary: "Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets."
+    twopage: true
     academic: true
     resume: true
-  -
-    title: "Creating Data: The Origins of Digitization in the American State, 1840-1940"
-    date: "Digital Monograph, in progress"
-    twopage: true
-    academic: true
-  -
-    author: "Peter Organisciak, Grace Therrell, Maggie Ryan, Benjamin MacDonald Schmidt"
-    title: Examining patterns of text reuse in digitized text collections
-    date: 2019-06-02
-    journal: 2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL)
-    academic: true
-    twopage: true
-  -
-    title: "Are College Students Killing Townies?"
-    author: "Benjamin Schmidt"
-    journal: "The Chronicle of Higher Education"
-    date: 2020-12-17
-    twopage: false
-    academic: false
-    public: true
-  -
-    fcitekey: schmidt\_history\_2018
-    title: "The History Major since the Great Recession"
-    author: "Benjamin Schmidt"
-    journal: "Perspectives"
-    date: 2018 December
-    twopage: false
-    academic: false
-    public: true
-    resume: true
-  -
-    fcitekey: schmidt\_stable\_2018
-    title: "Stable Random Projection: Lightweight, General-Purpose Dimensionality Reduction for Digitized Libraries"
-    date: 2018-09-30
-    journal: "Journal of Cultural Analytics"
-    doi: 10.22148/16.025
-    academic: true
-    twopage: true
-  -
-    fcitekey: schmidt\_modeling\_2018
-    title: "Modeling Time,"
-    journal: "in 'The Shape of Data in Digital Humanities,' ed. Julia Flanders and Fotis Jannidis"
-    date: (Routledge, 2018)
-    academic: true
-    twopage: false
-  -
-    fcitekey: schmidt\_digital\_2016
-    title: "Do Digital Humanists Need to Understand Algorithms?"
-    journal: Debates in the Digital Humanities 2016
-    journal_info: ed. Matthew Gold and Lauren Klein
-    type: chapter
-    date: 2016
-    place: University of Minnesota Press
-    academic: true
-    twopage: true
-  -
-    fcitekey: schmidt\_plot\_2015
-    date: 2015
-    title: "Plot Arceology: A Vector Space Model of Plot"
-    journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
-    academic: true
-    peer_reviewed: true
-    twopage: true
-    resume: true
-  -
-    fcitekey: schmidt\_words\_2013
-    date: April 2013
-    title: "Words Alone: Dismantling Topic Models in the Humanities"
-    journal: Journal of Digital Humanities
-    journal_info: Vol. 2 No. 1
-    url: http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/
-    twopage: true
-    academic: true
-  -
-    fcitekey: schmidt\_theory\_2012
-    date: April 2012
-    title: "Theory First"
-    journal: Journal of Digital Humanities
-    journal_info: Vol. 1 No. 1
-    twopage: false
-    academic: true
-  -
-    date: November 2010-Present
-    url: sappingattention.blogspot.com
-    title: Sapping Attention
-    description: Blog publishing original research and discussion in digital humanities, data visualization, and text mining
-    academic: true
-    blog: true
-  -
-    date: 2011-Present
-    title: Bookworm
-    url: https://github.com/Bookworm-project
-    description: Interactive website, database, and API
-    twopage: false
-    academic: true
-    software: true
-  -
-    fcitekey: schmidt\_ranking\_2007
-    date: July 2007
-    author: "Benjamin MacDonald Schmidt and Matthew Chingos"
-    title: "Ranking Doctoral Programs by Placement: A New Method"
-    journal: "PS: Political Science & Politics"
-    journal_info: Vol 40, pages 523-529
-    twopage: true
-    academic: true
-    peer_reviewed: true
-    resume: true
-  -
-    fcitekey: schmidt\_is\_2015
-    title: "Is It Fair to Rate Professors Online?, The New York Times (Room for debate)"
-    date: December 16, 2015
-    public: true
-    twopage: false
-  -
-    author: "Ben Schmidt"
-    title: "The Humanities are in Crisis"
-    journal: "The Atlantic"
-    date: "August 23, 2018"
-    url: "https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/"
-    public: true
-    twopage: true
-    resume: true
-  -
-    author: "Ben Schmidt and Mitch Fraas"
-    title: "The Language of the State of the Union"
-    journal: "The Atlantic"
-    date: "January 18, 2015"
-    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-    twopage: true
-    public: true
-  -
-    author: "Mitch Fraas and Ben Schmidt"
-    title: "Mapping the State of the Union"
-    journal: "The Atlantic"
-    date: "January 18, 2015"
-    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-    public: true
-    twopage: false
-  -
-    fcitekey: schmidt\_data\_2013
-    title: "The data shows there's no real crisis"
-    journal: "The New York Times"
-    journal_info: "Room for Debate"
-    date: "November 4, 2013"
-    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-    public: true
-  -
-    title: The Language of Lincoln
-    journal: The Atlantic
-    date: January 10, 2013
-    url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
-    public: true
-  -
-    title: The Foreign Language of Mad Men
-    journal: The Atlantic
-    date: March 22, 2012
-    url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
-    public: true
-  -
-    title: Prochronisms
-    url: prochronism.com
-    description: "Blog discussing changes in historical language through the lens of anachronisms in popular culture"
-    date: 2012-2015
-    public: true
-
+    fcitekey: Han_Arora_Scarlett_2021
 
 grants:
 - 
@@ -710,89 +622,52 @@ media_coverage:
 
 service:
 -
-  type: "Service to the Profession"
+  type: "Service to [National University of Singapore](http://www.nus.edu.sg/)"
   gigs:
     -
-      item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities.
-      date: 2017-2019
+      item: Admission reviewer for Master of Computing applicants (Aug 2022).
+      date: \dmydate\formatdate{8}{4}{2022}
       twopage: true
     -
-      item:  Working Group on Big Data and History, Social Science Resource Council
-      date: 2015-2018
-      twopage: false
+      item: Featured in a PhD programme marketing video.
+      date: \dmydate\formatdate{29}{9}{2021}
     -
-      item: Advisory Board, Culture Analytics
-      date: 2015-Present
+      item: Program Committee for NUS Computing Research Week 2021.
+      date: \ddate\formatdate{3}{8}{2021} - \dmydate\formatdate{5}{8}{2021}
+      twopage: true
+      info: Moderator of the technical panel discussion titled 'Heterogeneity in Federated Learning'.
+    -
+      item: Admission reviewer for Master of Computing applicants (August 2021).
+      date: \dmydate\formatdate{26}{4}{2021}
       twopage: true
     -
-      item:  Grant reviewer, National Endowment for the Humanities
-      date: 2014, 2019
-    -
-      item:  Digital Content Advisor, The American Yawp, Online History Textbook
-      date: 2014-Present
-    -
-      item:  Participant, Hathi Trust Research Center Un-Camp
-      date: September 10-11, 2012
-    -
-      item:  Invited Participant, Digital Public Library of America Technical Development Meeting
-      date: December 2011
+      item: Admission reviewer for Master of Computing applicants (Jan 2021).
+      date: \dmydate\formatdate{18}{10}{2020}
+      twopage: true
 -
-  type: "Service to the Department and University"
+  type: "Service to [Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
   gigs:
     - 
-      item: DH Steering Committee
-      date: 2019-present
-    -
-      item: Faculty Advisory Board, Research technology
-      date: 2019-present
+      item: "Guidance to junior scholar -- sharing of experiences."
+      date: \dmydate\formatdate{27}{6}{2019}
     - 
-      item: University committee on course evaluations
-      date: 2020
+      item: "Invited Speaker for A*STAR Scholarships Seminar for Undergraduate Studies."
+      date: \dmydate\formatdate{4}{12}{2015}
     -
-      item: Polonsky Fellowship Selection Committee
-      date: 2020
+      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- scholarship outreach and promotion."
+      date: \dmydate\formatdate{14}{3}{2015}
+-
+  type: "Service to [Impact Life Church](https://www.impactlife.sg/)"
+  gigs:
     - 
-      item: Digital Humanities Seed Grant Committee, co-chair
-      date: 2019-present
-    -
-      item: Committee on undergraduate research, College of Social Sciences and Humanities.
-      date: 2016
-    -
-      item: Committee on experiential liberal arts, CSSH
-      date: 2015
-    -
-      item: Graduate Committee, Northeastern University History Department
-      date: 2014-16
-    -
-      item:  Faculty Search Committee, Northeastern University
-      date: 2015-16
-    -
-      item:  Undergraduate Research Committee, Northeastern University College of Social Sciences and Humanities
-      date: 2014
-    -
-      item:  Committee on Digital Humanities Graduate Certificate
-      date: 2015
-    -
-      item:  Working Group on Evaluation of Digital Scholarship, Northeastern University
-      date: 2015
-    -
-      item:  Faculty Search Committee, Northeastern University
-      date: 2014-15
-    -
-      item:  Participant, Digital Working Group, Harvard History Department
-      date: 2013
-    -
-      item:  Departmental Representative, Princeton Graduate Student Government
-      date: 2010–2011
-    -
-      item:  Treasurer, Princeton Graduate History Association
-      date: 2008-2010
-    -
-      item:  Secretary, Princeton Graduate History Association
-      date: 2006-2008
-    -
-      item:  Director, Modern America Workshop, Princeton University
-      date: 2007-2008
+      item: "Head Of Information Technology"
+      date: \dmydate\formatdate{27}{6}{2019} - current?
+    - 
+      item: "Cell Group Leader"
+      date: \dmydate\formatdate{27}{6}{2019} - current?
+    - 
+      item: "Tutor"
+      date: \dmydate\formatdate{1}{1}{2011} - current?
 software:
 - 
   program: Bookworm
