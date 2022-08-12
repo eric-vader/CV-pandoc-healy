@@ -31,12 +31,25 @@
 
 
 \section{appointments}
-
+%
+% \textit{$appointment.items.item$}\hfill\sdate\today\,-\,\sydate\today\newline\justifying{\small $appointment.items.description$}\\
 $for(appointment)$
-\subsection{$appointment.place$}
+\subsection{\textbf{$appointment.place$}}
 \begin{separator}
-  $for(appointment.items)$
-  \entry{\today}{\justifying{\textbf{$appointment.items.item$}: $appointment.items.description$}}\\
+  $for(appointment.items/allbutlast)$
+    \entry{\today}{\today}{\textit{$appointment.items.item$}
+      $if(appointment.items.description)$
+        \\\justifying{\noindent\small $appointment.items.description$}
+      $endif$
+    }\\
+    \vspace{.5em}
+  $endfor$
+  $for(appointment.items/last)$
+    \entry{\today}{\today}{\textit{$appointment.items.item$}
+      $if(appointment.items.description)$
+        \\\justifying{\noindent\small $appointment.items.description$}
+      $endif$
+    }
   $endfor$
 \end{separator}
 $endfor$

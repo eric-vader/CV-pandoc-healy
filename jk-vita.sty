@@ -43,12 +43,14 @@
 \newdateformat{sdate}{\twodigit{\THEDAY}\,\shortmonthname[\THEMONTH]}
 \newdateformat{sydate}{\twodigit{\THEDAY}\,\shortmonthname[\THEMONTH]\,{\THEYEAR}}
 
+% https://tex.stackexchange.com/questions/290933/how-to-draw-a-vertical-line-for-separating-specific-section-and-content/329227
+% https://tex.stackexchange.com/questions/317445/a-title-command-that-lists-the-date-in-the-margin
 
-\newcommand{\entry}[2]{% \entry{<date>}{<title>}
+\newcommand{\entry}[3]{% \entry{<date>}{<title>}
   \noindent\leavevmode
   % \addcontentsline{toc}{section}{#2}% Add to ToC
-  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut \sdate#1\,-\,\sydate#1\hspace*{.1\baselineskip}}}\hspace{\datedist}}%
-  {\@titlefont #2}%
+  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut \sdate#1\,-\,\sydate#2\hspace*{.1\baselineskip}}}\hspace{\datedist}}%
+  {\@titlefont #3}%
   \vspace{\titleskip}
   \leavevmode\noindent
 }
@@ -60,7 +62,7 @@
 \newcommand{\settitleskip}{\setlength{\titleskip}}
 
 % Defaults
-\datefont{\tiny}
+\datefont{\tiny\sffamily}
 \titlefont{}
 \setdatedist{1em}
 \settitleskip{\parskip}
@@ -116,7 +118,7 @@
 
 % What use is a commit number?
 %\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}}}
-\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize Last updated \VCDateTEX}}}
+\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize Last updated \today}}}
 
 % Style for the front page
 \fancypagestyle{myplain}{%
@@ -182,36 +184,41 @@
   %% Name 
   \begin{minipage}[t]{\textwidth}
     \centering
-    {\noindent{\LARGE\scshape{\@title\@name}} {\scriptsize \textsc{\@postnoms}}}
+    {\noindent{\huge\scshape{\@title\@name}} {\scriptsize \textsc{\@postnoms}}}
+    \begin{center}
+      \scriptsize
+      {\faPhone~\texttt{\@tel}}\qquad
+      {\faEnvelope~\texttt{\href{mailto:\@email}{\@email}}}\qquad
+      {\faGlobe~\texttt{\href{http://\@www}{\@www}}}\qquad
+      {\faTwitter~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\qquad
+      {\faGithub~\texttt{\href{http://github.com/\@github}{\@github}}}
+    \end{center}
   \end{minipage}
-  \vspace{.25em}
-
   % \begin{minipage}[t]{0.194\textwidth}
   %   \centering\scriptsize
   %   {\faLocationArrow\\\texttt{\@address}}
   % \end{minipage}
-  \begin{minipage}[t]{0.194\textwidth}
-    \centering\scriptsize
-    {\faPhone\\\texttt{\@tel}}
-  \end{minipage}
-  \begin{minipage}[t]{0.194\textwidth}
-    \centering\scriptsize
-    {\faEnvelope\\\texttt{\href{mailto:\@email}{\@email}}}
-  \end{minipage}
-  \begin{minipage}[t]{0.194\textwidth}
-    \centering\scriptsize
-    {\faGlobe\\\texttt{\href{http://\@www}{\@www}}}
-  \end{minipage}
-  \begin{minipage}[t]{0.194\textwidth}
-    \centering\scriptsize
-    {\faTwitter\\\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}
-  \end{minipage}
-  \begin{minipage}[t]{0.194\textwidth}
-    \centering\scriptsize
-    {\faGithub\\\texttt{\href{http://github.com/\@github}{\@github}}}
-  \end{minipage}
-  
-  \vspace{.5em}
+  % \begin{minipage}[t]{0.194\textwidth}
+  %   \centering\scriptsize
+  %   {\faPhone\\\texttt{\@tel}}
+  % \end{minipage}
+  % \begin{minipage}[t]{0.194\textwidth}
+  %   \centering\scriptsize
+  %   {\faEnvelope\\\texttt{\href{mailto:\@email}{\@email}}}
+  % \end{minipage}
+  % \begin{minipage}[t]{0.194\textwidth}
+  %   \centering\scriptsize
+  %   {\faGlobe\\\texttt{\href{http://\@www}{\@www}}}
+  % \end{minipage}
+  % \begin{minipage}[t]{0.194\textwidth}
+  %   \centering\scriptsize
+  %   {\faTwitter\\\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}
+  % \end{minipage}
+  % \begin{minipage}[t]{0.194\textwidth}
+  %   \centering\scriptsize
+  %   {\faGithub\\\texttt{\href{http://github.com/\@github}{\@github}}}
+  % \end{minipage}
+  \vspace{.1em}
 }
 
 %%------------------------------------------------------------------------
