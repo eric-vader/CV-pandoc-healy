@@ -17,13 +17,19 @@ appointment:
         item: Graduate Tutor
         dates: \dmydate\formatdate{8}{8}{2018} - current
         description: |
-           Tutor for Junior and Senior Undergraduate modules.
-           Teach lectures, tutorials and consultations; Managed tutors and gradings; Developed module tools.
+           Tutor for Junior and Senior Undergraduate modules. 
+           Teach lectures, tutorials and consultations; Manage tutors and grading; Mentor new tutors; Develop grading rubrics, exam questions and module tools.
+      -
+        item: Tutor for Intro to Programming Workshop
+        dates: \mydate\formatdate{3}{7}{2017} # \d\formatdate{3}{7}{2017} - \dmydate\formatdate{6}{7}{2017}
+        description: |
+           Coached freshmen on computational thinking, programming.
+           
   -
     place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
     items:
       -
-        item: "Section Commander, Rank: First Sergeant (1SG)"
+        item: "Section Commander -- First Sergeant (1SG)"
         dates: NSmen
       -
         item: Combat Engineer, Specialist Trainer
@@ -40,497 +46,162 @@ appointment:
     place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
     items:
       -
-        item: Research Intern
+        item: "Research Intern -- A Cloud-based Collaborative Model Building Platform"
         dates: \ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
-        description: A Cloud-based Collaborative Model Building Platform.
+        description: Contributed to a cloud based Machine Learning platform.
       -
-        item: Research Intern
+        item: "Research Intern -- Autonomous Machine Learning using HPC Approaches"
         dates: \dmydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
-        description: Autonomous Machine Learning using HPC Approaches.
+        description: Contributed to a cloud based Machine Learning platform.
       -
-        item: Research Intern
+        item: "Research Intern -- Route My Day (Recommendation System)"
         dates: \dmydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
-        description: Route My Day (Recommendation System) -- Recommends routes and point-of-interests.
-
-  #     -
-  #       item: Director of Digital Humanities
-  #       date: September 2019-Present
-  #       description: |
-  #         Launched and oversaw first three years of 10-year, $1,000,000 seed grant program.
-  #         Launched and secured funding for new summer graduate fellowship.
-  #         Direct Graduate Certificate program in Digital Humanities inside 
-  #         Graduate School of Arts and Sciences.
-  #         Serve on research computing faculty advisory board setting university-wide technology policy.
-  # -
-  #   place: Northeastern University
-  #   items:
-  #     -
-  #       item: Assistant Professor of History
-  #       date: August 2013–June 2019
-  #       description: |
-  #         Taught and supervised staff in large lecture classes and graduate students. Constructed 
-  #         data visualizations and research under grants and fellowships.
-  #     -
-  #       item: Core Faculty, NuLab for Texts, Maps, and Networks
-  #       date: August 2013–June 2019
-  #       description: Developed graduate curriculum in digital humanities.
-  #     -
-  #       item: Affiliate Faculty, Program in Information Design and Visualization
-  #       date: November 2014–June 2019
-  #     -
-  #       item: Affiliate Faculty, Program in Information Design and Visualization
-  #       date: November 2014–June 2019
-  # -
-  #   place: Harvard University, School of Engineering and Applied Sciences
-  #   items:
-  #     -
-  #       item: Graduate Fellow, Cultural Observatory @ Harvard
-  #       date: 2011–2013
-  #       description: Led group building data visualization and analysis software *Bookworm* and conducted
-  #          independent research in digital humanities.
-  # - place: American Academy of Arts and Sciences
-  #   items: 
-  #   -
-  #     item: Program Assistant/Program Associate
-  #     date: November 2003-August 2005
-  #     description: |
-  #        Researched, performed data analysis, and wrote descriptions
-  #        of quantitative data for prototype edition of the Academy's now-
-  #        successful *Humanities Indicators*.  
+        description: Contributed to a end-to-end recommender system.
        
 education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Doctor of Philosophy (PhD) in Computer Science
-    grade: Current Cumulative Average Point (4.92/5.00)
-    date: \mydate\formatdate{8}{8}{2018} - \mydate\formatdate{7}{8}{2023}
+    grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Scarlett Jonathan.
+    date: \mydate\formatdate{8}{8}{2018} - exp. \ydate\formatdate{7}{8}{2023} 
     info:
-      - "PhD Student, expected to graduate in 2023."
-      - "Advised by Asst. Prof. Scarlett Jonathan"
+      - "Research focus 'Towards Modern Gaussian Processes', which aims to tackle problems related to Gaussian Processes (GP) such as scaling and robustness."
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Bachelor of Computing (Computer Science)
     grade: Graduated With Honours (Highest Distinction) in Computer Science
     date: \mydate\formatdate{12}{8}{2013} - \mydate\formatdate{31}{1}{2018}
     info:
-      - Completed the Turing Programme.
-      - Minor in Mathematics.
+      - Completed the Turing Programme, which nurture students who aspire to engage research careers.
   -
     place: "[USC Viterbi School of Engineering](https://www.usc.edu/)"
     item: Student Exchange
     grade: "Grade Point Average (4.0/4.0); Best student in CSCI 420."
     date: \mdate\formatdate{11}{1}{2016} - \mydate\formatdate{11}{5}{2016}
 
-awards:
-  -
-    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-    item: NS Excellence Award (NSEA)
-    date: \dmydate\formatdate{28}{1}{2022}
-    info: Top 10% of performers during ICT and training courses.
-  -
-    place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Certificate of Accomplishment
-    date: \dmydate\formatdate{1}{2}{2022}
-    info: Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
-  -
-    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-    item: NS Excellence Award (NSEA)
-    date: \dmydate\formatdate{14}{11}{2019}
-    info: Top 10% of performers during ICT and training courses.
-  -
-    place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Outstanding Undergraduate Researcher Prize 2017/2018
-    date: \dmydate\formatdate{21}{6}{2018}
-    info: Individual prize; For Final Year Project - Feature Subset Selection using Reinforcement Learning.
-  -
-    place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Certificate of Merit in Algorithms \& Theory Focus Area
-    date: \dmydate\formatdate{29}{1}{2018}
-    info: Awarded for meritorious performance in the focus area.
-  -
-    place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Dean's List Recipient
-    date: \dmydate\formatdate{15}{1}{2018}
-    info: Named to Dean's List for meritorious performance in S1 AY2017/18.
+achievement:
+  - type: "Awards"
+    items:
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Certificate of Accomplishment
+        date: \dmydate\formatdate{1}{2}{2022}
+        info: Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
+      -
+        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+        item: NS Excellence Award (NSEA)
+        date: \dmydate\formatdate{28}{1}{2022}
+        info: Top 10% of performers during ICT and training courses.
+      -
+        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+        item: NS Excellence Award (NSEA)
+        date: \dmydate\formatdate{25}{10}{2019}
+        info: Top 10% of performers during ICT and training courses.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Outstanding Undergraduate Researcher Prize 2017/2018
+        date: \dmydate\formatdate{21}{6}{2018}
+        info: Individual prize; For Final Year Project - Feature Subset Selection using Reinforcement Learning.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Certificate of Merit in Algorithms \& Theory Focus Area
+        date: \dmydate\formatdate{29}{1}{2018}
+        info: Awarded for meritorious performance in the focus area.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Dean's List Recipient
+        date: \dmydate\formatdate{15}{1}{2018}
+        info: Named to Dean's List for meritorious performance in S1 AY2017/18.
+      -
+        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+        item: NS Excellence Award (NSEA)
+        date: \dmydate\formatdate{9}{12}{2016}
+        info: Top 10% of performers during ICT and training courses.
+  - type: "Scholarships"
+    items:
+      -
+        place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/)"
+        item: A*STAR Undergraduate Scholarship
+        date: \dmydate\formatdate{25}{7}{2012}
+        info: Prestigious scholarship awarded to budding scientists.
 
-
-scholarships:
-  -
-    place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/)"
-    item: A*STAR Undergraduate Scholarship
-    date: \dmydate\formatdate{25}{7}{2012}
-    info: Prestigious scholarship awarded to budding scientists.
-
-publication:
-  -
-    title: Adversarial Attacks on Gaussian Process Bandits
-    author: "**Eric Han**, Jonathan Scarlett"
-    journal: Proceedings of the 39th International Conference on Machine Learning
-    date: \mydate\formatdate{17}{7}{2022}
-    twopage: true
-    academic: true
-    resume: true
-    fcitekey: pmlr-v162-han22f
-  -
-    title: High-Dimensional Bayesian Optimization via Tree-Structured Additive Models
-    author: "***Eric Han***, Ishank Arora, Jonathan Scarlett"
-    journal: Proceedings of the 35th AAAI Conference on Artificial Intelligence
-    date: \mydate\formatdate{2}{2}{2021}
-    fsummary: "Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets."
-    twopage: true
-    academic: true
-    resume: true
-    fcitekey: Han_Arora_Scarlett_2021
-
-grants:
-- 
-  resume: false
-  description: "Asylum Lab, NYU Center for the Humanities"
-- 
-  description: "Similarity and Duplication in Digital Libraries. IMLS grant. Co-PI; Peter Organisciak, University of Denver."
-  resume: true
-- 
-  description: "NEH-Mellon Fellowships for Digital Publication for *Creating Data*, Calendar Year 2018. $50,400."
-  resume: false
-- 
-  description: "Columbia University School of International and Public Affairs: Visiting Fellow, Spring 2017"
-  resume: false
-- 
-  description: Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
-  resume: false
-- 
-  description: Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
-  resume: true
-- 
-  description: Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
-  resume: false
-
-invited_talk:
-  - 
-    date: March 13, 2020 (Cancelled due to COVID-19)
-    title: "The Humanities in the Age of STEM"
-    host: American Council of Learned Societies
-    twopage: false
-  -
-    date: January 14, 2020
-    title: "Data in search of an argument"
-    host: "History as a Data Science Workshop (guest)"
-    place: "Columbia University, New York"
-    twopage: false
-  -
-    date: January 28, 2018
-    title: "Reordering the digital library: what do 21st century algorithms make out of 19th century collections"
-    host: "University of North Carolina"
-    place: "Chapel Hill"
-    twopage: true
-  -
-    date: July 29, 2016
-    title: "Visualizing and classifying large digital libraries"
-    host: New York Public Library
-    place: New York City
-    twopage: false
-  -
-    date: June 7, 2016
-    title: "Data Visualization for the Humanities"
-    host: Digital Futures Initiative
-    place: Grinnell College
-    twopage: false
-  -
-    date: November 12, 2015
-    title: "Historical Data Visualization"
-    host: Institute for Quantitative Theory and Methods Data Visualization speaker series
-    place: Emory University
-    twopage: false
-  -
-    date: May 11, 2015
-    title: "Plot Arceology"
-    host: Literary Lab
-    place: Stanford University
-  -
-    date: May 10, 2015
-    title: "Reconstructing the Map"
-    host: Center for Spatial and Textual Analysis
-    place: Stanford University
-    twopage: true
-  -
-    title: "Aggregate Americans: The US Census Bureau, data visualization, 1880-1940"
-    place: Washington University in St Louis
-    date: February 26, 2015
-    twopage: false
-  -
-    date: November 12, 2014
-    title: "Applying a grammar of visualization to millions of texts: the Bookworm project"
-    host: College of Art, Media, and Design
-    place: Northeastern University
-  -
-    title: "Bookworm: Exploring Massive Textual Collections through Metadata"
-    host: Yale University Library
-    place: Yale University
-    date: May 12, 2014
-    twopage: true
-  -
-    title: "Data-Driven Histories: Reinterpreting Nineteenth-Century Data"
-    host: Department of History
-    place: University of Georgia
-    date: April 22, 2014
-    twopage: true
-  -
-    title: "Data narratives and group dynamics in digital history: a case study in ships' logs"
-    host: Digital History symposium and roundtable
-    place: University of Nebraska, Lincoln
-    date: April 11, 2014
-    twopage: false
-  -
-    title: "History for the Digital Future: Digital Forms of Historical Scholarship"
-    host: Friday Workshop Series of the Eisenberg Institute for Historical Studies
-    place: University of Michigan
-    date: January 31, 2014
-    twopage: true
-  -
-    title: "'Big Data' across Disciplines, from Cultural Studies to Culturomics"
-    host: Workshop in History, Culture and Society
-    place: Sociology Department, Harvard University
-    date: March 27, 2013
-  -
-    title: "Unintended Consequences: Digital Reading and the Loci of Cultural Change"
-    host: Institute for Historical Research
-    place: London, UK
-    date: March 12, 2013
-  -
-    title: "Digital Reading"
-    host: Digital Humanities and the Americanist Seminar, Center for Cultural Analysis
-    place: Rutgers University
-    date: January 31, 2013
-  -
-    title: "Humanities Research with Digital Libraries"
-    host: ITHAKA S+R and Jstor teams, ITHAKA building
-    place: New York City
-    date: April 16, 2012
-  -
-    title: "A History of Attention"
-    host: Emily Harvey Foundation
-    place: New York City
-    date: March 17, 2012
-  -
-    title: "Bookworm"
-    host: Beta Sprint Competition Selection, Digital Public Library of America Plenary Meeting
-    place: Washington, DC
-    date: October 21, 2011
-
-home_institution:
--
-  title: "The DH/CSS job market. Panelist."
-  date: October 13, 2016
--
-  title: "What gender's got to do with teaching evaluations."
-  place: "Conflict. Civility. Respect. Peace. Northeastern Reflects series on civic sustainability."
-  date: November 4, 2015
--
-  title: "Open Access in the Digital Humanities"
-  host: Open Access Week event, Northeastern University
-  date: October 22, 2013
-
-conference:
--
-  title: "Two Volumes: the Lessons of Time on the Cross"
-  host: American Historical Association
-  place: Chicago
-  date: January 2019
--
-  title: "What will the liberal arts look like in 10 years?"
-  host: ITHAKA Next Wave Conference 2018
-  place: New York City
-  date: November 29, 2018
--
-  title: "Stable Random Projection: Universal, Minimal Dimensionality Reduction for Books"
-  host: Digital Humanities 2017
-  place: Montreal
-  date: August 2017
-
--
-  title: "Drawing the frontier line at the US Census, 1870-1920"
-  host: Columbia University
-  place: New York
-  date: April 8, 2017
-
--
-  title: A public exploratory data analysis of gender bias in teaching evaluations
-  host: IEEEViz Workshop on Visualization for the Digital Humanities
-  place: Baltimore
-  date: October 24, 2016
--
-  title: "Invited presentation"
-  host: Integration of education in the sciences, engineering, and medicine with the arts and humanities at the undergraduate and
-        graduate levels
-  place: National Academy of Sciences, Cambridge MA
-  date: October 14, 2016
--
-  title: "Exploratory Narratives"
-  host: Digital Humanities + Data Journalism conference
-  place: University of Miami
-  date: October 1, 2016
--
-  title: "Data Revisualization as Critical Humanities Practice: Reinterpreting 19th Century Data with Modern Tools"
-  host: Digital Humanities 2015 Conference
-  place: Sydney, Australia
-  date: July 1, 2015
-  twopage: true
--
-  title: "Historical data revisualization: Turner, Walker, and envisioning the frontier"
-  host: Roundtable on data visualization and historical practice
-  place: Annual Meeting of the American History Association
-  date: January 3, 2015
-  twopage: true
--
-  title: "Bookworm: Building an expressive grammar of humanities text analysis"
-  host: The Digital Crucible
-  place: Dartmouth College
-  date: October 7, 2014
--
-  title: "Why we worry about humanities enrollments"
-  host: Panel on responses to the American Academy Report on the Humanities
-  place: National Conference on Public History; Monterey, California
-  date: March 2014
--
-  title: "Transforming Texts into Cartesian Spaces"
-  host: New Media in American Literary History symposium
-  place: Northeastern University
-  date: December 2013
--
-  title: "Reading texts with Big Metadata: the Bookworm platform for digital books, newspapers, and other libraries"
-  host: Featured Talk, Boston Area Days of DH
-  place: Northeastern University
-  date: March 19, 2013
--
-  title: "Reading Genres: Exploring Massive Digital Collections From the Top Down"
-  host: Big Data and Uncertainty in the Humanities
-  place: University of Kansas
-  date: September 22, 2012
--
-  title: "Paying Attention: A Case Study in Conceptual History with Millions of Texts"
-  host: Panel on Digital Approaches to Conceptual History, 15th International Conference on the History of Concepts
-  place: Helsinki, Finland
-  date: August 24, 2012
--
-  title: "Drifting Metaphors: Using Digital Libraries to Describe Discursive Change"
-  host: "Panel on Computational Approaches to Nineteenth-Century Literary History, Conference of the American Literature Association"
-  place: San Francisco
-  date: May 24, 2012
--
-  title: "Digital Collections and Research Libraries"
-  host: "Research Libraries in the Digital Age: Needs and Opportunities Conference (invited presentation), American Antiquarian Society"
-  place: Worcester, Massachusetts
-  date: March 30, 2012
--
-  title: "A Conversation about Text Mining as a Research Method"
-  host: Roundtable participant, Annual Meeting of the American Historical Association
-  place: Chicago
-  date: January 8, 2012
--
-  title: "Practicing Intellectual History on the Digital Archive"
-  host: Paper, Modern America Workshop
-  place: Princeton University
-  date: March 2011
--
-  title: "The Rise of the American Attention Span, 1890-1935"
-  host: Paper, Modern America Workshop
-  place: Princeton University
-  date: March 2010
-
-workshop:
-
--
-  title: Text Mining the Digital Library with Hathi Trust Extended Features
-  place: NYC Week of DH
-  date: January, 2020
--
-  title: Thinking Through Word Embeddings for the Humanities
-  place: Carnegie Mellon University
-  date: June, 2018
--
-  title: Thinking Through Word Embeddings for the Humanities
-  place: NYC Week of DH
-  date: January, 2018
--
-  title: Classification and the Library
-  host: History Lab group
-  place: Columbia University
-  date: April 19, 2016
--
-  title: Text Analytics for Medical History (Instructor, NEH/NIH workshop)
-  host: National Institutes of Health
-  place: Bethesda, MD
-  date: April 11, 2016
--
-  title: An Introduction to Text Analysis for Historians
-  host: Digital History Workshop Sessions, Annual Meeting of the American Historical Association
-  place: New York
-  date: January 2, 2015
--
-  title: Global Literary Networks Work Retreat
-  host: Neubauer Collegium for Culture and Society
-  place: University of Chicago
-  date: December 4-5, 2014
--
-  title: 'Doing Digital History: A Graduate Student Workshop'
-  place: University of Georgia
-  date: April 21, 2014
--
-  title: "Digital Methods for conceptual history"
-  host: International Research School in Conceptual History and Political Thought; two-day guest instructor
-  place: Helsinki University
-  date: August 2012
-
+research:
+  - type: Peer-Reviewed Conference Publications
+    items:
+      -
+        title: Adversarial Attacks on Gaussian Process Bandits
+        author: "**Eric Han**, Jonathan Scarlett"
+        place: Proceedings of the 39th International Conference on Machine Learning
+        date: \mydate\formatdate{17}{7}{2022}
+        twopage: true
+        academic: true
+        resume: true
+        fcitekey: pmlr-v162-han22f
+      -
+        title: High-Dimensional Bayesian Optimization via Tree-Structured Additive Models
+        author: "***Eric Han***, Ishank Arora, Jonathan Scarlett"
+        place: Proceedings of the 35th AAAI Conference on Artificial Intelligence
+        date: \mydate\formatdate{2}{2}{2021}
+        fsummary: "Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets."
+        twopage: true
+        academic: true
+        resume: true
+        fcitekey: Han_Arora_Scarlett_2021
+  - type: Summer School
+    items:
+      -
+        title: Attended The Gaussian Process Summer School, 2019
+        date: \mydate\formatdate{12}{9}{2019} # \ddate\formatdate{9}{9}{2019}-\dmydate\formatdate{12}{9}{2019}
+        place: The University Of Sheffield, Sheffield, United Kingdom
+        twopage: true
+        academic: true
+        resume: true
 
 teaching:
--
-  title: "Introduction to Programming"
-  date: Fall 2020
-  type: Graduate
-- 
-  title: "The History of Big Data"
-  date: Spring 2020
-  type: Undergraduate
--
-  title: "Working with Data"
-  date: Spring 2020, Spring 2021
-  type: Graduate
-- 
-  title: "Asylum in Crisis. Co-taught with Sibylle Fischer and Ellen Noonan"
-  date: Spring 2021
-  type: Undergraduate
--
-  title: "Bostonography: Exploring the city through texts, maps, and networks. Co-taught with Ryan Cordell"
-  date: Fall 2016
-  type: Undergraduate
--
-  title: "United States History from 1607 to the present"
-  date: Spring 2019; Fall 2017
-  type: Undergraduate
--
-  title: "Texts, Maps, and Networks: Readings and Methods for Digital History"
-  date: Fall 2015; Fall 2016; Fall 2017
-  type: Graduate
--
-  title: "Humanities Data Analysis"
-  date: Spring 2019; Spring 2015
-  type: Graduate
--
-  title: "The Making of Modern America: The United States, 1877-1945"
-  date: Fall 2014
-  type: Undergraduate
--
-  title: "The History of Big Data"
-  type: First Year Honors Seminar
-  date: Fall 2013, Fall 2014
--
-  title: "History in the Digital Age"
-  date: Spring 2014
-  type: Undergraduate
--
-  title: "Introduction to Digital History"
-  date: Fall 2013
-  type: Graduate
+  - course: CS3203 -- Software Engineering Project
+    type: Undergrad.
+    credits: 8 credits
+    items:
+      -
+        tasks: "Support lectures, teach consultations, organize tutors, grading, improve grading rubrics and improve testing tools."
+        date: AY2021/22 S1
+      - 
+        tasks: "Support lectures, teach consultations, organize tutors, grading and maintain testing tools."
+        date: AY2020/21 S2
+      -
+        tasks: "Support lectures, teach consultations and develop testing tools."
+        date: AY2019/20 S2
+      - 
+        tasks: "Teach tutorials, consultations and support lectures."
+        date: AY2018/19 S2
+      - 
+        tasks: "Teach tutorials and consultations."
+        date: AY2018/19 S1
+  - course: CS2030/CS2030S -- Programming Methodology II 
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
+        date: AY2020/21 S1
+  - course: CS3217 -- Software Engineering on Modern Application Platforms  
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Taught tutorial classes."
+        date: AY2021/22 S2
+  - course: CS3243 -- Introduction to Artificial Intelligence
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials, review of learning materials, designing exam questions."
+        date: AY2022/23 S1
+      -
+        tasks: "Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions."
+        date: AY2021/22 S2
+
 
 public_history:
 -
@@ -589,37 +260,6 @@ public_history:
     item: Weekends with Alex Witt, MSNBC. Discussing Mad Men.
     date: March 24, 2012
 
-media_coverage:
--
-  fcitekey: miller\_is\_2015
-  author: Miller, Clare Cain
-  title: "Is the Professor Bossy or Brilliant? Much Depends on Gender"
-  url: "http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html?abt=0002&abg=1"
-  journal: "*The New York Times*"
-  date: February 6, 2015
--
-  fcitekey: dewey\_when\_2014
-  author: "*Dewey, Caitlin*"
-  title: "When F-Bombs Went Mainstream, Who Talks about Terrorism, and Other Surprising Cultural Insights from Big Data"
-  url: "http://www.washingtonpost.com/news/the-intersect/wp/2014/09/18/when-f-bombs-went-mainstream-who-talks-about-terrorism-and-other-surprising-cultural-insights-from-big-data/"
-  journal: "*The Washington Post*"
-  date: September 18, 2014
--
-  fcitekey: hertzberg\_nobody\_2014
-  author: Hertzberg, Hendrik
-  title: "Nobody Said That Then!"
-  url: "http://www.newyorker.com/online/blogs/hendrikhertzberg/2014/02/nobody-said-that-then-continued.html?intcid=obnetwork"
-  journal: The New Yorker Blogs
-  date: February 25, 2014
--
-  fcitekeyl: schuessler\_quants\_2013
-  author: Schuessler, Jennifer
-  title: "Quants Ask: What Crisis in the Humanities?"
-  url: "http://artsbeat.blogs.nytimes.com/2013/06/27/quants-ask-what-crisis-in-the-humanities/"
-  journal: The New York Times
-  date: June 27, 2013
-  resume: true
-
 service:
 -
   type: "Service to [National University of Singapore](http://www.nus.edu.sg/)"
@@ -654,20 +294,28 @@ service:
       item: "Invited Speaker for A*STAR Scholarships Seminar for Undergraduate Studies."
       date: \dmydate\formatdate{4}{12}{2015}
     -
-      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- scholarship outreach and promotion."
+      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- Scholarship outreach and promotion."
       date: \dmydate\formatdate{14}{3}{2015}
+-
+  type: "Service to [Pioneer Junior College](http://www.pioneerjc.moe.edu.sg)"
+  gigs:
+    -
+      item: "Teaching and sharing on 'Computational Thinking' to junior college students."
+      date: \dmdate\formatdate{18}{5}{2015} - \dmydate\formatdate{15}{6}{2015}
 -
   type: "Service to [Impact Life Church](https://www.impactlife.sg/)"
   gigs:
     - 
-      item: "Head Of Information Technology"
-      date: \dmydate\formatdate{27}{6}{2019} - current?
+      item: "Head Of Information Technology -- Lead a team of >15 volunteers."
+      date: \mydate\formatdate{8}{3}{2018} - current
+      info: Responsible for IT infra., Purchasing, Software development of Church Applications and more.
     - 
-      item: "Cell Group Leader"
-      date: \dmydate\formatdate{27}{6}{2019} - current?
+      item: "Cell Group Leader -- Build strong communities and healthy Christians."
+      date: \mydate\formatdate{1}{10}{2017} - current
     - 
-      item: "Tutor"
-      date: \dmydate\formatdate{1}{1}{2011} - current?
+      item: "Tutor - Teach tuition classes."
+      info: "Classes: GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
+      date: \mydate\formatdate{1}{1}{2012} - \formatdate{1}{12}{2018}
 software:
 - 
   program: Bookworm
@@ -692,10 +340,14 @@ competencies:
 -
   type: Computing Platforms
   items:
-    - "Substantial experience (could lead workshops): R, Python, Javascript, MySQL, D3."
-    - "Research/collaborative use: HTML5/CSS, Unix administration, Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
+    - item: Programming Languages
+      info: "Python (also sci. packages, ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
+    - item: Tools / Platforms
+      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
+    - item: Operating Systems
+      info: Linux (Fedora; daily driver), *nix administration, Windows, macOS.
 -
-  type: Languages
-  items: German (intermediate), Spanish (reading), French (reading).
-
+  type: Language Proficiency
+  items: 
+    - item: English (Native) and Chinese (Intermediate).
 ...

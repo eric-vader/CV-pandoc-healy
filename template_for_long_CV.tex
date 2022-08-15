@@ -41,20 +41,11 @@ $for(appointment)$
         \\\justifying{\noindent\small $appointment.items.description$}
       $endif$
     }\\
-    \vspace{.75ex}
+    \vspace{.5ex}
   $endfor$
+  \vspace{-.5ex}
 \end{separator}
 $endfor$
-
-% /allbutlast
-
-% $for(appointment.items/last)$
-% \entry{$appointment.items.dates$}{\textit{$appointment.items.item$}
-%   $if(appointment.items.description)$
-%     \\\justifying{\noindent\small $appointment.items.description$}
-%   $endif$
-% }
-% $endfor$
 
 \section{education}
 % Education uses a different field called ``items.''
@@ -75,54 +66,56 @@ $for(education)$
       $endfor$}
     $endif$
   }\\
-  \vspace{.75ex}
+  % \vspace{.75ex}
 \end{separator}
 $endfor$
+
 
 \section{achievement}
-\subsection{Awards}
-\begin{separator}
-$for(awards)$
-  \entry{$awards.date$}{\textit{$awards.item$, $awards.place$}
-    \\\justifying{\noindent\small $awards.info$}
-  }\\
-  \vspace{.75ex}
-$endfor$
+$for(achievement)$
+  \subsection{$achievement.type$}
+  \begin{separator}
+  $for(achievement.items)$
+    \entry{$achievement.items.date$}{\textit{$achievement.items.item$, $achievement.items.place$}
+      \\\justifying{\noindent\small $achievement.items.info$}
+    }\\
+    \vspace{.5ex}
+  $endfor$
+  \vspace{-.5ex}
 \end{separator}
-\subsection{Scholarships}
-\begin{separator}
-$for(scholarships)$
-  \entry{$scholarships.date$}{\textit{$scholarships.item$, $scholarships.place$}
-    \\\justifying{\noindent\small $scholarships.info$}
-  }\\
-  \vspace{.75ex}
 $endfor$
-\end{separator}
-
 % A little wonky. I want my publications divided up based on tags.
 % (Yes, it would be better to just do this with bib file). That's for later.
 
-\section{publications}
+\section{research}
 
-\subsection{Peer-Reviewed Conference Publications}
-\begin{separator}
-$for(publication)$
-$if(publication.academic)$
-  $if(publication.citekey)$
-    (\cite{$publication.citekey$}).\\[.15cm]
-  $else$
-    \entry{$publication.date$}{\textit{$publication.title$} 
-      \\\justifying{\noindent\small $publication.author$\\ $publication.journal$
-      $if(publication.summary)$
-        \\ $publication.summary$ 
-      $endif$}
-    }\\
-    \vspace{.75ex}
-  $endif$
-$endif$
+$for(research)$
+  \subsection{$research.type$}
+  \begin{separator}
+  $for(research.items)$
+    $if(research.items.academic)$
+      $if(research.items.citekey)$
+        (\cite{$research.items.citekey$}).\\[.15cm]
+      $else$
+        \entry{$research.items.date$}{\textit{$research.items.title$} 
+          \justifying{\noindent\small
+          $if(research.items.author)$
+            \\$research.items.author$
+          $endif$
+          $if(research.items.place)$
+            \\ $research.items.place$
+          $endif$
+          $if(research.items.summary)$
+            \\ $research.items.summary$ 
+          $endif$}
+        }\\
+      $endif$
+      \vspace{.5ex}
+    $endif$
+  $endfor$
+  \vspace{-.5ex}
+  \end{separator}
 $endfor$
-\end{separator}
-
 
 \section{service}
 $for(service)$
@@ -134,72 +127,42 @@ $for(service)$
         \\\justifying{\noindent\small $service.gigs.info$ }
       $endif$
     }\\
-    \vspace{.75ex}
+    \vspace{.5ex}
   $endfor$
+  \vspace{-.5ex}
+  \end{separator}
+$endfor$
+\newpage
+\section{teaching}
+$for(teaching)$
+  \subsection{$teaching.course$ ($teaching.type$ $teaching.credits$)}
+  \begin{separator}
+    $for(teaching.items)$
+      \entry{$teaching.items.date$}{\textit{$teaching.items.tasks$}
+        $if(teaching.items.info)$
+          \\\justifying{\noindent\small $teaching.items.info$ }
+        $endif$
+      }\\
+      \vspace{.5ex}
+    $endfor$
+    \vspace{-.5ex}
   \end{separator}
 $endfor$
 
-\section{invited talks}
-
-$for(invited_talk)$
-``$invited_talk.title$.'' $if(invited_talk.host)$$invited_talk.host$, $endif$$invited_talk.place$. $invited_talk.date$.\\[.15cm]
-$endfor$
-
-
-\section{workshops}
-
-$for(workshop)$
-``$workshop.title$.''
-$if(workshop.host)$$workshop.host$, $endif$$workshop.place$.
-$workshop.date$.\\[.15cm]
-$endfor$
-
-\section{conference talks}
-
-$for(conference)$
-``$conference.title$.''
-$if(conference.host)$$conference.host$, $endif$
-$conference.place$.
-$conference.date$.\\[.15cm]
-$endfor$
-
-\section{teaching}
-
-$for(teaching)$
-``$teaching.title$.'' $teaching.date$. ($teaching.type$)\\[.15cm]
-$endfor$
-
-
-\section{public history}
-
-$for(public_history)$
-% This one has a hierarchical setup: there are multiple roles in public history, and
-% each can have any number of ``gigs''
-% These are irregular enough that I just use an ``item'' field to store the text.
-\subsection{$public_history.role$}
-$for(public_history.gigs)$
-$public_history.gigs.item$ $public_history.gigs.date$.\\[.15cm]
-$endfor$
-$endfor$
-\subsection{Selected media coverage}
-
-$for(media_coverage)$
-$if(media_coverage.citekey)$
-\fullcite{$media_coverage.citekey$}\\
-$else$
-$media_coverage.title$
-$endif$
-$endfor$
-
-
-
-
-\section{research competencies}
+\section{competencies}
 $for(competencies)$
-\subsection{$competencies.type$}
-$for(competencies.items)$
-$competencies.items$\\[.15cm]
-$endfor$
+  \subsection{$competencies.type$}
+  \begin{separator}
+    $for(competencies.items)$
+      \entry{>}{\textit{$competencies.items.item$}
+        $if(competencies.items.info)$
+          \\\justifying{\noindent\small $competencies.items.info$ }
+        $endif$
+      }\\
+      \vspace{.5ex}
+    $endfor$
+    \vspace{-.5ex}
+  \end{separator}
 $endfor$
 
 \end{document}
