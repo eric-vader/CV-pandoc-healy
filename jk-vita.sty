@@ -16,11 +16,15 @@
 \usepackage{calculator}
 \usepackage{fancyhdr,enumitem,color}
 \usepackage[hidelinks]{hyperref}
-\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.2in,lmargin=1.2in]{geometry}
+
+\newcommand{\lrmargin}{1.4in}
+\newcommand{\lrmarginoffset}{-0.2in}
+\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.0in,lmargin=\lrmargin]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fontawesome5}
 \usepackage[compact,small,sf,bf]{titlesec}
+
 \usepackage[]{mdframed}
 \newmdenv[
         topline=false,
@@ -39,31 +43,32 @@
   \MODULO{\twodigit{#1}}{100}{\ModuloResult}%
   \twodigit{\ModuloResult}%
 }
-\renewcommand*{\shortmonthnameenglish}[1][\month]{%
-  \@orgargctr=#1\relax
-  \ifcase\@orgargctr
-  \PackageError{datetime}{Invalid Month number \the\@orgargctr}{Month
-  numbers should go from 1 (jan) to 12 (dec)}%
-  \or jan%
-  \or feb%
-  \or mar%
-  \or apr%
-  \or may%
-  \or jun%
-  \or jul%
-  \or aug%
-  \or sept%
-  \or oct%
-  \or nov%
-  \or dec%
-  \else%
-  \PackageError{datetime}%
-  {Invalid Month number \the\@orgargctr}%
-  {Month numbers should go from 1 (jan) to 12 (dec)}%
-\fi
-}
+% \renewcommand*{\shortmonthnameenglish}[1][\month]{%
+%   \@orgargctr=#1\relax
+%   \ifcase\@orgargctr
+%   \PackageError{datetime}{Invalid Month number \the\@orgargctr}{Month
+%   numbers should go from 1 (jan) to 12 (dec)}%
+%   \or jan%
+%   \or feb%
+%   \or mar%
+%   \or apr%
+%   \or may%
+%   \or jun%
+%   \or jul%
+%   \or aug%
+%   \or sept%
+%   \or oct%
+%   \or nov%
+%   \or dec%
+%   \else%
+%   \PackageError{datetime}%
+%   {Invalid Month number \the\@orgargctr}%
+%   {Month numbers should go from 1 (jan) to 12 (dec)}%
+% \fi
+% }
 \newdateformat{ddate}{{\THEDAY}}
-\newdateformat{ydate}{{\THEYEAR}}
+\newdateformat{ydate}{\shortyear{\THEYEAR}}
+\newdateformat{yydate}{{\THEYEAR}}
 \newdateformat{mdate}{\shortmonthname[\THEMONTH]}
 \newdateformat{mydate}{\shortmonthname[\THEMONTH]\,{\shortyear\THEYEAR}}
 \newdateformat{dmdate}{\THEDAY\,\shortmonthname[\THEMONTH]}
@@ -88,7 +93,7 @@
 \newcommand{\settitleskip}{\setlength{\titleskip}}
 
 % Defaults
-\datefont{\tiny\sffamily}
+\datefont{\scriptsize\sffamily}
 \titlefont{}
 \setdatedist{1em}
 \settitleskip{\parskip}
@@ -144,7 +149,7 @@
 
 % What use is a commit number?
 %\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}}}
-\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize Last updated \today}}}
+\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize Updated \dmydate\today.}}}
 
 % Style for the front page
 \fancypagestyle{myplain}{%
@@ -208,16 +213,18 @@
   % Pull header block up
   \vspace*{-6em}
   %% Name 
-  \begin{minipage}[t]{\textwidth}
+  \hspace{\lrmarginoffset}\begin{minipage}[t]{\textwidth}
     \centering
     {\noindent{\Huge\scshape{\@title\@name}} {\footnotesize \textsc{\@postnoms}}}
     \begin{center}
+      \textcolor{ImperialBlue}{
       \footnotesize
       {\raisebox{-0.1\height}{\faPhone}~~\texttt{\@tel}}\quad\enspace
       {\raisebox{-0.1\height}{\faEnvelope}~~\texttt{\href{mailto:\@email}{\@email}}}\quad\enspace
       {\raisebox{-0.1\height}{\faGlobe}~~\texttt{\href{http://\@www}{\@www}}}\quad\enspace
       {\raisebox{-0.1\height}{\faTwitter}~~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\quad\enspace
       {\raisebox{-0.1\height}{\faGithub}~~\texttt{\href{http://github.com/\@github}{\@github}}}
+      }
     \end{center}
   \end{minipage}
   % \begin{minipage}[t]{0.194\textwidth}
@@ -281,8 +288,8 @@
   \global\aftersecfalse}
 
 % Section styling
-\titleformat{\section}[leftmargin]{\raggedleft\sffamily\scriptsize\bfseries}{}{0pt}{}[\setsubskip]
-\titlespacing*{\section}{2cm}{2ex}{0.2cm}
+\titleformat{\section}[leftmargin]{\raggedleft\sffamily\bfseries}{}{0pt}{}[\setsubskip]
+\titlespacing*{\section}{\lrmargin}{2ex}{0.2cm}
 
 % Subsection styling
 \titleformat{\subsection}{\subskip\bfseries}{}{0pt}{}[] % \itshape \bfseries

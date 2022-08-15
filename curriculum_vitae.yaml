@@ -15,7 +15,7 @@ appointment:
     items:
       -
         item: Graduate Tutor
-        dates: \dmydate\formatdate{8}{8}{2018} - current
+        dates: \dmydate\formatdate{8}{8}{2018} - Curr
         description: |
            Tutor for Junior and Senior Undergraduate modules. 
            Teach lectures, tutorials and consultations; Manage tutors and grading; Mentor new tutors; Develop grading rubrics, exam questions and module tools.
@@ -33,29 +33,29 @@ appointment:
         dates: NSmen
       -
         item: Combat Engineer, Specialist Trainer
-        dates: \dmydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
+        dates: \mydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
         description: National Service; Managed and trained men/cadets.
   -
     place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
     items:
       -
         item: Software Engineering Intern
-        dates: \ddate\formatdate{27}{5}{2016} - \dmydate\formatdate{19}{8}{2016}
+        dates: \mydate\formatdate{27}{5}{2016} - \mydate\formatdate{19}{8}{2016}
         description: Designed and deployed Church Management System (CHMS).
   -
     place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
     items:
       -
         item: "Research Intern -- A Cloud-based Collaborative Model Building Platform"
-        dates: \ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
+        dates: \mydate\formatdate{1}{12}{2015} #\ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
         description: Contributed to a cloud based Machine Learning platform.
       -
         item: "Research Intern -- Autonomous Machine Learning using HPC Approaches"
-        dates: \dmydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
+        dates: \mydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
         description: Contributed to a cloud based Machine Learning platform.
       -
         item: "Research Intern -- Route My Day (Recommendation System)"
-        dates: \dmydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
+        dates: \mydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
         description: Contributed to a end-to-end recommender system.
        
 education:
@@ -63,7 +63,7 @@ education:
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Doctor of Philosophy (PhD) in Computer Science
     grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Scarlett Jonathan.
-    date: \mydate\formatdate{8}{8}{2018} - exp. \ydate\formatdate{7}{8}{2023} 
+    date: \mydate\formatdate{8}{8}{2018} - Exp \ydate\formatdate{7}{8}{2023} 
     info:
       - "Research focus 'Towards Modern Gaussian Processes', which aims to tackle problems related to Gaussian Processes (GP) such as scaling and robustness."
   -
@@ -111,7 +111,7 @@ achievement:
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
         item: Dean's List Recipient
         date: \dmydate\formatdate{15}{1}{2018}
-        info: Named to Dean's List for meritorious performance in S1 AY2017/18.
+        info: Named to Dean's List for meritorious performance in S1 AY17/18.
       -
         place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
         item: NS Excellence Award (NSEA)
@@ -164,43 +164,43 @@ teaching:
     items:
       -
         tasks: "Support lectures, teach consultations, organize tutors, grading, improve grading rubrics and improve testing tools."
-        date: AY2021/22 S1
+        date: AY21/22 S1
       - 
         tasks: "Support lectures, teach consultations, organize tutors, grading and maintain testing tools."
-        date: AY2020/21 S2
+        date: AY20/21 S2
       -
         tasks: "Support lectures, teach consultations and develop testing tools."
-        date: AY2019/20 S2
+        date: AY19/20 S2
       - 
         tasks: "Teach tutorials, consultations and support lectures."
-        date: AY2018/19 S2
+        date: AY18/19 S2
       - 
         tasks: "Teach tutorials and consultations."
-        date: AY2018/19 S1
+        date: AY18/19 S1
   - course: CS2030/CS2030S -- Programming Methodology II 
     type: Undergrad.
     credits: 4 credits
     items:
       -
         tasks: "Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
-        date: AY2020/21 S1
+        date: AY20/21 S1
   - course: CS3217 -- Software Engineering on Modern Application Platforms  
     type: Undergrad.
     credits: 4 credits
     items:
       -
         tasks: "Taught tutorial classes."
-        date: AY2021/22 S2
+        date: AY21/22 S2
   - course: CS3243 -- Introduction to Artificial Intelligence
     type: Undergrad.
     credits: 4 credits
     items:
       -
         tasks: "Teach tutorials, review of learning materials, designing exam questions."
-        date: AY2022/23 S1
+        date: AY22/23 S1
       -
         tasks: "Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions."
-        date: AY2021/22 S2
+        date: AY21/22 S2
 
 
 public_history:
@@ -301,17 +301,17 @@ service:
   gigs:
     -
       item: "Teaching and sharing on 'Computational Thinking' to junior college students."
-      date: \dmdate\formatdate{18}{5}{2015} - \dmydate\formatdate{15}{6}{2015}
+      date: \mdate\formatdate{18}{5}{2015} - \mydate\formatdate{15}{6}{2015}
 -
   type: "Service to [Impact Life Church](https://www.impactlife.sg/)"
   gigs:
     - 
       item: "Head Of Information Technology -- Lead a team of >15 volunteers."
-      date: \mydate\formatdate{8}{3}{2018} - current
+      date: \mydate\formatdate{8}{3}{2018} - Curr
       info: Responsible for IT infra., Purchasing, Software development of Church Applications and more.
     - 
       item: "Cell Group Leader -- Build strong communities and healthy Christians."
-      date: \mydate\formatdate{1}{10}{2017} - current
+      date: \mydate\formatdate{1}{10}{2017} - Curr
     - 
       item: "Tutor - Teach tuition classes."
       info: "Classes: GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."

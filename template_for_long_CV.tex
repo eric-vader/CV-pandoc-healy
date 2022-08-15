@@ -26,28 +26,27 @@ $endif$
 \github{$github$}
 \subject{}
 
-
+\newcommand{\commonspace}{2.1ex}
 \begin{document}
 
 \maketitle
 
-\section{experience}
+\section{Experience}
 $for(appointment)$
 \subsection{$appointment.place$}
-\begin{separator}
   $for(appointment.items)$
+    \begin{separator}
     \entry{$appointment.items.dates$}{\textit{$appointment.items.item$}
       $if(appointment.items.description)$
         \\\justifying{\noindent\small $appointment.items.description$}
       $endif$
-    }\\
-    \vspace{.5ex}
+    }
+    \end{separator}
+    \vspace{-\commonspace}
   $endfor$
-  \vspace{-.5ex}
-\end{separator}
 $endfor$
 
-\section{education}
+\section{Education}
 % Education uses a different field called ``items.''
 $for(education)$
 \subsection{$education.item$, $education.place$}
@@ -71,28 +70,27 @@ $for(education)$
 $endfor$
 
 
-\section{achievement}
+\section{Achievement}
 $for(achievement)$
   \subsection{$achievement.type$}
-  \begin{separator}
   $for(achievement.items)$
+    \begin{separator}
     \entry{$achievement.items.date$}{\textit{$achievement.items.item$, $achievement.items.place$}
       \\\justifying{\noindent\small $achievement.items.info$}
-    }\\
-    \vspace{.5ex}
+    }
+    \end{separator}
+    \vspace{-\commonspace}
   $endfor$
-  \vspace{-.5ex}
-\end{separator}
 $endfor$
 % A little wonky. I want my publications divided up based on tags.
 % (Yes, it would be better to just do this with bib file). That's for later.
 
-\section{research}
+\section{Research}
 
 $for(research)$
   \subsection{$research.type$}
-  \begin{separator}
   $for(research.items)$
+    \begin{separator}
     $if(research.items.academic)$
       $if(research.items.citekey)$
         (\cite{$research.items.citekey$}).\\[.15cm]
@@ -108,61 +106,58 @@ $for(research)$
           $if(research.items.summary)$
             \\ $research.items.summary$ 
           $endif$}
-        }\\
+        }
       $endif$
-      \vspace{.5ex}
     $endif$
-  $endfor$
-  \vspace{-.5ex}
   \end{separator}
+  \vspace{-\commonspace}
+  $endfor$
 $endfor$
 
-\section{service}
+\section{Service}
 $for(service)$
   \subsection{$service.type$}
-  \begin{separator}
   $for(service.gigs)$
+    \begin{separator}
     \entry{$service.gigs.date$}{\textit{$service.gigs.item$}
       $if(service.gigs.info)$
         \\\justifying{\noindent\small $service.gigs.info$ }
       $endif$
-    }\\
-    \vspace{.5ex}
+    }
+    \end{separator}
+    \vspace{-\commonspace}
   $endfor$
-  \vspace{-.5ex}
-  \end{separator}
 $endfor$
 \newpage
-\section{teaching}
+
+\section{Teaching}
 $for(teaching)$
   \subsection{$teaching.course$ ($teaching.type$ $teaching.credits$)}
-  \begin{separator}
-    $for(teaching.items)$
+  $for(teaching.items)$
+    \begin{separator}
       \entry{$teaching.items.date$}{\textit{$teaching.items.tasks$}
         $if(teaching.items.info)$
           \\\justifying{\noindent\small $teaching.items.info$ }
         $endif$
-      }\\
-      \vspace{.5ex}
-    $endfor$
-    \vspace{-.5ex}
-  \end{separator}
+      }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
 $endfor$
 
-\section{competencies}
+\section{Competency}
 $for(competencies)$
   \subsection{$competencies.type$}
-  \begin{separator}
-    $for(competencies.items)$
+  $for(competencies.items)$
+    \begin{separator}
       \entry{>}{\textit{$competencies.items.item$}
         $if(competencies.items.info)$
           \\\justifying{\noindent\small $competencies.items.info$ }
         $endif$
-      }\\
-      \vspace{.5ex}
-    $endfor$
-    \vspace{-.5ex}
-  \end{separator}
+      }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
 $endfor$
 
 \end{document}
