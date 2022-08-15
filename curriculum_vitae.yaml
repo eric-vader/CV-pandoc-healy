@@ -23,7 +23,7 @@ appointment:
     place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
     items:
       -
-        item: Section Commander - First Sergeant (1SG)
+        item: "Section Commander, Rank: First Sergeant (1SG)"
         dates: NSmen
       -
         item: Combat Engineer, Specialist Trainer
@@ -125,7 +125,7 @@ awards:
   -
     place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
     item: NS Excellence Award (NSEA)
-    date: \dmydate\formatdate{14}{4}{2022}
+    date: \dmydate\formatdate{28}{1}{2022}
     info: Top 10% of performers during ICT and training courses.
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
@@ -151,7 +151,7 @@ awards:
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Dean's List Recipient
     date: \dmydate\formatdate{15}{1}{2018}
-    info: Named to Dean’s List for meritorious performance in S1 AY2017/18.
+    info: Named to Dean's List for meritorious performance in S1 AY2017/18.
 
 
 scholarships:
