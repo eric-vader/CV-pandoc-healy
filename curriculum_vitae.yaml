@@ -15,7 +15,7 @@ appointment:
     items:
       -
         item: Graduate Tutor
-        dates: \dmydate\formatdate{8}{8}{2018} - Curr
+        dates: \dmydate\formatdate{8}{8}{2018} - Curr.
         description: |
            Tutor for Undergraduate modules. 
            Teach lectures, tutorials and consultations; Manage tutors and grading; Mentor new tutors; Develop grading rubrics, exam questions and module tools.
@@ -61,7 +61,7 @@ education:
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Doctor of Philosophy (PhD) in Computer Science
     grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Scarlett Jonathan.
-    date: \mydate\formatdate{8}{8}{2018} - Exp \ydate\formatdate{7}{8}{2023} 
+    date: \mydate\formatdate{8}{8}{2018} - Exp.\ydate\formatdate{7}{8}{2023} 
     info:
       - "Research focus 'Towards Modern Gaussian Processes', which aims to tackle problems related to Gaussian Processes (GP) such as scaling and robustness."
   -
@@ -287,7 +287,7 @@ service:
   gigs:
     - 
       item: "Guidance to junior scholar -- sharing of experiences."
-      date: \dmydate\formatdate{27}{6}{2019}
+      date: \mydate\formatdate{27}{6}{2019}
     - 
       item: "Invited Speaker for A*STAR Scholarships Seminar for Undergraduate Studies."
       date: \dmydate\formatdate{4}{12}{2015}
@@ -305,11 +305,11 @@ service:
   gigs:
     - 
       item: "Head Of Information Technology -- Lead a team of >15 volunteers."
-      date: \mydate\formatdate{8}{3}{2018} - Curr
+      date: \mydate\formatdate{8}{3}{2018} - Curr.
       info: Responsible for IT infra., Purchasing, Software development of Church Applications and more.
     - 
       item: "Cell Group Leader -- Build strong communities and healthy Christians."
-      date: \mydate\formatdate{1}{10}{2017} - Curr
+      date: \mydate\formatdate{1}{10}{2017} - Curr.
     - 
       item: "Tutor - Teach tuition classes."
       info: "GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
