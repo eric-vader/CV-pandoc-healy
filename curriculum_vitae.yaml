@@ -59,7 +59,7 @@ appointment:
 education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Doctor of Philosophy (PhD) in Computer Science
+    item: Doctor of Philosophy (Ph.D.) in Computer Science
     grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Scarlett Jonathan.
     date: \mydate\formatdate{8}{8}{2018} - Exp.\ydate\formatdate{7}{8}{2023} 
     info:

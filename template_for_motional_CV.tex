@@ -1,0 +1,174 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{.5em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf Motional, Inc} \\
+  {
+    3 Fusionopolis Way, \#15-20 Symbiosis \\
+    Singapore 138633
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{1em}
+
+Dear Recruiter, \\[.5em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  Thank you for our conversation at NUS SoC Career Fair; your recruiter advises me to send in my resume.
+  I am Eric Han, studying for a Ph.D. in AI/Machine Learning. I am interested in an internship at Motional starting \emph{Dec 2022}, spanning about \emph{12 weeks}.
+  I am graduating in \emph{Aug 2023}.
+  \\[.5em]
+  I am wondering if you are looking for Ph.D. talent and if you have internships available for the period as mentioned earlier. 
+  I would also be curious to know more about the AI/ML projects happening in Motional, for which I can apply my skills.
+}\end{minipage}\\[.5em]
+
+Regards,\\
+Eric Han\\
+\noindent\rule{\textwidth}{1pt}
+
+\section{Experience}
+$for(appointment)$
+\subsection{$appointment.place$}
+  $for(appointment.items)$
+    \begin{separator}
+    \entry{$appointment.items.dates$}{\textit{$appointment.items.item$}
+      $if(appointment.items.description)$
+        \\\justifying{\noindent\footnotesize $appointment.items.description$}
+      $endif$
+    }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
+$endfor$
+
+\section{Education}
+% Education uses a different field called ``items.''
+$for(education)$
+\subsection{$education.item$, $education.place$}
+\begin{separator}
+  \entry{$education.date$}{\textit{$education.grade$}
+    $if(education.info)$
+      \\\justifying{\noindent\small
+      $for(education.info)$
+        $if(education.info.text)$
+          % Store certain things in a field called 'text' to allow another field
+          % for priority.
+          $education.info.text$
+        $else$
+          $education.info$
+        $endif$
+      $endfor$}
+    $endif$
+  }\\
+  % \vspace{.75ex}
+\end{separator}
+\vspace{-\commonspace}
+$endfor$
+
+\section{Achievement}
+$for(achievement)$
+  \subsection{$achievement.type$}
+  $for(achievement.items)$
+    \begin{separator}
+    \entry{$achievement.items.date$}{\textit{$achievement.items.item$, $achievement.items.place$}
+      \\\justifying{\noindent\small $achievement.items.info$}
+    }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
+$endfor$
+% A little wonky. I want my publications divided up based on tags.
+% (Yes, it would be better to just do this with bib file). That's for later.
+
+\section{Research}
+
+$for(research)$
+  \subsection{$research.type$}
+  $for(research.items)$
+    \begin{separator}
+    $if(research.items.academic)$
+      $if(research.items.citekey)$
+        (\cite{$research.items.citekey$}).\\[.15cm]
+      $else$
+        \entry{$research.items.date$}{\textit{$research.items.title$} 
+          \justifying{\noindent\small
+          $if(research.items.author)$
+            \\$research.items.author$
+          $endif$
+          $if(research.items.place)$
+            \\ $research.items.place$
+          $endif$
+          $if(research.items.summary)$
+            \\ $research.items.summary$ 
+          $endif$}
+        }
+      $endif$
+    $endif$
+  \end{separator}
+  \vspace{-\commonspace}
+  $endfor$
+$endfor$
+
+\section{Service}
+$for(service)$
+  \subsection{$service.type$}
+  $for(service.gigs)$
+    \begin{separator}
+    \entry{$service.gigs.date$}{\textit{$service.gigs.item$}
+      $if(service.gigs.info)$
+        \\\justifying{\noindent\small $service.gigs.info$ }
+      $endif$
+    }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
+$endfor$
+
+\section{Competency}
+$for(competencies)$
+  \subsection{$competencies.type$}
+  $for(competencies.items)$
+    \begin{separator}
+      \entry{>}{\textit{$competencies.items.item$}
+        $if(competencies.items.info)$
+          \\\justifying{\noindent\small $competencies.items.info$ }
+        $endif$
+      }
+    \end{separator}
+    \vspace{-\commonspace}
+  $endfor$
+$endfor$
+
+\end{document}
