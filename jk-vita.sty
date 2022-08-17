@@ -17,9 +17,9 @@
 \usepackage{fancyhdr,enumitem,color}
 \usepackage[hidelinks]{hyperref}
 
-\newcommand{\lrmargin}{1.4in}
-\newcommand{\lrmarginoffset}{-0.2in}
-\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.0in,lmargin=\lrmargin]{geometry}
+\newcommand{\lrmargin}{1.3in}
+\newcommand{\lrmarginoffset}{0.0in}
+\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.3in,lmargin=\lrmargin]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fontawesome5}
@@ -30,7 +30,7 @@
         topline=false,
         bottomline=false,
         rightline=false,
-        linewidth=1pt,
+        linewidth=1.5pt,
         innerleftmargin=4pt,
         leftmargin=0pt,
         rightmargin=0pt,
@@ -213,18 +213,20 @@
 
   % Pull header block up
   \vspace*{-6em}
+  \newcommand{\contactmargin}{\hspace*{0.3cm}}
+  \newcommand{\symbmargin}{\hspace*{0.1cm}}
   %% Name 
   \hspace{\lrmarginoffset}\begin{minipage}[t]{\textwidth}
     \centering
     {\noindent{\Huge\scshape{\bf \@title\@name}} {\footnotesize \textsc{\@postnoms}}}
     \begin{center}
       \textcolor{ImperialBlue}{
-      \footnotesize\bf
-        {\raisebox{-0.1\height}{\faPhone}~~\texttt{\@tel}}\quad\enspace
-        {\raisebox{-0.1\height}{\faEnvelope}~~\texttt{\href{mailto:\@email}{\@email}}}\quad\enspace
-        {\raisebox{-0.1\height}{\faGlobe}~~\texttt{\href{http://\@www}{\@www}}}\quad\enspace
-        {\raisebox{-0.1\height}{\faTwitter}~~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\quad\enspace
-        {\raisebox{-0.1\height}{\faGithub}~~\texttt{\href{http://github.com/\@github}{\@github}}}
+      \footnotesize
+      {\raisebox{-0.1\height}{\faPhone}\symbmargin\texttt{\@tel}}\contactmargin\enspace
+      {\raisebox{-0.1\height}{\faEnvelope}\symbmargin\texttt{\href{mailto:\@email}{\@email}}}\contactmargin\enspace
+      {\raisebox{-0.1\height}{\faGlobe}\symbmargin\texttt{\href{http://\@www}{\@www}}}\contactmargin\enspace
+      {\raisebox{-0.1\height}{\faTwitter}\symbmargin\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\contactmargin\enspace
+      {\raisebox{-0.1\height}{\faGithub}\symbmargin\texttt{\href{http://github.com/\@github}{\@github}}}
       }
     \end{center}
   \end{minipage}

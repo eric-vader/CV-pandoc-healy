@@ -17,7 +17,7 @@ appointment:
         item: Graduate Tutor
         dates: \dmydate\formatdate{8}{8}{2018} - Curr
         description: |
-           Tutor for Junior and Senior Undergraduate modules. 
+           Tutor for Undergraduate modules. 
            Teach lectures, tutorials and consultations; Manage tutors and grading; Mentor new tutors; Develop grading rubrics, exam questions and module tools.
       -
         item: Tutor for Intro to Programming Workshop
@@ -97,12 +97,12 @@ achievement:
         info: Top 10% of performers during ICT and training courses.
       -
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
-        item: Outstanding Undergraduate Researcher Prize 2017/2018
+        item: Outstanding Undergraduate Researcher Prize 2017/18
         date: \dmydate\formatdate{21}{6}{2018}
         info: Individual prize; For Final Year Project - Feature Subset Selection using Reinforcement Learning.
       -
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
-        item: Certificate of Merit in Algorithms \& Theory Focus Area
+        item: Certificate of Merit in Algo. \& Theory Focus Area
         date: \dmydate\formatdate{29}{1}{2018}
         info: Awarded for meritorious performance in the focus area.
       -
@@ -164,7 +164,7 @@ teaching:
         tasks: "Support lectures, teach consultations, organize tutors, grading, improve grading rubrics and improve testing tools."
         date: AY21/22 S1
       - 
-        tasks: "Support lectures, teach consultations, organize tutors, grading and maintain testing tools."
+        tasks: "Support lectures, teach consultations, organize tutors, grading, maintain testing tools."
         date: AY20/21 S2
       -
         tasks: "Support lectures, teach consultations and develop testing tools."
@@ -182,7 +182,7 @@ teaching:
       -
         tasks: "Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
         date: AY20/21 S1
-  - course: CS3217 -- Software Engineering on Modern Application Platforms  
+  - course: CS3217 -- Software Engineering on Modern App. Platforms  
     type: Undergrad.
     credits: 4 credits
     items:
@@ -292,7 +292,7 @@ service:
       item: "Invited Speaker for A*STAR Scholarships Seminar for Undergraduate Studies."
       date: \dmydate\formatdate{4}{12}{2015}
     -
-      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- Scholarship outreach and promotion."
+      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- Outreach and promotion."
       date: \dmydate\formatdate{14}{3}{2015}
 -
   type: "Service to [Pioneer Junior College](http://www.pioneerjc.moe.edu.sg)"
@@ -312,7 +312,7 @@ service:
       date: \mydate\formatdate{1}{10}{2017} - Curr
     - 
       item: "Tutor - Teach tuition classes."
-      info: "Classes: GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
+      info: "GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
       date: \mydate\formatdate{1}{1}{2012} - \formatdate{1}{12}{2018}
 software:
 - 
@@ -339,7 +339,7 @@ competencies:
   type: Computing Platforms
   items:
     - item: Programming Languages
-      info: "Python (also sci. packages, ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
+      info: "Python (also sci. pkgs., ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
     - item: Tools / Platforms
       info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
     - item: Operating Systems
