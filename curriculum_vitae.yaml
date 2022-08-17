@@ -24,17 +24,6 @@ appointment:
         dates: \mydate\formatdate{3}{7}{2017} # \d\formatdate{3}{7}{2017} - \dmydate\formatdate{6}{7}{2017}
         description: |
            Coached freshmen on computational thinking, programming.
-           
-  -
-    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-    items:
-      -
-        item: "Section Commander -- First Sergeant (1SG)"
-        dates: NSmen
-      -
-        item: Combat Engineer, Specialist Trainer
-        dates: \mydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
-        description: National Service; Managed and trained men/cadets.
   -
     place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
     items:
@@ -57,7 +46,16 @@ appointment:
         item: "Research Intern -- Route My Day (Recommendation System)"
         dates: \mydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
         description: Contributed to a end-to-end recommender system.
-       
+  -
+    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+    items:
+      -
+        item: "Section Commander -- First Sergeant (1SG)"
+        dates: NSmen
+      -
+        item: Combat Engineer, Specialist Trainer
+        dates: \mydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
+        description: National Service; Managed and trained men/cadets.
 education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"

@@ -80,7 +80,7 @@
 \newcommand{\entry}[2]{% \entry{<date>}{<title>}
   \noindent\leavevmode
   % \addcontentsline{toc}{section}{#2}% Add to ToC
-  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut#1\hspace*{.1\baselineskip}}}\hspace{\datedist}}%
+  \makebox[0pt][r]{\smash{\rotatebox[origin=r]{0}{\@datefont\strut#1\hspace*{.01\baselineskip}}}\hspace{\datedist}}%
   {\@titlefont #2}%
   \vspace{\titleskip}
   \leavevmode\noindent
@@ -94,7 +94,7 @@
 
 % Defaults
 \datefont{\scriptsize\sffamily}
-\titlefont{}
+\titlefont{\small}
 \setdatedist{1em}
 \settitleskip{\parskip}
 
@@ -122,6 +122,7 @@
 %% color for the links 
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{ImperialBlue}{rgb}{0.082,0.416,0.608}
+\definecolor{navyblue}{rgb}{0.0, 0.0, 0.5}
 \definecolor{ImperialLightBlue}{rgb}{0.545,0.682,0.8}
 
 %% Choose fonts for use with xelatex
@@ -215,15 +216,15 @@
   %% Name 
   \hspace{\lrmarginoffset}\begin{minipage}[t]{\textwidth}
     \centering
-    {\noindent{\Huge\scshape{\@title\@name}} {\footnotesize \textsc{\@postnoms}}}
+    {\noindent{\Huge\scshape{\bf \@title\@name}} {\footnotesize \textsc{\@postnoms}}}
     \begin{center}
       \textcolor{ImperialBlue}{
-      \footnotesize
-      {\raisebox{-0.1\height}{\faPhone}~~\texttt{\@tel}}\quad\enspace
-      {\raisebox{-0.1\height}{\faEnvelope}~~\texttt{\href{mailto:\@email}{\@email}}}\quad\enspace
-      {\raisebox{-0.1\height}{\faGlobe}~~\texttt{\href{http://\@www}{\@www}}}\quad\enspace
-      {\raisebox{-0.1\height}{\faTwitter}~~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\quad\enspace
-      {\raisebox{-0.1\height}{\faGithub}~~\texttt{\href{http://github.com/\@github}{\@github}}}
+      \footnotesize\bf
+        {\raisebox{-0.1\height}{\faPhone}~~\texttt{\@tel}}\quad\enspace
+        {\raisebox{-0.1\height}{\faEnvelope}~~\texttt{\href{mailto:\@email}{\@email}}}\quad\enspace
+        {\raisebox{-0.1\height}{\faGlobe}~~\texttt{\href{http://\@www}{\@www}}}\quad\enspace
+        {\raisebox{-0.1\height}{\faTwitter}~~\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\quad\enspace
+        {\raisebox{-0.1\height}{\faGithub}~~\texttt{\href{http://github.com/\@github}{\@github}}}
       }
     \end{center}
   \end{minipage}
@@ -251,7 +252,7 @@
   %   \centering\scriptsize
   %   {\faGithub\\\texttt{\href{http://github.com/\@github}{\@github}}}
   % \end{minipage}
-  \vspace{.1em}
+  \vspace{.5em}
 }
 
 %%------------------------------------------------------------------------
@@ -289,11 +290,11 @@
 
 % Section styling
 \titleformat{\section}[leftmargin]{\raggedleft\sffamily\bfseries}{}{0pt}{}[\setsubskip]
-\titlespacing*{\section}{\lrmargin}{2ex}{0.2cm}
+\titlespacing*{\section}{\lrmargin}{3ex}{0.2cm}
 
 % Subsection styling
 \titleformat{\subsection}{\subskip\bfseries}{}{0pt}{}[] % \itshape \bfseries
-\titlespacing*{\subsection}{0pt}{1ex}{1ex}
+\titlespacing*{\subsection}{0pt}{1.5ex}{1ex}
 
 \raggedbottom
 \makeatother
