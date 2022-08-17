@@ -99,7 +99,7 @@ achievement:
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
         item: Outstanding Undergraduate Researcher Prize 2017/18
         date: \dmydate\formatdate{21}{6}{2018}
-        info: Individual prize; For Final Year Project - Feature Subset Selection using Reinforcement Learning.
+        info: Individual prize; Final Year Project - Feature Subset Selection using Reinforcement Learning.
       -
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
         item: Certificate of Merit in Algo. \& Theory Focus Area
@@ -306,7 +306,7 @@ service:
     - 
       item: "Head Of Information Technology -- Lead a team of >15 volunteers."
       date: \mydate\formatdate{8}{3}{2018} - Curr.
-      info: Responsible for IT infra., Purchasing, Software development of Church Applications and more.
+      info: Responsible for IT infra., Purchasing, Software development of Church Applications, etc.
     - 
       item: "Cell Group Leader -- Build strong communities and healthy Christians."
       date: \mydate\formatdate{1}{10}{2017} - Curr.

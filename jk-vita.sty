@@ -19,7 +19,7 @@
 
 \newcommand{\lrmargin}{1.3in}
 \newcommand{\lrmarginoffset}{0.0in}
-\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=1.3in,lmargin=\lrmargin]{geometry}
+\usepackage[centering,a4paper,tmargin=1.5in,bmargin=1in,rmargin=\lrmargin,lmargin=\lrmargin]{geometry}
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \usepackage{fontawesome5}
@@ -222,12 +222,11 @@
     \begin{center}
       \textcolor{ImperialBlue}{
       \footnotesize\bf
-      {\raisebox{-0.1\height}{\faPhone}\symbmargin\texttt{\@tel}}\contactmargin\enspace
-      {\raisebox{-0.1\height}{\faEnvelope}\symbmargin\texttt{\href{mailto:\@email}{\@email}}}\contactmargin\enspace
-      {\raisebox{-0.1\height}{\faGlobe}\symbmargin\texttt{\href{http://\@www}{\@www}}}\contactmargin\enspace
-      {\raisebox{-0.1\height}{\faTwitter}\symbmargin\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\contactmargin\enspace
-      {\raisebox{-0.1\height}{\faGithub}\symbmargin\texttt{\href{http://github.com/\@github}{\@github}}}
-      }
+      {\raisebox{-0.1\height}{\faPhone}\symbmargin\texttt{\@tel}}\contactmargin\hfill
+      {\raisebox{-0.1\height}{\faEnvelope}\symbmargin\texttt{\href{mailto:\@email}{\@email}}}\contactmargin\hfill
+      {\raisebox{-0.1\height}{\faGlobe}\symbmargin\texttt{\href{http://\@www}{\@www}}}\contactmargin\hfill
+      {\raisebox{-0.1\height}{\faTwitter}\symbmargin\texttt{\href{http://twitter.com/\@twitter}{\@twitter}}}\contactmargin\hfill
+      {\raisebox{-0.1\height}{\faGithub}\symbmargin\texttt{\href{http://github.com/\@github}{\@github}}}}
     \end{center}
   \end{minipage}
   % \begin{minipage}[t]{0.194\textwidth}
