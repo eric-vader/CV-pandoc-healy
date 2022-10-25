@@ -25,13 +25,6 @@ appointment:
         description: |
            Coached freshmen on computational thinking, programming.
   -
-    place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
-    items:
-      -
-        item: Software Engineering Intern
-        dates: \mydate\formatdate{27}{5}{2016} - \mydate\formatdate{19}{8}{2016}
-        description: Designed and deployed Church Management System (CHMS).
-  -
     place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
     items:
       -
@@ -46,16 +39,6 @@ appointment:
         item: "Research Intern -- Route My Day (Recommendation System)"
         dates: \mydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
         description: Contributed to a end-to-end recommender system.
-  -
-    place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-    items:
-      -
-        item: "Section Commander -- First Sergeant (1SG)"
-        dates: NSmen
-      -
-        item: Combat Engineer, Specialist Trainer
-        dates: \mydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
-        description: National Service; Managed and trained men/cadets.
 education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
@@ -86,16 +69,6 @@ achievement:
         date: \dmydate\formatdate{1}{2}{2022}
         info: Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
       -
-        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-        item: NS Excellence Award (NSEA)
-        date: \dmydate\formatdate{28}{1}{2022}
-        info: Top 10% of performers during ICT and training courses.
-      -
-        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-        item: NS Excellence Award (NSEA)
-        date: \dmydate\formatdate{25}{10}{2019}
-        info: Top 10% of performers during ICT and training courses.
-      -
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
         item: Outstanding Undergraduate Researcher Prize 2017/18
         date: \dmydate\formatdate{21}{6}{2018}
@@ -110,11 +83,6 @@ achievement:
         item: Dean's List Recipient
         date: \dmydate\formatdate{15}{1}{2018}
         info: Named to Dean's List for meritorious performance in S1 AY17/18.
-      -
-        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
-        item: NS Excellence Award (NSEA)
-        date: \dmydate\formatdate{9}{12}{2016}
-        info: Top 10% of performers during ICT and training courses.
   - type: "Scholarships"
     items:
       -
@@ -145,15 +113,6 @@ research:
         academic: true
         resume: true
         fcitekey: Han_Arora_Scarlett_2021
-  - type: Summer School
-    items:
-      -
-        title: Attended The Gaussian Process Summer School, 2019
-        date: \mydate\formatdate{12}{9}{2019} # \ddate\formatdate{9}{9}{2019}-\dmydate\formatdate{12}{9}{2019}
-        place: The University Of Sheffield, Sheffield, United Kingdom
-        twopage: true
-        academic: true
-        resume: true
 
 teaching:
   - course: CS3203 -- Software Engineering Project
@@ -295,12 +254,6 @@ service:
       item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- Outreach and promotion."
       date: \dmydate\formatdate{14}{3}{2015}
 -
-  type: "Service to [Pioneer Junior College](http://www.pioneerjc.moe.edu.sg)"
-  gigs:
-    -
-      item: "Teaching and sharing on 'Computational Thinking' to junior college students."
-      date: \mdate\formatdate{18}{5}{2015} - \mydate\formatdate{15}{6}{2015}
--
   type: "Service to [Impact Life Church](https://www.impactlife.sg/)"
   gigs:
     - 
@@ -333,14 +286,6 @@ software:
   description: Data tiling to display zoomable D3 scatterplots with tens of millions of items in browser.
     Used for work at Library of Congress, University of Tuebingen, Nomic Software.
 
-personal_projects:
--
-  type: Curated Personal Projects
-  items:
-    - item: Automation of trading activities on FTX/Acala (Python, Javascript)
-      info: "Updates lending offers on FTX and executes arbitrage strategies on Acala blockchain."
-    - item: Ethereum Wallet Security (CUDA, C++)
-      info: "Adapted/fixed performance code that computes elliptic curve cryptography on CPUs / GPUs."
 
 competencies:
 -
@@ -349,11 +294,19 @@ competencies:
     - item: Programming Languages
       info: "Python (also sci. pkgs., ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
     - item: Tools / Platforms
-      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
+      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Ms. Office, Google WS."
     - item: Operating Systems
       info: Linux (Fedora; daily driver), *nix administration, Windows, macOS.
 -
   type: Language Proficiency
   items: 
     - item: English (Native) and Chinese (Intermediate).
+personal_projects:
+-
+  type: Curated Personal Projects
+  items:
+    - item: Automation of trading activities on FTX/Acala (Python, Javascript)
+      info: "Updates lending offers on FTX and executes arbitrage strategies on Acala blockchain."
+    - item: Ethereum Wallet Security (CUDA, C++)
+      info: "Adapted/fixed performance code that computes elliptic curve cryptography on CPUs / GPUs."
 ...

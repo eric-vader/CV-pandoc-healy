@@ -1,0 +1,69 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf Citadel Securities} \\
+  {
+    Ms. Tanisha McOmber\\
+    tanisha.mcomber@citadel.com
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Ms. Tanisha, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  Thank you for our conversation at ICML 2022 in Baltimore, Maryland, USA.
+  \\[.5em]
+  I am studying for a Ph.D. in AI/Machine Learning and am on track to graduation in \emph{Aug 2023}.
+  I am interested in an internship at Citadel Securities, Singapore from \emph{November 14, 2022 - February 5, 2023}, spanning \emph{12 weeks}.
+  \\[.5em]
+  My research tackles problems in Gaussian Process optimization, such as high-dimensionality, large datasets, and robustness considerations.
+  I have first-author publications in peer-reviewed premier conferences such as AAAI and ICML.
+  I am interested in applying Artificial Intelligence, my research and programming skills to challenging problems in Citadel Securities, Singapore.
+  \\[.5em]
+  Apart from Artificial Intelligence research, I am also interested in digital assets. 
+  I believe asset tokenization and blockchain technology will open new use cases in the finance industry.
+  I am especially drawn to Citadel Securities, Singapore, due to its market-making activities in digital assets.
+  I hope to be able to apply my skills specifically in that area.
+  \\[.5em]
+  Thank you for your consideration.
+}\end{minipage}\\[1em]
+
+Regards,\\
+Eric Han\\
+
+\end{document}
