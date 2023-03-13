@@ -81,6 +81,11 @@ achievement:
   - type: "Awards"
     items:
       -
+        place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+        item: NS Excellence Award (NSEA)
+        date: \dmydate\formatdate{7}{3}{2023}
+        info: Top 10% of performers during ICT and training courses.
+      -
         place: "[National University of Singapore](http://www.nus.edu.sg/)"
         item: Certificate of Accomplishment
         date: \dmydate\formatdate{1}{2}{2022}
