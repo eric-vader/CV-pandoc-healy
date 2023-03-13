@@ -260,6 +260,21 @@ public_history:
 
 service:
 -
+  type: "Service to Research Community"
+  gigs:
+    -
+      item: Student Volunteer for [34th International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/alt2023/).
+      date: \dmydate\formatdate{23}{2}{2023}
+      twopage: true
+    -
+      item: Session Chair for [Workshop on Information Theory and Data Science](https://ims.nus.edu.sg/events/information-theory-and-data-science-workshop/).
+      date: \dmydate\formatdate{20}{1}{2023}
+      twopage: true
+    -
+      item: Reviewer for [39th International Conference on Machine Learning](https://icml.cc/Conferences/2022).
+      date: \dmydate\formatdate{11}{4}{2022}
+      twopage: true
+-
   type: "Service to [National University of Singapore](http://www.nus.edu.sg/)"
   gigs:
     -
