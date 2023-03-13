@@ -128,7 +128,7 @@ research:
     items:
       -
         title: Adversarial Attacks on Gaussian Process Bandits
-        author: "**Eric Han**, Jonathan Scarlett"
+        author: "*Eric Han*, Jonathan Scarlett"
         place: Proceedings of the 39th International Conference on Machine Learning
         date: \mydate\formatdate{17}{7}{2022}
         twopage: true
@@ -137,7 +137,7 @@ research:
         fcitekey: pmlr-v162-han22f
       -
         title: High-Dimensional Bayesian Optimization via Tree-Structured Additive Models
-        author: "***Eric Han***, Ishank Arora, Jonathan Scarlett"
+        author: "*Eric Han*, Ishank Arora, Jonathan Scarlett"
         place: Proceedings of the 35th AAAI Conference on Artificial Intelligence
         date: \mydate\formatdate{2}{2}{2021}
         fsummary: "Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets."
