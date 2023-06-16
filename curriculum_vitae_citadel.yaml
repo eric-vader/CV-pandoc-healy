@@ -219,6 +219,21 @@ public_history:
 
 service:
 -
+  type: "Service to Research Community"
+  gigs:
+    -
+      item: Student Volunteer for [34th International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/alt2023/).
+      date: \dmydate\formatdate{23}{2}{2023}
+      twopage: true
+    -
+      item: Session Chair for [Workshop on Information Theory and Data Science](https://ims.nus.edu.sg/events/information-theory-and-data-science-workshop/).
+      date: \dmydate\formatdate{20}{1}{2023}
+      twopage: true
+    -
+      item: Reviewer for [39th International Conference on Machine Learning](https://icml.cc/Conferences/2022).
+      date: \dmydate\formatdate{11}{4}{2022}
+      twopage: true
+-
   type: "Service to [National University of Singapore](http://www.nus.edu.sg/)"
   gigs:
     -
@@ -294,19 +309,19 @@ competencies:
     - item: Programming Languages
       info: "Python (also sci. pkgs., ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
     - item: Tools / Platforms
-      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Ms. Office, Google WS."
+      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
     - item: Operating Systems
       info: Linux (Fedora; daily driver), *nix administration, Windows, macOS.
 -
   type: Language Proficiency
   items: 
     - item: English (Native) and Chinese (Intermediate).
-personal_projects:
--
-  type: Curated Personal Projects
-  items:
-    - item: Automation of trading activities on FTX/Acala (Python, Javascript)
-      info: "Updates lending offers on FTX and executes arbitrage strategies on Acala blockchain."
-    - item: Ethereum Wallet Security (CUDA, C++)
-      info: "Adapted/fixed performance code that computes elliptic curve cryptography on CPUs / GPUs."
+# personal_projects:
+# -
+#   type: Curated Personal Projects
+#   items:
+#     - item: Automation of trading activities on FTX/Acala (Python, Javascript)
+#       info: "Updates lending offers on FTX and executes arbitrage strategies on Acala blockchain."
+#     - item: Ethereum Wallet Security (CUDA, C++)
+#       info: "Adapted/fixed performance code that computes elliptic curve cryptography on CPUs / GPUs."
 ...
