@@ -15,7 +15,7 @@ appointment:
     items:
       -
         item: Graduate Tutor
-        dates: \dmydate\formatdate{8}{8}{2018} - Curr.
+        dates: \dmydate\formatdate{8}{8}{2018} - \dmydate\formatdate{7}{8}{2023}
         description: |
            Tutor for Undergraduate modules. 
            Teach lectures, tutorials and consultations; Manage tutors and grading; Mentor new tutors; Develop grading rubrics, exam questions and module tools.
@@ -60,7 +60,7 @@ education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Doctor of Philosophy (Ph.D.) in Computer Science
-    grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Scarlett Jonathan.
+    grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Jonathan Scarlett.
     date: \mydate\formatdate{8}{8}{2018} - Exp.\ydate\formatdate{7}{8}{2023} 
     info:
       - "Research focus 'Towards Modern Gaussian Processes', which aims to tackle problems related to Gaussian Processes (GP) such as scaling and robustness."
@@ -80,6 +80,11 @@ education:
 achievement:
   - type: "Awards"
     items:
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Full-Time Teaching Assistant Award 
+        date: \dmydate\formatdate{21}{04}{2023}
+        info: Recognition of the high level of commitment to, and achievement of good teaching.
       -
         place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
         item: NS Excellence Award (NSEA)
@@ -161,6 +166,23 @@ research:
         resume: true
 
 teaching:
+  - course: CS3243 -- Introduction to Artificial Intelligence
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials, review of learning materials, designing exam questions."
+        date: AY22/23 S1
+      -
+        tasks: "Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions."
+        date: AY21/22 S2
+  - course: CS3217 -- Software Engineering on Modern App. Platforms  
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Taught tutorial classes."
+        date: AY21/22 S2
   - course: CS3203 -- Software Engineering Project
     type: Undergrad.
     credits: 8 credits
@@ -187,25 +209,6 @@ teaching:
       -
         tasks: "Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
         date: AY20/21 S1
-  - course: CS3217 -- Software Engineering on Modern App. Platforms  
-    type: Undergrad.
-    credits: 4 credits
-    items:
-      -
-        tasks: "Taught tutorial classes."
-        date: AY21/22 S2
-  - course: CS3243 -- Introduction to Artificial Intelligence
-    type: Undergrad.
-    credits: 4 credits
-    items:
-      -
-        tasks: "Teach tutorials, review of learning materials, designing exam questions."
-        date: AY22/23 S1
-      -
-        tasks: "Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions."
-        date: AY21/22 S2
-
-
 public_history:
 -
   role: Museum
