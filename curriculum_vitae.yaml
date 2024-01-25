@@ -1,6 +1,6 @@
 ---
 name: Han Liang Wee, Eric
-title: ""
+title: "Dr."
 address: SGP
 email: mail@eric-han.com
 twitter: eric_vader
@@ -14,6 +14,10 @@ appointment:
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     items:
       -
+        item: Teaching Assistant
+        dates: \dmydate\formatdate{8}{8}{2023} - \dmydate\formatdate{30}{6}{2024}
+        description: Continues from Graduate Tutor.
+      -
         item: Graduate Tutor
         dates: \dmydate\formatdate{8}{8}{2018} - \dmydate\formatdate{7}{8}{2023}
         description: |
@@ -23,29 +27,29 @@ appointment:
         item: Tutor for Intro to Programming Workshop
         dates: \mydate\formatdate{3}{7}{2017} # \d\formatdate{3}{7}{2017} - \dmydate\formatdate{6}{7}{2017}
         description: |
-           Coached freshmen on computational thinking, programming.
+           Coach freshmen on computational thinking, programming.
   -
     place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
     items:
       -
         item: Software Engineering Intern
         dates: \mydate\formatdate{27}{5}{2016} - \mydate\formatdate{19}{8}{2016}
-        description: Designed and deployed Church Management System (CHMS).
+        description: Design and deploy Church Management System (CHMS).
   -
     place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
     items:
       -
         item: "Research Intern -- A Cloud-based Collaborative Model Building Platform"
         dates: \mydate\formatdate{1}{12}{2015} #\ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
-        description: Contributed to a cloud based Machine Learning platform.
+        description: Contribute to a cloud based Machine Learning platform.
       -
         item: "Research Intern -- Autonomous Machine Learning using HPC Approaches"
         dates: \mydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
-        description: Contributed to a cloud based Machine Learning platform.
+        description: Contribute to a cloud based Machine Learning platform.
       -
         item: "Research Intern -- Route My Day (Recommendation System)"
         dates: \mydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
-        description: Contributed to a end-to-end recommender system.
+        description: Contribute to a end-to-end recommender system.
   -
     place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
     items:
@@ -59,18 +63,19 @@ appointment:
 education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
-    item: Doctor of Philosophy (Ph.D.) in Computer Science
-    grade: Current Cumulative Average Point (4.92/5.00); Advised by Asst. Prof. Jonathan Scarlett.
-    date: \mydate\formatdate{8}{8}{2018} - Exp.\ydate\formatdate{7}{8}{2023} 
-    info:
-      - "Research focus 'Towards Modern Gaussian Processes', which aims to tackle problems related to Gaussian Processes (GP) such as scaling and robustness."
+    item: Doctor of Philosophy (PhD) in Computer Science
+    grade: Bayesian Optimisation Techniques for High-Dimensional and Adversarial Settings
+    date: \mydate\formatdate{8}{8}{2018} - \mydate\formatdate{16}{01}{2024} 
+    # info:
+    #   - My research interests include techniques to scale additive Bayesian Optimization, 
+    #   center on advancing Bayesian Optimization (BO) for high-dimensional and adversarial contexts, focusing on robust solutions for real-world applications like machine learning, robotics, and adversarial attacks on Convolutional Neural Networks (CNNs).
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Bachelor of Computing (Computer Science)
-    grade: Graduated With Honours (Highest Distinction) in Computer Science
+    grade: Graduated With Honours (Highest Distinction) in Computer Science, with Turing Programme
     date: \mydate\formatdate{12}{8}{2013} - \mydate\formatdate{31}{1}{2018}
-    info:
-      - Completed the Turing Programme, which nurture students who aspire to engage research careers.
+    # info:
+    #   - Completed the Turing Programme, which nurture students who aspire to engage research careers.
   -
     place: "[USC Viterbi School of Engineering](https://www.usc.edu/)"
     item: Student Exchange
@@ -136,6 +141,14 @@ achievement:
 research:
   - type: Peer-Reviewed Conference Publications
     items:
+      - 
+        title: Structured Dimensionality Reduction Methods for Black-Box Adversarial Attacks with Bayesian Optimization
+        author: "*Eric Han*, Jonathan Scarlett"
+        place: Ongoing Work
+        date: \mydate\formatdate{17}{7}{2022}
+        twopage: true
+        academic: true
+        resume: true
       -
         title: Adversarial Attacks on Gaussian Process Bandits
         author: "*Eric Han*, Jonathan Scarlett"
@@ -166,6 +179,16 @@ research:
         resume: true
 
 teaching:
+  - course: CS2109s -- Introduction to AI and Machine Learning
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials; Ongoing Semester."
+        date: AY23/24 S2
+      -
+        tasks: "Teach tutorials, grading, designing exam questions."
+        date: AY23/24 S1
   - course: CS3243 -- Introduction to Artificial Intelligence
     type: Undergrad.
     credits: 4 credits
@@ -181,7 +204,7 @@ teaching:
     credits: 4 credits
     items:
       -
-        tasks: "Taught tutorial classes."
+        tasks: "Teach tutorials."
         date: AY21/22 S2
   - course: CS3203 -- Software Engineering Project
     type: Undergrad.
@@ -207,65 +230,8 @@ teaching:
     credits: 4 credits
     items:
       -
-        tasks: "Supported Labs and developed module tools; Created sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
+        tasks: "Support labs and develop sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
         date: AY20/21 S1
-public_history:
--
-  role: Museum
-  gigs:
-  -
-    item: American Whaling exhibits at the New Bedford Whaling Museum
-    date: 2014-2015
-  -
-    item: Mapping the Frontier, Boston Public Library
-    date: 2019
--
-  role: Language Consulting
-  gigs:
-
-  -
-    item: "Historical Language Consultant, \"Masters of Sex,\" Season 2. Showtime Television."
-    date: 2014
-  -
-    item: "Historical Language Consultant, \"Vegas,\" Season 1. Eye Productions/CBS television."
-    date: 2012-2013
--
-  role: TV and Radio Appearances
-  gigs:
-  - 
-    item: Central Standard, KCUR Kansas City, "Is History Dying?"
-    url: https://www.kcur.org/show/central-standard/2019-01-30/seg-1-is-history-dying-seg-2-the-marie-kondo-craze
-    date: January 30, 2019
-  -
-    item: "\"Think\" with Krys Boyd, KERA Dallas. \"Go ahead, Major in Philosophy.\""
-    url: "http://think.kera.org/2018/09/10/go-ahead-major-in-philosophy/"
-    date: September 10, 2018
-  -
-    item: Morning Edition, National Public Radio. Discussing gendered language and teaching evaluations.
-    url: "http://www.npr.org/blogs/ed/2015/02/23/386001328/how-we-talk-about-our-teachers"
-    date: February 23, 2015
-  -
-    item: WBAL, Baltimore. Discussing the State of the Union Address.
-    date: January 20, 2015
-  -
-    item: "New England Cable News. Discussing \"The Simpsons.\""
-    date: September 2014
-  -
-    item: The Kojo Nnamdi Show, WAMU Washington DC. Hourlong guest discussing Digital Humanities.
-    url: "http://thekojonnamdishow.org/shows/2013-02-19/digital-humanities"
-    date: February 19, 2013
-  -
-    item: On the Media, National Public Radio. Discussing historical fiction and computational changes in language. (Version of Lexicon Valley interview, below).
-    url: "http://www.onthemedia.org/2012/jun/15/lexicon-valley-takes-mad-men/"
-    date: June 15, 2012
-  -
-    item: Lexicon Valley podcast, Slate.com.
-    url: "http://www.slate.com/articles/podcasts/lexicon_valley/2012/06/lexicon_valley_anachronisms_in_mad_men_downton_abbey_and_edith_wharton_.html"
-    date: June 11, 2012
-  -
-    item: Weekends with Alex Witt, MSNBC. Discussing Mad Men.
-    date: March 24, 2012
-
 service:
 -
   type: "Service to Research Community"
@@ -328,11 +294,11 @@ service:
   gigs:
     - 
       item: "Head Of Information Technology -- Lead a team of >15 volunteers."
-      date: \mydate\formatdate{8}{3}{2018} - Curr.
+      date: \mydate\formatdate{8}{3}{2018} - \mydate\formatdate{31}{12}{2023}
       info: Responsible for IT infra., Purchasing, Software development of Church Applications, etc.
     - 
       item: "Cell Group Leader -- Build strong communities and healthy Christians."
-      date: \mydate\formatdate{1}{10}{2017} - Curr.
+      date: \mydate\formatdate{1}{10}{2017} - \mydate\formatdate{31}{12}{2023}
     - 
       item: "Tutor - Teach tuition classes."
       info: "GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
@@ -372,7 +338,7 @@ competencies:
     - item: Programming Languages
       info: "Python (also sci. pkgs., ie. SciPy), C++, Java, LaTex, Markdown, HTML/CSS, Javascript, Bash."
     - item: Tools / Platforms
-      info: "Git, Mlflow, Plotly, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
+      info: "Git, Mlflow, Plotly, Slurm, Jira, Google Cloud Platform, Microsoft Office, Google Workspace."
     - item: Operating Systems
       info: Linux (Fedora; daily driver), *nix administration, Windows, macOS.
 -
