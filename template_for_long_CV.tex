@@ -64,7 +64,7 @@ $for(education)$
         $endif$
       $endfor$}
     $endif$
-  }\\
+  }
   % \vspace{.75ex}
 \end{separator}
 $endfor$
@@ -129,7 +129,9 @@ $for(service)$
   $endfor$
 $endfor$
 
+$if(teaching)$
 \section{Teaching}
+$endif$
 $for(teaching)$
   \subsection{$teaching.course$ ($teaching.type$ $teaching.credits$)}
   $for(teaching.items)$
