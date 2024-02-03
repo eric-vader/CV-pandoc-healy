@@ -20,7 +20,6 @@ appointment:
       -
         item: Graduate Tutor
         dates: \dmydate\formatdate{8}{8}{2018} - \dmydate\formatdate{7}{8}{2023}
-           
       -
         item: Tutor for Intro to Programming Workshop
         dates: \mydate\formatdate{3}{7}{2017} # \d\formatdate{3}{7}{2017} - \dmydate\formatdate{6}{7}{2017}
@@ -165,15 +164,15 @@ research:
         academic: true
         resume: true
         fcitekey: Han_Arora_Scarlett_2021
-  - type: Summer School
-    items:
-      -
-        title: The Gaussian Process Summer School, 2019
-        date: \mydate\formatdate{12}{9}{2019} # \ddate\formatdate{9}{9}{2019}-\dmydate\formatdate{12}{9}{2019}
-        place: The University Of Sheffield, Sheffield, United Kingdom
-        twopage: true
-        academic: true
-        resume: true
+  # - type: Summer School
+  #   items:
+  #     -
+  #       title: The Gaussian Process Summer School, 2019
+  #       date: \mydate\formatdate{12}{9}{2019} # \ddate\formatdate{9}{9}{2019}-\dmydate\formatdate{12}{9}{2019}
+  #       place: The University Of Sheffield, Sheffield, United Kingdom
+  #       twopage: true
+  #       academic: true
+  #       resume: true
 
 teaching:
   - course: CS2109s -- Introduction to AI and Machine Learning
@@ -238,7 +237,7 @@ service:
       date: \dmydate\formatdate{23}{2}{2023}
       twopage: true
     -
-      item: Session Chair for [Workshop on Information Theory and Data Science](https://ims.nus.edu.sg/events/information-theory-and-data-science-workshop/).
+      item: Session Chair for [Workshop on Information Theory and Data Science Workshop](https://ims.nus.edu.sg/events/information-theory-and-data-science-workshop/).
       date: \dmydate\formatdate{20}{1}{2023}
       twopage: true
     -
@@ -292,7 +291,7 @@ service:
     - 
       item: "Head Of Information Technology -- Lead a team of >15 volunteers."
       date: \mydate\formatdate{8}{3}{2018} - \mydate\formatdate{31}{12}{2023}
-      info: Responsible for IT infra., Purchasing, Software development of Church Applications, etc.
+      info: Responsible for IT infra., purchasing, software development of Church applications, etc.
     - 
       item: "Cell Group Leader -- Build strong communities and healthy Christians."
       date: \mydate\formatdate{1}{10}{2017} - \mydate\formatdate{31}{12}{2023}

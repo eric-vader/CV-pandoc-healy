@@ -86,7 +86,6 @@ $endfor$
 % (Yes, it would be better to just do this with bib file). That's for later.
 
 \section{Research}
-
 $for(research)$
   \subsection{$research.type$}
   $for(research.items)$
@@ -114,6 +113,8 @@ $for(research)$
   $endfor$
 $endfor$
 
+$if(service)$
+\begin{minipage}{\linewidth}
 \section{Service}
 $for(service)$
   \subsection{$service.type$}
@@ -128,10 +129,12 @@ $for(service)$
     \vspace{-\commonspace}
   $endfor$
 $endfor$
+\end{minipage}
+$endif$
 
 $if(teaching)$
+\begin{minipage}{\linewidth}
 \section{Teaching}
-$endif$
 $for(teaching)$
   \subsection{$teaching.course$ ($teaching.type$ $teaching.credits$)}
   $for(teaching.items)$
@@ -145,6 +148,8 @@ $for(teaching)$
     \vspace{-\commonspace}
   $endfor$
 $endfor$
+\end{minipage}
+$endif$
 
 \section{Competency}
 $for(competencies)$
