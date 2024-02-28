@@ -1,0 +1,82 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf Apple Inc.} \\
+  {
+    The Hiring Manager\\
+    Apple, Singapore
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Sir/Mdm, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  I am writing to express my interest in the `Senior Decision Support Data Scientist' position as recommended by Carissa Huang.
+  Carissa and I are close friends and have known each other at Church for more than 10 years, growing up together in the same Cell-Group.
+  Her insight into personal and professional aspirations, 
+  especially with my recent completion of a PhD in Computer Science from the National University of Singapore, 
+  prompted her to recommend Apple as an ideal place to start my post-doctoral career.
+  Carissa's positive reflections on Apple's work environment, and after finding more about the role, I have decided to apply.
+  \\[.5em]
+  During my doctoral research,
+  I specialized in the field of optimization, with a particular focus on developing advanced techniques to mitigate the challenges inherent in Bayesian Optimization - including high-dimensionality, large datasets, and enhancing robustness. This research allowed me to gain substantial hands-on experience in formulating and implementing complex AI/ML projects.
+  The projects are written in the Python programming language and leverages a wide array of machine learning and data visualization libraries such as SciPy, NumPy, PyTorch, Plotly, matplotlib. 
+  My approach to algorithm design often incorporated sophisticated data structures, such as the Union-Find algorithm, to enhance efficiency and performance significantly.
+  I presented my research and have first-author publications in the premier conferences AAAI and ICML.
+  \\[.5em]
+  Throughout my doctorate journey, I have been teaching undergraduate Computer Science classes spanning across AI/ML and Software Engineering.
+  This role has not only allowed me to refine my communication skills but also to play a pivotal part in educating and inspiring the next generation of computer scientists.
+  My responsibilities extended beyond classroom instruction to include the management and mentorship of undergraduate tutors, 
+  further demonstrating my leadership capabilities and commitment to fostering a supportive learning environment.
+  In recognition of my dedication to teaching excellence and my ability to effectively convey complex concepts, 
+  I was honored with the Full-Time Teaching Assistant Award in 2023.
+  \\[.5em]
+  In addition to my academic pursuits, 
+  I have enriched my professional experience through various internships and projects that have allowed me to apply my technical knowledge in real-world settings.
+  A notable project is with Scanteak, where I was charged with using technology to enhance the quality control mechanisms within their supply chain. 
+  My role entailed conducting multiple business trips to Scanteak's production facilities and distribution centers, 
+  during which I meticulously analyzed their operations and implemented solutions to streamline operations and improving quality control.
+  \\[.5em]
+  I am grateful for your consideration of my application, as well as for the endorsement provided by Carissa.
+  I look forward to an interview at your convenience.
+}\end{minipage}\\[1em]
+
+Warm regards,\\
+Eric Han\\
+
+\end{document}
