@@ -67,7 +67,7 @@ education:
   -
     place: "[National University of Singapore](http://www.nus.edu.sg/)"
     item: Doctor of Philosophy (PhD) in Computer Science
-    grade: Bayesian Optimisation Techniques for High-Dimensional and Adversarial Settings
+    grade: "Focus is in AI / Machine Learning / Optimization - High-Dimensionality and Robustness."
     date: \mydate\formatdate{8}{8}{2018} - \mydate\formatdate{16}{01}{2024} 
     # info:
     #   - My research interests include techniques to scale additive Bayesian Optimization, 
