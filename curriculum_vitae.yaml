@@ -45,7 +45,7 @@ appointment:
       -
         item: "Research Intern -- A Cloud-based Collaborative Model Building Platform"
         dates: \mydate\formatdate{1}{12}{2015} #\ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
-        description: "Continues from previous: Design, implement & deploy visualization website, app. protocol."
+        description: "Continues from previous: Design, implement & deploy dockerized, distributed ML platform."
       -
         item: "Research Intern -- Autonomous Machine Learning using HPC Approaches"
         dates: \mydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
@@ -321,7 +321,9 @@ competencies:
   type: Computing Platforms
   items:
     - item: Programming Languages
-      info: "Python (also sci. pkgs., ie. SciPy), C++, Java, HTML/CSS, Java/Typescript, Bash."
+      info: "Python, C++, Java, HTML/CSS, Java/Typescript, Bash."
+    - item: Numerical Computing
+      info: "NumPy, SciPy, PyTorch, GPy, etc..."
     - item: Databases
       info: "Firebase, SQL, MongoDB."
     - item: Typesetting / Presentation Tools
