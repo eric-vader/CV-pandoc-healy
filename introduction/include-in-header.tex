@@ -1,0 +1,220 @@
+
+% \usepackage[linesnumbered,ruled,vlined,algochapter]{algorithm2e}
+% \usepackage{lscape}
+% \usepackage{xspace}
+% \usepackage{xfrac}
+% \usepackage{enumitem}
+% \usepackage{amsthm}
+
+% /Centering 
+\usepackage{ragged2e}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{subfig}
+\usepackage{xspace}
+
+\setbeamercolor{background canvas}{bg=white}
+
+\def\addsymbol#1#2#3{%
+\expandafter\newcommand\csname #2\endcsname{#1}}
+
+\newcommand{\refalgo}[1]{Algorithm \ref{#1}}
+\newcommand{\reftbl}[1]{Table \ref{#1}}
+\newcommand{\refsec}[1]{??}
+\newcommand{\refthm}[1]{Theorem\,\ref{#1}}
+\newcommand{\refcor}[1]{Corollary\,\ref{#1}}
+
+\newcommand{\lsota}{state-of-the-art\xspace}  %lower-case version
+
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\etc}{etc\xspace}
+
+\newcommand{\ksi}{K+\sigma_n^2 I}
+\newcommand{\inv}{^{\text{-}1}}
+
+\newcommand{\nparam}{N_\mathrm{param}}
+\newcommand{\gs}{{N_{\mathrm{gridsize}}}}
+\newcommand{\nlvl}{N_\mathrm{lvl}}
+\newcommand{\xinX}{x \in {\mathcal X}}
+
+\newcommand{\matern}{Mat\'ern\xspace}
+\newcommand\maternx [2]{Mat\'ern\,$\sfrac{#1}{#2}$\xspace}
+\newcommand{\rbf}{RBF\xspace}
+\newcommand{\kMat}{k_{\text{Mat}}}
+\newcommand{\Rc}{\mathcal{R}}
+\newcommand{\targetr}{\Rc_{\rm target}}
+
+\newcommand{\parens}[1]{{\left(#1\right)}}
+\newcommand{\braces}[1]{{\left\{#1\right\}}}
+\newcommand{\sqparens}[1]{{\left[#1\right]}}
+\newcommand{\bars}[1]{{\left|#1\right|}}
+\newcommand{\dbars}[1]{{\left\|#1\right\|}}
+
+\newcommand{\Xv}{\mathbf{X}}
+\newcommand{\xv}{\mathbf{x}}
+\newcommand{\Pv}{\mathbf{P}}
+\newcommand{\xvtilde}{\widetilde{\mathbf{x}}}
+\newcommand{\Fc}{\mathcal{F}}
+
+% Special Method symbols
+\newcommand{\graphoverlap}{\textsf{Graph\ Overlap}\xspace}
+\newcommand{\graphnooverlap}{\textsf{Graph\ No-Overlap}\xspace}
+\newcommand{\graphnooverlapl}[1]{{\textsf{Graph\ No-Overlap~(#1)}}\xspace}
+\newcommand{\tree}{\textsf{Tree}\xspace}
+\newcommand{\random}{\textsf{Random}\xspace}
+\newcommand{\oracle}{\textsf{Oracle}\xspace}
+
+\DeclareMathOperator*{\successrate}{Success-Rate}
+\DeclareMathOperator*{\normalizedcost}{Normalized-Cost}
+\DeclareMathOperator*{\fscore}{F_1score}
+\DeclareMathOperator*{\precision}{Precision}
+\DeclareMathOperator*{\recall}{Recall}
+\DeclareMathOperator*{\Edge}{Edges}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\sgn}{sgn}
+\newcommand{\lgamma}{\mathlarger{\gamma}}
+\newcommand{\union}{\cup}
+\newcommand{\intersection}{\cap}
+
+\newcommand{\fmin}{f_{\min}}
+\newcommand{\fmax}{f_{\max}}
+
+% \newtheorem{thm}{Theorem}[chapter]
+% \newtheorem{cor}{Corollary}[chapter]
+
+% Our Expts
+\newcommand{\synthetic}{Synthetic1D\xspace}
+\newcommand{\forrester}{Forrester1D\xspace}
+\newcommand{\levy}{Levy1D\xspace}
+\newcommand{\levyhard}{Levy-Hard1D\xspace}
+\newcommand{\bohachevsky}{Bohachevsky2D\xspace}
+\newcommand{\bohachevskyhard}{Bohachevsky-Hard2D\xspace}
+\newcommand{\branin}{Branin2D\xspace}
+\newcommand{\camelback}{Camelback2D\xspace}
+\newcommand{\hartmann}{Hartmann6D\xspace}
+\newcommand{\robotsmall}{Robot3D\xspace}
+\newcommand{\robotlarge}{Robot4D\xspace}
+\newcommand{\npsynthetic}{Synthetic1D-Online\xspace}
+\newcommand{\npforrester}{Forrester1D-Online\xspace}
+\newcommand{\npcamelback}{Camelback2D-Online\xspace}
+\newcommand{\nplevy}{Levy1D-Online\xspace}
+\newcommand{\nplevyhard}{Levy-Hard1D-Online\xspace}
+\newcommand{\npbohachevsky}{Bohachevsky2D-Online\xspace}
+\newcommand\levydef [2]{$C=#1,\eta^2=#2$\xspace}
+\newcommand{\varforrester}{MaxVar-Forrester1D\xspace}
+\newcommand{\varcamelback}{MaxVar-Camelback2D\xspace}
+\newcommand{\varrobotsmall}{MaxVar-Robot3D\xspace}
+
+% \newcommand{\random}{\textsf{Random}\xspace}
+\newcommand{\noattack}{\textsf{No~Attack}\xspace}
+\newcommand{\aggressivesubtraction}{\textsf{Aggressive~Subtraction}\xspace}
+\newcommand{\subtraction}{\textsf{Subtraction}\xspace}
+\newcommand{\clipping}{\textsf{Clipping}\xspace}
+\newcommand{\subtractionrnd}{\textsf{Subtraction~Rnd}\xspace}
+\newcommand{\shortsq}{\textsf{Sq}\xspace}
+\newcommand{\shortrnd}{\textsf{Rnd}\xspace}
+\newcommand{\subtractionsq}{\textsf{Subtraction~Sq}\xspace}
+\newcommand{\bzero}{\boldsymbol{0}}
+
+\newcommand{\rngadv}{\textsf{Rng-Adv}\xspace}
+\newcommand{\boadv}{\textsf{BO-Adv}\xspace}
+
+\newcommand{\rngbandit}{\textsf{Rng-Bandit}\xspace}
+\newcommand{\optbandit}{\textsf{Optimal-Bandit}\xspace}
+\newcommand{\ts}{\textsf{TS-Bandit}\xspace}
+\newcommand{\ucb}{\textsf{UCB-Bandit}\xspace}
+\newcommand{\egreedy}{\textsf{$\epsilon$-Greedy-Bandit}\xspace}
+
+\newcommand{\tiling}{\textsf{Tiling}\xspace}
+\newcommand{\fsft}{\textsf{FSFT}\xspace}
+\newcommand{\sfsft}{\textsf{SFSFT}\xspace}
+
+\newcommand{\anni}{\textsf{NNI}\xspace}
+\newcommand{\lf}{\textsf{LF}\xspace}
+
+\newcommand{\asq}{\textsf{Sq-Attack}\xspace}
+\newcommand{\signopt}{\textsf{Sign-Opt}\xspace}
+
+\newcommand{\gpucb}{GP-UCB\xspace}
+\newcommand{\maxvar}{MaxVar\xspace}
+\newcommand{\defense}{Defense\xspace}
+\newcommand{\dynamic}{Dynamic\xspace}
+\newcommand{\noprefit}{Online-Learned Kernel\xspace}
+
+\newcommand{\Kv}{\mathbf{K}}
+\newcommand{\kv}{\mathbf{k}}
+\newcommand{\Iv}{\mathbf{I}}
+\newcommand{\iv}{\mathbf{i}}
+\newcommand{\yv}{\mathbf{y}}
+\newcommand{\Yv}{\mathbf{Y}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Use \acs to reference them
+% \addabbrev{AI}{Artificial Intelligence}
+% \addabbrev{API}{Application Programming Interface}
+% \addabbrev{ARD}{Automatic Relevance Determination}
+% \addabbrev{BFGS}{Broyden-Fletcher-Goldfarb-Shanno algorithm}
+% \addabbrev{BO}{Bayesian Optimization}
+% \addabbrev{CNN}{Convolutional Neural Networks}
+% \addabbrev{EI}{Expected Improvement}
+% \addabbrev{FFT}{Fast Fourier Transform}
+% \addabbrev{FMAB}{Federated Multi-armed Bandits}
+% \addabbrev{GP}{Gaussian Process}
+% \addabbrev{GP-UCB}{Gaussian Process with Upper Confidence Bound}
+% \addabbrev{HDBO}{High-Dimensional Bayesian Optimization}
+% \addabbrev{L-BFGS}{Limited-Memory Broyden-Fletcher-Goldfarb-Shanno algorithm}
+% \addabbrev{LCB}{Lower Confidence Bound}
+% \addabbrev{LF}{Low-frequency Fourier Transform}
+% \addabbrev{MAB}{Multi-armed Bandits}
+% \addabbrev{ML}{Machine Learning}
+% \addabbrev{MLaaS}{Machine-Learning-as-a-Service}
+% \addabbrev{MIP}{Mixed Integer Linear Programming}
+% \addabbrev{NNI}{Nearest Neighbour Interpolation}
+% \addabbrev{NN}{Neural Network}
+% \addabbrev{RGB}{Red, Green, and Blue}
+% \addabbrev{RBF}{Radial Basis Function}
+% \addabbrev{REMBO}{Random EMbedding Bayesian Optimization}
+% \addabbrev{RKHS}{Reproducing kernel Hilbert space}
+% \addabbrev{TNC}{Truncated Newton algorithm}
+% \addabbrev{UCB}{Upper Confidence Bound}
+% \addabbrev{UF}{Union-Find}
+
+\addsymbol{\mathbb{R}}{RR}{Set of real numbers}
+\addsymbol{\mathbb{N}}{N}{Set of natural numbers}
+\addsymbol{\mathbb{E}}{E}{Expectation}
+\addsymbol{C}{ncycles}{Number of cycles}
+
+\addsymbol{\mathrm{Bernoulli}}{ber}{Bernoulli distribution}
+\addsymbol{\mathcal{X}}{X}{Domain}
+\addsymbol{\mathcal{G}}{G}{Decomposition of functions}
+\addsymbol{\phi}{featurespace}{Values in feature space}
+\addsymbol{f}{f}{Target/Objective function $f:\X\rightarrow\RR$}
+\addsymbol{N_\mathrm{dim}}{ndim}{Number of dimensions in $\X$}
+\addsymbol{N_\mathrm{samples}}{nsamples}{Number of samples required}
+
+\addsymbol{a_\mathrm{UCB}}{aUCB}{Upper Confidence Bound acquisition function}
+\addsymbol{a_\mathrm{EI}}{aEI}{Expected Improvement acquisition function}
+
+\addsymbol{\mathrm{cov}}{cov}{Covariance function}
+
+\addsymbol{\mathbf{X}}{Xinput}{Input to the function $f$}
+\addsymbol{\mathbf{y}}{youtput}{Output of the function $f$}
+
+\addsymbol{\mathcal{D}}{D}{Observations/Samples, comprising of $\Xinput,\youtput$}
+\addsymbol{x^*}{xopt}{Location on $f$ where it achieves global optimal value}
+\addsymbol{f^*}{fopt}{Global Optima of $f$}
+\addsymbol{x_{\min}}{xmin}{Location on $f$ where it achieves global minimum value}
+\addsymbol{x_{\max}}{xmax}{Location on $f$ where it achieves global maximum value}
+\addsymbol{\mathcal{GP}}{GP}{Gaussian Process modelling $f$ with mean $\mu$ and covariance $K$}
+
+\newenvironment{pandoccrossrefsubfigures}
+{
+  \begin{figure}
+}
+{
+  \end{figure}
+}
