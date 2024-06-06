@@ -19,6 +19,26 @@
 \usepackage{rotating}
 \usepackage{makecell}
 \usepackage[edges]{forest}
+\usepackage{stackengine}
+
+\usetikzlibrary{decorations.markings}
+\newsavebox\mybox
+\savebox\mybox{%
+  \tikz{
+    \draw[ultra thick,red] (-4pt,-4pt) -- (4pt,4pt);
+    \draw[ultra thick,red] (-4pt,4pt) -- (4pt,-4pt);
+  }%
+}  
+
+\tikzset{
+prune/.style={
+  decoration={
+   markings,
+   mark=at position 0.5 with \node {\usebox\mybox};
+  },
+  postaction=decorate
+  }
+}
 \forestset{%
   label tree/.style={
     for tree={tier/.option=level},

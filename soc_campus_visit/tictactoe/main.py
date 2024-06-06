@@ -90,5 +90,5 @@ def print_tree(tree, s, a_str, depth=0, max_depth=0):
 
 tree = Tree()
 tree.create_node(s.to_latex(), id(s))
-print_tree(tree, s, '', max_depth=1)
+print_tree(tree, s, '', max_depth=2)
 # print(tree)

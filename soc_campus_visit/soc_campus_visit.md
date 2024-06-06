@@ -78,6 +78,7 @@ Effective learning is driven by an *innate desire* to learn the subject rather t
 For the teaching position, I am interested to
 
 - Focus on improving teaching quality
+- Contribute anywhere there are needs
 - Curriculum development/improvement
 - Casual research
     - Mentor for Undergraduate Research / FYP
@@ -176,7 +177,7 @@ $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
 \ttt{O}{X}{X}{X}{X}{O}{O}{O}{}\xrightarrow{a_8=(8,X)}
 \ttt{O}{X}{X}{X}{X}{O}{O}{O}{X} = S_9$$
 
-* **Inital state**: $S_0$, 1D array of $9$ elements: $O,X,\emptyset$
+* **Inital state**: $S_0$, 1D array of $[\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset]$; possible elements: $O,X,\emptyset$
 * **Players**: $P_X$-max, $P_O$-min
 * **$i$-th Actions**: $a_i=(c_i,y): c_i\in[0,8]$ where $S_i[c_i]=\emptyset$, symbol $y\in{X,O}$
 * **Transition**: $T(S_i, a_i)=S_{i+1}$, where $S_{i+1}[j]=\begin{cases}
@@ -188,7 +189,7 @@ $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
 
 ## Modeling Tic-tac-toe
 
-* **Inital state**: $S_0$, 1D array of $9$ elements: $O,X,\emptyset$
+* **Inital state**: $S_0$, 1D array of $[\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset]$; possible elements: $O,X,\emptyset$
 * **Players**: $P_X$-max, $P_O$-min
 * **$i$-th Actions**: $a_i=(c_i,y): c_i\in[0,8]$ where $S_i[c_i]=\emptyset$, symbol $y\in{X,O}$
 * **Transition**: $T(S_i, a_i)=S_{i+1}$, where $S_{i+1}[j]=\begin{cases}
@@ -204,23 +205,20 @@ $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
 
 ## Modeling Tic-tac-toe in Python
 
-* **Inital state**: $S_0$, 1D array of $9$ elements: $O,X,\emptyset$
+* **Inital state**: $S_0$, 1D array of $[\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset]$; possible elements: $O,X,\emptyset$
 * **$i$-th Actions**: $a_i=(c_i,y): c_i\in[0,8]$ where $S_i[c_i]=\emptyset$, symbol $y\in{X,O}$
 
 ~~~python
-X,O,E = 'X','O','.'
-SYMBOLS = {X,O}
-WINNING_POS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
+...
 class TicTacToe(object):
   def __init__(self, Si=[ E ] * 9):
     self.Si = Si
-    self.winner = E
   def actions(self):
     e_cis = [ ci for ci, Si_ci in enumerate(self.Si) if Si_ci == E ]
     return [ (ci, y) for y in SYMBOLS for ci in e_cis ]
 ~~~
 
-Full code here: [http://eric-han.com]()
+Code will be made avaliable after class: [http://eric-han.com](http://eric-han.com)
 
 ## Zero-sum game
 
@@ -394,16 +392,36 @@ Now I can just pick the move that is the best (max value):
 * All 3 moves would, at worse-case, end up in draws.
 
 ## Minimax algorithm
+<!-- 
+![AIMA F5.3](algorithm/minimax.pdf){width=65%} -->
 
-**Intuition**: Simulate the game until the end with an imaginary *optimal* opponent.
+\begin{minipage}{.5\linewidth}
+  \includegraphics{algorithm/minimax.pdf}
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+\scalebox{.65}{
+\begin{forest}
+[{$\ttt{O}{X}{}{X}{X}{O}{}{O}{}$},edge label={node[midway,left,font=\scriptsize]{()}}
+[{$U\left(\ttt{O}{X}{X}{X}{X}{O}{}{O}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}]
+[{$U\left(\ttt{O}{X}{}{X}{X}{O}{X}{O}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}]
+[{$U\left(\ttt{O}{X}{}{X}{X}{O}{}{O}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}]
+]
+\end{forest}
+}
 
-__function__ MINIMAX-DECISION(_state_) __returns__ _an action_  
-        __return__ arg max<sub> _a_ $\in$ ACTIONS(_s_)</sub> MIN\-VALUE(RESULT(_state_, _a_))
+Conceptually, at every level (min or max),
+\begin{itemize}
+  \item Evaluate all of the successor's values
+  \item Pick the action with the best value
+\end{itemize}
+But we evaluate it in a DFS fashion.
+
+\end{minipage}
 
 ## Minimax Tic-tac-toe example
 
 \begin{figure}
-\scalebox{.4}{
+\scalebox{.41}{
 \begin{forest}
 [{$\ttt{}{}{}{}{}{}{}{}{}$},edge label={node[midway,left,font=\scriptsize]{()}}
 [{$U\left(\ttt{X}{}{}{}{}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(0,X)}}]
@@ -420,26 +438,476 @@ __function__ MINIMAX-DECISION(_state_) __returns__ _an action_
 }
 \end{figure}
 
+Computing it out for all possible actions for $S_0$:
+
+* All successor states have values of $U(.)=0$
+* All actions would lead to draws
+* No matter what you play, Tic-tac-toe is unlosable
+
+\begin{tcolorbox}[title=Intuition from Primary Sch: How can that be?]
+  Center is better, corners are next best and then the rest.
+\end{tcolorbox}
+
+## Minimax Tic-tac-toe example
+
+\begin{figure}
+\scalebox{.41}{
+\begin{forest}
+[{$\ttt{}{}{}{}{}{}{}{}{}$},edge label={node[midway,left,font=\scriptsize]{()}}
+[{$U\left(\ttt{X}{}{}{}{}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(0,X)}}]
+[{$U\left(\ttt{}{X}{}{}{}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(1,X)}}]
+[{$U\left(\ttt{}{}{X}{}{}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}]
+[{$U\left(\ttt{}{}{}{X}{}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(3,X)}}]
+[{$U\left(\ttt{}{}{}{}{X}{}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(4,X)}}]
+[{$U\left(\ttt{}{}{}{}{}{X}{}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(5,X)}}]
+[{$U\left(\ttt{}{}{}{}{}{}{X}{}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}]
+[{$U\left(\ttt{}{}{}{}{}{}{}{X}{}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(7,X)}}]
+[{$U\left(\ttt{}{}{}{}{}{}{}{}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}]
+]
+\end{forest}
+}
+\end{figure}
+
+Computing it out for all possible actions for $S_0$:
+
+* All successor states have values of $U(.)=0$
+* All actions would lead to draws
+* No matter what you play, Tic-tac-toe is unlosable
+* Assuming *optimal* opponent
+
 ## Minimax analysis
 
-Issues - Huge/Infinite Game Trees
+With $b$ branching factor and $m$ max depth,
 
-## Alpha-Beta Pruning algorithm
+* Time:
+  * $O(b^m)$ (From DFS)
+* Space:
+  * $O(bm)$ (From DFS)
+* Completeness:
+  * Yes if finite (From DFS)
+* Optimality:
+  * Yes on $U(.)$, assuming *optimal* opponent
 
-Intuition
+ . . .
 
-## Alpha-Beta Tic-tac-toe example
+\begin{tcolorbox}[title=Can we do better for Tic-tac-toe?]
+  We know that an action cannot be reused!
+\end{tcolorbox}
 
-## Alpha-Beta analysis
+## Minimax Tic-tac-toe analysis
 
-## 2048 
+With $b$ branching factor and $m$ max depth,
 
-## Modeling 2048
-
-## Minimax 2048 example
+* States:
+  * 1D array of size $9$, with possible $O,X,\emptyset$ elements --- $O(3^9)$
+  * Can be reduced further by removing illegal states
+* Time:
+  * $O(b^m), m=9$
+  * $9!$ terminal nodes, so $\sum^9_i i!$ nodes to explore
+* Space:
+  * $O(bm)$
+* Completeness:
+  * Yes if finite (From DFS)
+* Optimality:
+  * Yes on $U(.)$, assuming *optimal* opponent
 
 ## Minimax limitations
 
-## Expectimax algorithm
+What happens when:
 
-## Expectimax example
+* Large game trees --- Chess: $N=10^{40}$, $b\sim 35$, Go: $N=2.1\times 10^{170}$, $b\sim 250$
+
+  * Borrowing from IDS --- Max depth/Cutoff
+  * Is it necessary to evaluate everything? --- Alpha-Beta Pruning
+  * ... (More during tutorials)
+
+* We have randomness --- Games with Dice, 2048, etc...
+
+  * Use statistics to capture randomness --- Expectimax
+
+## Cutoff
+
+**Intuition**: Stop at a time or depth limit.
+
+\begin{figure}
+\scalebox{0.6}{
+\begin{forest}
+[{$\ttt{O}{X}{}{X}{X}{O}{}{O}{}$},edge label={node[midway,left,font=\scriptsize]{()}}
+[{$\ttt{O}{X}{X}{X}{X}{O}{}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}
+[{$\ttt{O}{X}{X}{X}{X}{O}{O}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(6,O)}}
+[{$U\left(\ttt{O}{X}{X}{X}{X}{O}{O}{O}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}]
+]
+[{$\ttt{O}{X}{X}{X}{X}{O}{}{O}{O}$},edge label={node[midway,left,font=\scriptsize]{(8,O)}}
+[{$U\left(\ttt{O}{X}{X}{X}{X}{O}{X}{O}{O}\right)=1$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}]
+]
+]
+[{$\ttt{O}{X}{}{X}{X}{O}{X}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}
+[{$\ttt{O}{X}{O}{X}{X}{O}{X}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(2,O)}}
+[{$U\left(\ttt{O}{X}{O}{X}{X}{O}{X}{O}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}]
+]
+[{$\ttt{O}{X}{}{X}{X}{O}{X}{O}{O}$},edge label={node[midway,left,font=\scriptsize]{(8,O)}}
+[{$U\left(\ttt{O}{X}{X}{X}{X}{O}{X}{O}{O}\right)=1$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}]
+]
+]
+[{$\ttt{O}{X}{}{X}{X}{O}{}{O}{X}$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}
+[{$\ttt{O}{X}{O}{X}{X}{O}{}{O}{X}$},edge label={node[midway,left,font=\scriptsize]{(2,O)}}
+[{$U\left(\ttt{O}{X}{O}{X}{X}{O}{X}{O}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}]
+]
+[{$\ttt{O}{X}{}{X}{X}{O}{O}{O}{X}$},edge label={node[midway,left,font=\scriptsize]{(6,O)}}
+[{$U\left(\ttt{O}{X}{X}{X}{X}{O}{O}{O}{X}\right)=0$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}]
+]
+]
+]
+\end{forest}
+}
+\end{figure}
+
+
+## Cutoff
+
+**Intuition**: Stop at a time or depth limit.
+
+\begin{figure}
+\scalebox{0.7}{
+\begin{forest}
+[{$\ttt{O}{X}{}{X}{X}{O}{}{O}{}$},edge label={node[midway,left,font=\scriptsize]{()}}
+[{$\ttt{O}{X}{X}{X}{X}{O}{}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(2,X)}}]
+[{$\ttt{O}{X}{}{X}{X}{O}{X}{O}{}$},edge label={node[midway,left,font=\scriptsize]{(6,X)}}]
+[{$\ttt{O}{X}{}{X}{X}{O}{}{O}{X}$},edge label={node[midway,left,font=\scriptsize]{(8,X)}}]
+]
+\end{forest}
+}
+\end{figure}
+
+Previously, we can *always* propagate the $U(.)$ values, but not now:
+
+* Heuristic^[Must design carefully (More during tutorials)] value for non-terminal states: `UTILITY(state)`
+* Add test for cutoff condition: `TERMINAL-TEST(state)`
+
+## Alpha-Beta Pruning algorithm
+
+**Intuition**: Skip if there is *already* a better move found.
+
+* Assign bounds to each of the nodes
+* Starting with $[-\infty,\infty]$
+* Go from left to right
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle$}
+    [8]
+    [$\nabla$
+        [0]
+        [1]
+    ]
+    [$\nabla$
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+Commonly used notation --- $\triangle$: Max, $\nabla$: Min
+
+## Alpha-Beta Pruning algorithm
+
+We start by initalizing $[\infty,\infty]$.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[-\infty,\infty]$}
+    [8]
+    [$\nabla$
+        [0]
+        [1]
+    ]
+    [$\nabla$
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+Then we discover the leaf node $8$, we update its parent max node to at least $8$.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8,\infty]$}
+    [8]
+    [{$\nabla[-\infty,\infty]$}
+        [0]
+        [1]
+    ]
+    [$\nabla$
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+Now we discover leaf node $0$, we update its parent min node to at most $0$.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8,\infty]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1]
+    ]
+    [$\nabla$
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+Notice that, from root:
+
+* $\triangle[8,\infty]$ would always prefer the node $8>[-\infty,0]$:
+* So, $\nabla[-\infty,0]$ is never explored.
+* We will not need to evaluate 1 at all > Pune!
+
+## Alpha-Beta Pruning algorithm
+
+$\triangle[8,\infty]$ would always prefer the node $8>[-\infty,0]$, so we prune leaf node $1$.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8,\infty]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1,edge={prune}]
+    ]
+    [{$\nabla[-\infty,\infty]$}
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+Now we discover leaf node $-1$, we update its parent min node to at most $-1$.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8,\infty]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1,edge={prune}]
+    ]
+    [{$\nabla[-\infty,-1]$}
+        [-1]
+        [$\triangle$
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+$\triangle[8,\infty]$ would always prefer the node $8>[-\infty,-1]$, so we prune the rest.
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1,edge={prune}]
+    ]
+    [{$\nabla[-\infty,-1]$}
+        [-1]
+        [$\triangle$,edge={prune}
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+* Bounds needs to be checked along the path
+* Can we summarize all of the bounds searched so far?
+    - $\alpha$: Minimum score that the Max player knows it can guarantee
+    - $\beta$: Maximum score that the Min player already knows it can guarantee
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1,edge={prune}]
+    ]
+    [{$\nabla[-\infty,-1]$}
+        [-1]
+        [$\triangle$,edge={prune}
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+## Alpha-Beta Pruning algorithm
+
+* $\alpha$: Minimum score that the Max player knows it can guarantee
+* $\beta$: Maximum score that the Min player already knows it can guarantee
+
+\begin{figure}
+\scalebox{1}{
+\begin{forest}
+[{$\triangle[8]$}
+    [8]
+    [{$\nabla[-\infty,0]$}
+        [0]
+        [1,edge={prune}]
+    ]
+    [{$\nabla[-\infty,-1]$}
+        [-1]
+        [$\triangle$,edge={prune}
+            [9]
+            [9]
+        ]
+    ]
+]
+\end{forest}
+}
+\end{figure}
+
+Instead of checking if root node would always prefer the node $8>[-\infty,0]$:
+
+* $\alpha=8,\beta=\infty$ is passed into each iteration: allowing you to reason along the path.
+* Nodes after $0$, ie. node $1$, is pruned because $v$ less eq $\alpha$, ie. $0\leq 8$
+
+## Alpha-Beta Pruning algorithm
+<!-- 
+![AIMA F5.7](algorithm/alphabeta.pdf){width=45%} -->
+
+\begin{minipage}{.5\linewidth}
+  \includegraphics{algorithm/alphabeta.pdf}
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+
+Conceptually, we use 
+\begin{itemize}
+  \item $\alpha$: Minimum score that the Max player knows it can guarantee
+  \item $\beta$: Maximum score that the Min player already knows it can guarantee
+\end{itemize}
+to reason on the bounds on nodes to decide if we can prune.
+
+(Tracing during tutorials)
+
+\end{minipage}
+
+## Alpha-Beta analysis
+
+Pruning does not affect result:
+
+* Time: 
+  * Worst Case: Same as Minimax
+  * Best Case: $O(b^\frac{m}{2})$ for perfect ordering (More during tutorials)
+    * Save on static evaluation (evaluating the values) and move generation (generating nodes).
+    * Can explore twice as deep on the best case.
+* Space: Same as Minimax
+* Completeness: Same as Minimax
+* Optimality: Same as Minimax
+
+## 2048 
+
+\begin{minipage}{.5\linewidth}
+  \includegraphics[width=0.7\linewidth]{2048.png}
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+
+Play 2048: \url{https://play2048.co/}
+
+\begin{itemize}
+  \item Player plays Up, Down, Left or Right
+  \item The game will randomly spawn either $2$ or $4$ in one of the empty cells
+  \item If there is no empty cells, you lose.
+  \item Tiles will fall in that direction
+  \item Tiles with same value will be merged
+\end{itemize}
+
+\end{minipage}
+
+## Modeling 2048 [Discussion/Exercise]
+
+* **Inital state**: 
+* **Players**: 
+* **Actions**: 
+* **Transition**: 
+* **Terminal/Leaf test**: 
+* **Utility**: 
+
+How to model the randomness?
+
+ . . .
+
+* Model it adversarially as a min player using minimax
+* Model it using expectation --- Expectimax
+    * Chance nodes, representing each possible outcome
+    * See R&N Section 5.5
+
+## Minimax vs Expectimax
+
+![Expectimax1,2 are using different heuristics^[https://cs229.stanford.edu/proj2016/report/NieHouAn-AIPlays2048-report.pdf]](2048-compared.png){width=60%}
+
+## Additional Reading
+
+1. Alpha-Beta: IBM Deep Blue --- [https://www.sciencedirect.com/science/article/pii/S0004370201001291](https://www.sciencedirect.com/science/article/pii/S0004370201001291)
+1. Game Theory Concepts Within AlphaGo --- [https://towardsdatascience.com/game-theory-concepts-within-alphago-2443bbca36e0](https://towardsdatascience.com/game-theory-concepts-within-alphago-2443bbca36e0)
+1. What Game Theory Reveals About Life, The Universe, and Everything --- [https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG](https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG)
+1. Expectimax for 2048, achieving `16384: 94%, 32768: 36%` --- [https://github.com/nneonneo/2048-ai](https://github.com/nneonneo/2048-ai)
+1. R&N Chapter 5 --- Adversarial Search

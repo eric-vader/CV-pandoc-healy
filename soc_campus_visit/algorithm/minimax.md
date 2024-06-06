@@ -1,9 +1,6 @@
 
 ---
-title: "Learning Adversarial Search algorithms"
-subtitle: "The Art of Unlosable Tic-Tac-Toe"
-author: Eric Han
-date: June 7, 2024
+title: ""
 ---
 __function__ MINIMAX-DECISION(_state_) __returns__ _an action_  
 &emsp;__return__ arg max<sub> _a_ &Element; ACTIONS(_s_)</sub> MIN\-VALUE(RESULT(_state_, _a_))  
