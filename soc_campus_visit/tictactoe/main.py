@@ -65,9 +65,32 @@ def min_value(state):
     v = min(v, next_state.value)
   return v
 
+def expectimax(state):
+  state.value = em_max_value(state)
+  return [ a for a, next_state in state.successors(X) if next_state.value == state.value ]
+
+def em_max_value(state):
+  if state.is_terminal():
+    return state.utility()
+  v = float('-inf')
+  for a, next_state in state.successors(X):
+    next_state.value = expected_value(next_state)
+    v = max(v, next_state.value)
+  return v
+
+def expected_value(state):
+  if state.is_terminal():
+    return state.utility()
+  v = 0
+  for a, next_state in state.successors(O):
+    next_state.value = em_max_value(next_state)
+    v += next_state.value
+  return v / len(state.successors(O))
+
 s = TicTacToe([O,X,E,X,X,O,E,O,E])
 s = TicTacToe()
-print(minimax(s))
+# print(minimax(s))
+print(expectimax(s))
 
 def print_tree(tree, s, a_str, depth=0, max_depth=0):
 
@@ -90,5 +113,5 @@ def print_tree(tree, s, a_str, depth=0, max_depth=0):
 
 tree = Tree()
 tree.create_node(s.to_latex(), id(s))
-print_tree(tree, s, '', max_depth=2)
+print_tree(tree, s, '', max_depth=1)
 # print(tree)
