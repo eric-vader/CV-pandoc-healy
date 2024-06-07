@@ -16,13 +16,14 @@ Relevant Experience: Mention any previous teaching positions, industry experienc
 My _Singaporean_ educational journey to CS, R&D:
 
 * [2008] **Secondary School** --- Informal learning; scripting, games
-    * Interest in Computing: why & how computers work
+    * *Interest in computing*: why & how computers work
 * [2010] **Pioneer JC** --- H2 Computing
-    * Interest in research: A*STAR IHPC Quest 2009 (Bronze) - K-Means
+    * *Interest in research*: A*STAR IHPC Quest 2009 (Bronze) - K-Means
 * [2018] **B.Com. NUS** --- Com. Sci w Honors
-    * A*STAR Scholarship - Internships working on R&D projects
+    * A*STAR Scholarship: Internships working on R&D projects
 * [2024] **PhD. NUS** --- AI/ML tackling scaling and robustness
     * First-author publications in AAAI, ICML.
+    * *Interest in teaching*: Fulfilling
 
 Working experiences:
 
@@ -78,7 +79,7 @@ Effective learning is driven by an *innate desire* to learn the subject rather t
 For the teaching position, I am interested to
 
 - Focus on improving teaching quality
-- Contribute anywhere there are needs
+- Contribute anywhere there are needs; Computing, Teaching & Research
 - Curriculum development/improvement
 - Casual research
     - Mentor for Undergraduate Research / FYP
@@ -97,7 +98,7 @@ For the teaching position, I am interested to
 
 ## Recap on formulation
 
-**Un/Informed Search (Path)**:
+**Un/Informed Search (Path)**: BFS, UCS, DFS, GBFS, A\*
 
 * State space
 * Initial state
@@ -105,7 +106,7 @@ For the teaching position, I am interested to
 * Action
 * Transition
 
-**Local Search (Goal)**:
+**Local Search (Goal)**: Hill Climbing, Sim. Annealing, Beam, Genetic
 
 * Inital state
 * Transition
@@ -218,11 +219,11 @@ class TicTacToe(object):
     return [ (ci, y) for y in SYMBOLS for ci in e_cis ]
 ~~~
 
-Code will be made avaliable after class: [http://eric-han.com](http://eric-han.com)
+Code will be made avaliable: [https://eric-han.com/teaching/demo/ttt.py](https://eric-han.com/teaching/demo/ttt.py)
 
 ## Zero-sum game
 
-Zero-sum game is a game where one player gain is equals to another's loss, where the total utility of the game is the same/constant (ie. no improvement). 
+Zero-sum game is a game where one player gain is equals to another's loss, where the total utility of the game is the **same/constant** (ie. no improvement). 
 
 ### Tic-tac-toe is zero-sum
 
@@ -232,7 +233,7 @@ Zero-sum game is a game where one player gain is equals to another's loss, where
 
 So, for Tic-tac-toe: $U(S_i, X) = -U(S_i, O)$
 
-**Intuition**: For nerds like me, if you played enough, you notice you keep getting draws.
+**Intuition**: If you played enough, you notice you keep getting draws.
 
 \begin{tcolorbox}[title=Question]
   Can we come up with an algorithm to play Tic-tac-toe?
@@ -261,7 +262,7 @@ $$
 \end{aligned}
 $$
 
-I am player $P_X$, trying to find the best move at $\ttt{O}{X}{}{X}{X}{O}{}{O}{}$
+I am max player $P_X$, trying to find the best move at $\ttt{O}{X}{}{X}{X}{O}{}{O}{}$
 
 ## Minimax algorithm
 
@@ -521,7 +522,7 @@ What happens when:
   * Is it necessary to evaluate everything? --- Alpha-Beta Pruning
   * ... (More during tutorials)
 
-* We have randomness --- Games with Dice, 2048, etc...
+* Non-optimal agent or we have randomness --- Games with Dice, 2048, etc...
 
   * Use statistics to capture randomness --- Expectimax
 
@@ -586,7 +587,7 @@ Previously, we can *always* propagate the $U(.)$ values, but not now:
 
 ## Alpha-Beta Pruning algorithm
 
-**Intuition**: Skip if there is *already* a better move found.
+**Intuition**: Skip if there is *already* a better move found, track using bounds.
 
 * Assign bounds to each of the nodes
 * Starting with $[-\infty,\infty]$
@@ -689,6 +690,8 @@ Now we discover leaf node $0$, we update its parent min node to at most $0$.
 \end{forest}
 }
 \end{figure}
+
+ . . .
 
 Notice that, from root:
 
@@ -827,7 +830,7 @@ $\triangle[8,\infty]$ would always prefer the node $8>[-\infty,-1]$, so we prune
 
 Instead of checking if root node would always prefer the node $8>[-\infty,0]$:
 
-* $\alpha=8,\beta=\infty$ is passed into each iteration: allowing you to reason along the path.
+* $\alpha=8,\beta=\infty$ is passed in from parent: allowing you to reason along the path.
 * Nodes after $0$, ie. node $1$, is pruned because $v$ less eq $\alpha$, ie. $0\leq 8$
 
 ## Alpha-Beta Pruning algorithm
@@ -896,18 +899,36 @@ How to model the randomness?
  . . .
 
 * Model it adversarially as a min player using minimax
-* Model it using expectation --- Expectimax
+* Model it using expectation $\sum_r{P(r)*U(r)}$ --- Expectimax^[See R&N Section 5.5]
     * Chance nodes, representing each possible outcome
-    * See R&N Section 5.5
 
-## Minimax vs Expectimax
+## 2048: Minimax vs Expectimax
 
 ![Expectimax1,2 are using different heuristics^[https://cs229.stanford.edu/proj2016/report/NieHouAn-AIPlays2048-report.pdf]](2048-compared.png){width=60%}
 
-## Additional Reading
+## Tic-tac-toe: Minimax vs Expectimax
 
-1. Alpha-Beta: IBM Deep Blue --- [https://www.sciencedirect.com/science/article/pii/S0004370201001291](https://www.sciencedirect.com/science/article/pii/S0004370201001291)
-1. Game Theory Concepts Within AlphaGo --- [https://towardsdatascience.com/game-theory-concepts-within-alphago-2443bbca36e0](https://towardsdatascience.com/game-theory-concepts-within-alphago-2443bbca36e0)
-1. What Game Theory Reveals About Life, The Universe, and Everything --- [https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG](https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG)
-1. Expectimax for 2048, achieving `16384: 94%, 32768: 36%` --- [https://github.com/nneonneo/2048-ai](https://github.com/nneonneo/2048-ai)
+### Max-Expectation-Max-Expectation...
+
+Minimax will pick any action, but what if we model using a random agent?
+
+$U\left(\ttt{X}{}{}{}{}{}{}{}{}\right)=U\left(\ttt{}{}{X}{}{}{}{}{}{}\right)=U\left(\ttt{}{}{}{}{}{}{X}{}{}\right)=U\left(\ttt{}{}{}{}{}{}{}{}{X}\right)=0.995$
+
+$U\left(\ttt{}{}{}{}{X}{}{}{}{}\right)=0.990$
+
+$U\left(\ttt{}{X}{}{}{}{}{}{}{}\right)=U\left(\ttt{}{}{}{X}{}{}{}{}{}\right)=U\left(\ttt{}{}{}{}{}{X}{}{}{}\right)=U\left(\ttt{}{}{}{}{}{}{}{X}{}\right)=0.987$
+
+## Additional
+
+### Reading 
+
 1. R&N Chapter 5 --- Adversarial Search
+1. Alpha-Beta: IBM Deep Blue --- [https://www.sciencedirect.com/science/article/pii/S0004370201001291](https://www.sciencedirect.com/science/article/pii/S0004370201001291)
+1. What Game Theory Reveals About Life, The Universe, and Everything --- [https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG](https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG)
+1. Expectimax for 2048, `16384: 94%` --- [https://github.com/nneonneo/2048-ai](https://github.com/nneonneo/2048-ai)
+1. National Museum of Mathematics Tic-tac-toe --- [https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf](https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf)
+
+### Homework
+
+1. Implement `minimax` in the code, and experiment!
+1. Slides available [https://eric-han.com/teaching/demo/ttt.pdf](https://eric-han.com/teaching/demo/ttt.pdf)
