@@ -125,7 +125,7 @@ Ingredients needed to formulate a problem:
 * **Terminal/Leaf test**: Checks if the game is over
 * **Utility**: Reward for a terminal state and player
 
-## Tic-Tac-toe
+## Tic-Tac-Toe
 
 2P childhood game where $(P_{O},P_{X})$ players take turns drawing their symbols on a 3x3 grid.
 The winner is the first player to get 3 of his/her symbol in a row, col. or diag.
@@ -153,7 +153,7 @@ $$
   Fully Observable, 2 Agent, Deterministic, Sequential, Static, Discrete
 \end{tcolorbox}
 
-## Modeling Tic-Tac-toe [Discussion]
+## Modeling Tic-Tac-Toe [Discussion]
 $$\ttt{}{}{}{}{}{}{}{}{}\xrightarrow{P_{X}}
 \ttt{}{X}{}{}{}{}{}{}{}\xrightarrow{P_{O}}
 \ttt{O}{X}{}{}{}{}{}{}{}\xrightarrow{P_{X}}
@@ -171,7 +171,7 @@ The winner is the first player to get 3 of his/her symbol in a row, col. or diag
 * **Terminal/Leaf test**: 
 * **Utility**: 
 
-## Modeling Tic-Tac-toe
+## Modeling Tic-Tac-Toe
 $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
 \ttt{}{X}{}{}{}{}{}{}{}\xrightarrow{\cdots}
 \cdots
@@ -188,7 +188,7 @@ $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
 * **Terminal/Leaf test**: Row, col. or diag having same symbols or no moves
 * **Utility**: $U(S_i, p)$ is $0$ if draw, $1$ if $p$ wins, $-1$ if $p$ loses
 
-## Modeling Tic-Tac-toe
+## Modeling Tic-Tac-Toe
 
 * **Initial state**: $S_0$, 1D array of $[\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset]$; possible elements: $O,X,\emptyset$
 * **Players**: $P_X$-max, $P_O$-min
@@ -204,7 +204,7 @@ $$S_0=\ttt{0}{1}{2}{3}{4}{5}{6}{7}{8}\xrightarrow{a_0=(1,X)}
   Yes, but it must be \textbf{clear}; ie. Able to translate into code without additional assumptions; you should (at min) describe how the state is represented.
 \end{tcolorbox}
 
-## Modeling Tic-Tac-toe in Python
+## Modeling Tic-Tac-Toe in Python
 
 * **Initial state**: $S_0$, 1D array of $[\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset,\emptyset]$; possible elements: $O,X,\emptyset$
 * **$i$-th Actions**: $a_i=(c_i,y): c_i\in[0,8]$ where $S_i[c_i]=\emptyset$, symbol $y\in{X,O}$
@@ -225,21 +225,21 @@ Code will be made available: [https://eric-han.com/teaching/demo/ttt.py](https:/
 
 Zero-sum game is a game where one player gain is equals to another's loss, where the total utility of the game is the **same/constant** (ie. no improvement). 
 
-### Tic-Tac-toe is zero-sum
+### Tic-Tac-Toe is zero-sum
 
 * If $P_X$ wins $P_O$ loses: $\sum U = 1 - 1=0$
 * If $P_O$ wins $P_X$ loses: $\sum U = 1 - 1=0$
 * If $P_O,P_X$ draws: $\sum U = 0 + 0=0$
 
-So, for Tic-Tac-toe: $U(S_i, X) = -U(S_i, O)$
+So, for Tic-Tac-Toe: $U(S_i, X) = -U(S_i, O)$
 
 **Intuition**: If you played enough, you notice you keep getting draws.
 
 \begin{tcolorbox}[title=Question]
-  Can we come up with an algorithm to play Tic-Tac-toe?
+  Can we come up with an algorithm to play Tic-Tac-Toe?
 \end{tcolorbox}
 
-## Tic-Tac-toe game-tree
+## Tic-Tac-Toe game-tree
 
 ![Game-tree (R&N 3rd Ed) --- Initial, Players, Actions, Transition, Terminal, Utility](rn_gametree.png){width=70%}
 
@@ -419,7 +419,7 @@ But we evaluate it in a DFS fashion.
 
 \end{minipage}
 
-## Minimax Tic-Tac-toe example
+## Minimax Tic-Tac-Toe example
 
 \begin{figure}
 \scalebox{.41}{
@@ -443,13 +443,13 @@ Computing it out for all possible actions for $S_0$:
 
 * All successor states have values of $U(.)=0$
 * All actions would lead to draws
-* No matter what you play, Tic-Tac-toe is Unlosable
+* No matter what you play, Tic-Tac-Toe is Unlosable
 
 \begin{tcolorbox}[title=Intuition from Primary Sch: How can that be?]
   Center is better, corners are next best and then the rest.
 \end{tcolorbox}
 
-## Minimax Tic-Tac-toe example
+## Minimax Tic-Tac-Toe example
 
 \begin{figure}
 \scalebox{.41}{
@@ -473,7 +473,7 @@ Computing it out for all possible actions for $S_0$:
 
 * All successor states have values of $U(.)=0$
 * All actions would lead to draws
-* No matter what you play, Tic-Tac-toe is Unlosable
+* No matter what you play, Tic-Tac-Toe is Unlosable
 * Assuming *optimal* opponent
 
 ## Minimax analysis
@@ -491,11 +491,11 @@ With $b$ branching factor and $m$ max depth,
 
  . . .
 
-\begin{tcolorbox}[title=Can we do better for Tic-Tac-toe?]
+\begin{tcolorbox}[title=Can we do better for Tic-Tac-Toe?]
   We know that an action cannot be reused!
 \end{tcolorbox}
 
-## Minimax Tic-Tac-toe analysis
+## Minimax Tic-Tac-Toe analysis
 
 With $b$ branching factor and $m$ max depth,
 
@@ -906,7 +906,7 @@ How to model the randomness?
 
 ![Expectimax1,2 are using different heuristics^[https://cs229.stanford.edu/proj2016/report/NieHouAn-AIPlays2048-report.pdf]](2048-compared.png){width=60%}
 
-## Tic-Tac-toe: Minimax vs Expectimax
+## Tic-Tac-Toe: Minimax vs Expectimax
 
 ### Max-Expectation-Max-Expectation...
 
@@ -926,7 +926,7 @@ $U\left(\ttt{}{X}{}{}{}{}{}{}{}\right)=U\left(\ttt{}{}{}{X}{}{}{}{}{}\right)=U\l
 1. Alpha-Beta: IBM Deep Blue --- [https://www.sciencedirect.com/science/article/pii/S0004370201001291](https://www.sciencedirect.com/science/article/pii/S0004370201001291)
 1. What Game Theory Reveals About Life, The Universe, and Everything --- [https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG](https://youtu.be/mScpHTIi-kM?si=CLagrjz3WVi-EkXG)
 1. Expectimax for 2048, `16384: 94%` --- [https://github.com/nneonneo/2048-ai](https://github.com/nneonneo/2048-ai)
-1. National Museum of Mathematics Tic-Tac-toe --- [https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf](https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf)
+1. National Museum of Mathematics Tic-Tac-Toe --- [https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf](https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf)
 
 ### Experiment
 
