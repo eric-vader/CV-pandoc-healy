@@ -928,7 +928,7 @@ $U\left(\ttt{}{X}{}{}{}{}{}{}{}\right)=U\left(\ttt{}{}{}{X}{}{}{}{}{}\right)=U\l
 1. Expectimax for 2048, `16384: 94%` --- [https://github.com/nneonneo/2048-ai](https://github.com/nneonneo/2048-ai)
 1. National Museum of Mathematics Tic-tac-toe --- [https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf](https://momath.org/wp-content/uploads/2021/08/Alyssa-Choi-Tic-Tac-Toe.pdf)
 
-### Homework
+### Experiment
 
-1. Implement `minimax` in the code, and experiment!
+1. Implement `minimax` in the [https://eric-han.com/teaching/demo/ttt.py](https://eric-han.com/teaching/demo/ttt.py)
 1. Slides available [https://eric-han.com/teaching/demo/ttt.pdf](https://eric-han.com/teaching/demo/ttt.pdf)
