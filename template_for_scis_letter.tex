@@ -1,0 +1,73 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.75\textwidth} 
+  To: {\bf SCIS Faculty Recruitment} \\
+  {
+    Singapore Management University\\
+    School of Computing and Information Systems (SCIS)\\
+    80 Stamford Road\\
+    Singapore 178902\\ 
+    Republic of Singapore\\
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.25\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Sir/Mdm, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  I am writing to express my interest Faculty Position in the School of Computing and Information Systems (SCIS) at the Singapore Management University (SMU). I am primarily interested in Education Track Faculty Positions that has a focus on teaching. The core area my research interest belongs to \textbf{Artificial Intelligence \& Data Science}, \textbf{Decision Making \& Optimization}.
+  With a passion for Computer Science and, a dedication to excellent teaching, I am excited about the opportunity to contribute to SCIS. 
+  \\[.5em]
+  My doctoral research is primarily in the areas of Artificial Intelligence (AI), and Machine Learning (ML), specifically focusing on developing advanced techniques to mitigate the challenges inherent in Bayesian Optimization (BO) - including high-dimensionality, large datasets, and enhancing robustness. I presented my research and have first-author publications in premier conferences, such as AAAI and ICML. I have more than 5 years of formal research experience in Computer Science. At SCIS, I would like to not only continue tackling fundamental issues in BO, but also applying BO to practical and real-world domains.
+  \\[.5em]
+  Throughout my doctorate journey, I have been teaching undergraduate Computer Science classes spanning across AI/ML and Software Engineering as a `Graduate Tutor' and `Teaching Assistant'.
+  I am currently `Teaching Assistant', with more than 5 years of experience (with more than 500 teaching/contact hours) in teaching lectures, tutorials, and consultations.
+  This role has not only allowed me to refine my communication skills but also to play a pivotal part in educating and inspiring the next generation of computer scientists.
+  My responsibilities extended beyond classroom instruction to include the management and mentorship of undergraduate tutors, 
+  developing grading rubrics, exam questions, and module tools.
+  In recognition of my dedication to teaching excellence and my ability to effectively convey complex concepts, 
+  I was honored with the Full-Time Teaching Assistant Award in 2023. 
+  I am committed to teaching excellence and possess the necessary teaching experience for this position.
+  \\[.5em]
+  Enclosed is my curriculum vitae, teaching statement, research statement which provides additional details about my background and qualifications.
+  I am grateful for your consideration of my application.
+}\end{minipage}\\[1em]
+
+Warm regards,\\
+Eric Han\\
+
+\end{document}

@@ -1,0 +1,80 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf DigiPen Institute of Technology} \\
+  {
+    Hiring Manager\\
+    singapore-jobs@digipen.edu\\
+    Department Of Computer Science\\
+    DigiPen Institute of Technology Singapore
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Sir/Mdm, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  I am writing to express my interest in the `Assistant/Associate Professor' position in the `Department Of Computer Science'.
+  With a passion for Computer Science and a dedication to excellent teaching, 
+  I am excited about the opportunity to contribute to DigiPen.
+  \\[.5em]
+  My doctoral research is primarily in the areas of Artificial Intelligence (AI), and Machine Learning (ML), specifically focusing on developing advanced techniques to mitigate the challenges inherent in Bayesian Optimization - including high-dimensionality, large datasets, and enhancing robustness. I presented my research and have first-author publications in premier conferences, such as AAAI and ICML. I have more than 5 years of formal research experience in Computer Science.
+  \\[.5em]
+  Throughout my doctorate journey, I have been teaching undergraduate Computer Science classes spanning across AI/ML and Software Engineering.
+  I am currently `Teaching Assistant', with more than 5 years of experience (with more than 500 teaching/contact hours) in teaching lectures, tutorials, and consultations.
+  This role has not only allowed me to refine my communication skills but also to play a pivotal part in educating and inspiring the next generation of computer scientists.
+  My responsibilities extended beyond classroom instruction to include the management and mentorship of undergraduate tutors, 
+  developing grading rubrics, exam questions, and module tools.
+  In recognition of my dedication to teaching excellence and my ability to effectively convey complex concepts, 
+  I was honored with the Full-Time Teaching Assistant Award in 2023. 
+  I am committed to teaching excellence and possess the necessary teaching experience for this position.
+  \\[.5em]
+  In addition to my academic pursuits, I have background in C++ programming; 
+  I started learning C++ language formally while pursuing GCE `A' levels H2 Computing in Junior College.
+  I continued learning C++ at University even though it was not the programming language of choice for AI/ML, getting an `A' for ITP-435x - `Professional C++' at the University of Southern California during my student exchange. Some of my personal/research projects are implemented in C++.
+  I also have background in Distributed Computing, demonstrated by my various internships at Agency for Science, Technology and Research (A*STAR), Institute of High Performance Computing, Distributed Computing Group.
+  Throughout my internships there, I worked with large datasets and implemented software that works over a cluster such as a distributed web crawler.
+  During my PhD, I wrote software and used a distributed cluster (Slurm) to distribute experiments over a cluster of computers.
+  \\[.5em]
+  Enclosed is my curriculum vitae, statement of teaching philosophy, and PhD transcript which provides additional details about my background and qualifications.
+  I am grateful for your consideration of my application.
+}\end{minipage}\\[1em]
+
+Warm regards,\\
+Eric Han\\
+
+\end{document}

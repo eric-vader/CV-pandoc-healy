@@ -1,0 +1,98 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+\usepackage{booktabs}
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+\newcommand{\chapquote}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2, \textit{#3}\end{flushright} }
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+{\bf\Large{Teaching Philosophy / Statement}}
+
+\vspace{1em}
+
+My philosophy of education is that students who are inquisitive about the subject are effective learners. I believe effective learning is primarily driven by an innate desire to learn the subject rather than a need to learn (secondary). Hence, I am very focused on creating an environment that fosters each student's desire to learn. Specifically, I believe three elements foster a learning-positive environment: (1) Creating a relaxed and safe environment. (2) Engaging students to facilitate learning in and after class. (3) Creating equal opportunities for all students to learn. Here, we discuss each of the elements.
+
+\subsection{(1) Creating a relaxed and safe environment}
+Creating a relaxed and safe environment is important to students as it primarily relieves stress from learning. In other words, the primary driver for learning is not “needs” but “wants” - not primarily exams/grades driven in their learning. This allows students to make mistakes during learning without worrying about their grades, focusing more on understanding the material rather than on avoidance of mistakes. I am casual in my teaching communication, for example, sharing my personal struggles (successes/failures) in learning the topic and discussing my thinking processes and approaches to understanding the topic. These approaches are reflected clearly in the student feedback: “Eric keeps the sessions informal and casual, an environment where the best learning takes place in my opinion. By keeping the knowledge–sharing lighthearted, he is able to retain the attention of students well while keeping it entertaining and engaging. Very few TAs have been able to do that in my experience and it makes him stand apart as an educator.”. I am encouraged by students who observed my effort and have benefitted greatly from that. I am especially encouraged by a student Undergraduate Teaching Assistant (UGTA) who enjoyed this relaxed and safe learning environment and plans to create such an atmosphere in his class. I plan to continue on this path, especially now that Safe Management measures are lifted, I plan to increase student interaction during my tutorials to further support this relaxed and safe environment.
+
+\subsection{(2) Engaging students to facilitate learning in and after class}
+Students benefit the most from timely feedback - engaging students in the class via in-class participation and giving students appropriate and timely feedback is important for their learning. It is important to students as they get to know whether they are on the right track or not and not spend too much time going in circles. Participation helps clear up misunderstandings of the subject; Students can benefit directly from in-class feedback. Over the years, I have been growing more in this aspect - getting students to participate in buddy discussion and live Q\&A in class, getting students to recap a concept in class, improving access via the use of telegram DMs and groups as a more accessible platform for students, and also getting to know the students personally via small-talk before or after class. Such efforts have been noticed by the students over the years - “Very engaging.”, “Engaging, takes time to explain to students some concepts”. From my reflections over the years, I am convinced that engagement is important to building effective learners and reflects not only in the student feedback but also in their academic performance. I plan on continually improving my engagement; I will focus on face-to-face engagement, such as in-class discussions to engage students.
+
+\subsection{(3) Creating equal opportunities for all students to learn}
+Even though modules have prerequisites, students come to my class with varied backgrounds and levels of understanding of prior knowledge. Weaker students need more help, and sometimes they do not ask for help. These students need to be able to catch up, or else they can run the risk of giving up or being left behind in terms of understanding. I would pay close attention to students who regularly do poorly in their weekly assignments and those who frequently fail to be engaged in class. I would go out of my way to help these students, personally reaching out to them and offering them help. I would also challenge stronger students to solve harder problems, to encourage and inspire them to learn beyond what is required. This is reflected in the student feedback - “Excellent tutor. Goes out of his way to help students. Incredibly easy to approach.”, “Going the extra mile by putting in extra effort to ensure that we understand certain concepts, and ensuring that we can all attend classes”, and “He shows knowledge and passion in what he teach, even to the extend of implementing his own wordle bot. It does helps to inspire students in addition to the strengths already mentioned”. More importantly, after my intervention, I have observed an improvement in the weaker student's grades and engagement. Reflecting on their feedback, I will continue to ensure that students of all levels can have opportunities to learn and, importantly, for weaker students to catch up. An area that I have yet to try would be to get the stronger students to help the weaker students and that is where I plan to improve further.
+
+\subsection{Teaching Excellence}
+I have been improving my teaching quality as a \emph{Teaching Assistant/Graduate Tutor} as discussed from the three elements and the impact narratives from the Student Feedback comments and observations on student performance. Here, I discuss a more macro view of my consistent and sustained performance over the years. The macro picture as seen in Table~\ref{tab:stufeedback} supports the micro evidence as discussed above in the 3 elements; I consistently received high nominations for teaching awards (> 15\%) and high/very high Student Feedback (SF) ratings. 
+I note that the score for CS3217 should be taken in the context where I am teaching CS3217 for the first time and am also teaching another module at the same time.
+In addition, I have taught a variety of undergraduate modules (5 in total) - CS2109s (x2), CS3217 (x1), CS3243 (x2), CS3203 (x5), and CS2030 (x1); which is a larger variety than required for \emph{Graduate Tutor} who are expected to be kept in 2-3 modules while pursuing a PhD.
+These modules span across Artificial Intelligence (AI) / Machine Learning (ML) and Software Engineering (SE).
+In recognition of my dedication to teaching excellence and effective communication, 
+I was honored with the Full-Time Teaching Assistant Award (FTTA) in 2023. 
+
+\subsection{Summary}
+In summary, I have successfully refined and applied my teaching philosophy to the student's benefit primarily in tutorial teaching.
+A learning-positive environment is important for effective learning, especially for difficult content.
+Though not required, I have volunteered to take on other tasks such as designing exam questions (finals/midterms), running tools lectures, working with the module lecturer to improve grading rubrics, and more, where I apply my teaching philosophy wherever I contribute.
+Aside from the micro and macro evidence, 
+my dedication to exceptional teaching has been formally acknowledged via award of FTTA.\\[1em]
+
+\chapquote{``The best TA i have ever met in my 3 years in NUS. He go above and beyond what is expected of him by the students. He is concern about our wellbeing and often encourage us to do better.''}{CS3203 Student}{AY2018/19 S2}
+
+Warm regards,\\
+Eric Han\\
+
+\begin{table}[ht]
+  \begin{center}
+    \caption{Summary of Student Feedback (SF) ratings (/5.0) and Nominations over the years.}
+    \label{tab:stufeedback}
+    \begin{tabular}{cclrrr}
+      \toprule % <-- Toprule here
+      \textbf{Yr.} & \textbf{Code} & \textbf{Module Name}& \textbf{SF} & \textbf{Nominations} & \textbf{Type}\\
+      \midrule % <-- Midrule here
+      23/24 S2 & CS2109s & Introduction to AI and ML & - & - & Tutorial \\
+      23/24 S1 & CS2109s & Introduction to AI and ML & 4.6 & 4/13 (30\%) & Tutorial \\
+      22/23 S1 & CS3243 & Introduction to AI & 4.8 & 8/25 (32\%) & Tutorial \\
+      21/22 S2 & CS3243 & Introduction to AI & 4.5 & 12/39 (31\%) & Tutorial \\
+      21/22 S2 & CS3217 & SE on Modern App. Platforms & 3.8 & 0/6 (0\%) & Tutorial \\
+      21/22 S1 & CS3203 & Software Engineering Project & 3.7 & 5/161 (3\%) & Lecture \\
+      19/20 S2 & CS3203 & Software Engineering Project & 4.6 & 8/13 (61\%) & Recitation \\
+      18/19 S2 & CS3203 & Software Engineering Project & 4.4 & 5/16 (31\%) & Tutorial \\
+      18/19 S2 & CS3203 & Software Engineering Project & 4.8 & 11/18 (61\%) & Recitation \\
+      18/19 S1 & CS3203 & Software Engineering Project & 4.1 & 2/20 (10\%) & Tutorial \\
+      18/19 S1 & CS3203 & Software Engineering Project & 3.3 & 1/3 (33\%) & Recitation \\
+      \bottomrule % <-- Bottomrule here
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\end{document}

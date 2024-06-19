@@ -1,0 +1,73 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf School of Computing} \\
+  {
+    Search Committee Chair\\
+    Associate Professor Prateek Saxena\\
+    School of Computing\\
+    National University of Singapore    
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Associate Professor Prateek Saxena, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  I am writing to express my interest in the Educator Track Faculty Position in the Department Of Computer Science (NUS Portal Requisition ID: 24619).
+  With a passion for Computer Science, a dedication to excellent teaching and many years benefitting as an undergraduate and graduate student in SoC,
+  I am excited about the opportunity to contribute back to NUS and SoC.
+  \\[.5em]
+  Throughout my doctorate journey, I have been teaching undergraduate Computer Science classes spanning across AI/ML and Software Engineering as a `Graduate Tutor' and `Teaching Assistant'.
+  I am currently `Teaching Assistant', with more than 5 years of experience (with more than 500 teaching/contact hours) in teaching lectures, tutorials, and consultations.
+  This role has not only allowed me to refine my communication skills but also to play a pivotal part in educating and inspiring the next generation of computer scientists.
+  My responsibilities extended beyond classroom instruction to include the management and mentorship of undergraduate tutors, 
+  developing grading rubrics, exam questions, and module tools.
+  In recognition of my dedication to teaching excellence and my ability to effectively convey complex concepts, 
+  I was honored with the Full-Time Teaching Assistant Award in 2023. 
+  I am committed to teaching excellence and possess the necessary teaching experience for this position.
+  \\[.5em]
+  My doctoral research is primarily in the areas of Artificial Intelligence (AI), and Machine Learning (ML), specifically focusing on developing advanced techniques to mitigate the challenges inherent in Bayesian Optimization - including high-dimensionality, large datasets, and enhancing robustness. I presented my research and have first-author publications in premier conferences, such as AAAI and ICML. I have more than 5 years of formal research experience in Computer Science.
+  \\[.5em]
+  Enclosed is my curriculum vitae, teaching statement, research statement which provides additional details about my background and qualifications.
+  I am grateful for your consideration of my application.
+}\end{minipage}\\[1em]
+
+Warm regards,\\
+Eric Han\\
+
+\end{document}

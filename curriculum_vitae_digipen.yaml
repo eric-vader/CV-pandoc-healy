@@ -1,0 +1,337 @@
+---
+name: Han Liang Wee, Eric
+title: "Dr."
+address: SGP
+email: mail@eric-han.com
+twitter: eric_vader
+github: eric-vader
+www: eric-han.com
+tel: '+6592982927'
+bibliography: ./eric.bib
+
+appointment:
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    items:
+      -
+        item: Teaching Assistant
+        dates: \dmydate\formatdate{8}{8}{2023} - \dmydate\formatdate{30}{6}{2024}
+        description: "Continues from previous: Teach lectures, tutorials and consultations; Grading; Manage tutors; Mentor new tutors; Develop grading rubrics, exam questions and module tools; Taught 2 Sophomore-level, 8 Junior-level modules with more than 500 teaching/contact hours."
+      -
+        item: Graduate Tutor
+        dates: \dmydate\formatdate{8}{8}{2018} - \dmydate\formatdate{7}{8}{2023}
+      -
+        item: Tutor for Intro to Programming Workshop
+        dates: \mydate\formatdate{3}{7}{2017} # \d\formatdate{3}{7}{2017} - \dmydate\formatdate{6}{7}{2017}
+        description: |
+           Teach freshmen on computational thinking, programming.
+  # -
+  #   place: "[Scanteak](https://scanteak.com.sg/)"
+  #   items:
+  #     -
+  #       item: Quality Control IT Project
+  #       dates: \mydate\formatdate{1}{12}{2017} - \mydate\formatdate{26}{4}{2018}
+  #       description: Studied Scanteak's supply chain, proposed automation to improve QC in procurement.
+  # -
+  #   place: "[Church of Singapore (Bukit Timah)](http://www.cosbt.org.sg/)"
+  #   items:
+  #     -
+  #       item: Software Engineering Intern
+  #       dates: \mydate\formatdate{27}{5}{2016} - \mydate\formatdate{19}{8}{2016}
+  #       description: Design and implement Church Management System (CHMS).
+  -
+    place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
+    items:
+      -
+        item: "Research Intern -- A Cloud-based Collaborative Model Building Platform"
+        dates: \mydate\formatdate{1}{12}{2015} #\ddate\formatdate{1}{12}{2015} - \dmydate\formatdate{30}{12}{2015}
+        description: "Continues from previous: Design, implement & deploy visualization website, app. protocol."
+      -
+        item: "Research Intern -- Autonomous Machine Learning using HPC Approaches"
+        dates: \mydate\formatdate{6}{5}{2015} - \formatdate{30}{6}{2015}
+      -
+        item: "Research Intern -- Route My Day (Recommendation System)"
+        dates: \mydate\formatdate{14}{1}{2013} - \formatdate{13}{7}{2013}
+        description: Design, implement & deploy visualization website, distributed web crawler & MongoDB cluster.
+  # -
+  #   place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+  #   items:
+  #     -
+  #       item: "Section Commander -- First Sergeant (1SG)"
+  #       dates: NSmen
+  #     -
+  #       item: Combat Engineer, Specialist Trainer
+  #       dates: \mydate\formatdate{10}{2}{2011} - \formatdate{9}{12}{2012}
+  #       description: National Service; Managed and trained men/cadets.
+education:
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Doctor of Philosophy (PhD) in Computer Science
+    grade: Bayesian Optimisation Techniques for High-Dimensional and Adversarial Settings
+    date: \mydate\formatdate{8}{8}{2018} - \mydate\formatdate{16}{01}{2024} 
+    # info:
+    #   - My research interests include techniques to scale additive Bayesian Optimization, 
+    #   center on advancing Bayesian Optimization (BO) for high-dimensional and adversarial contexts, focusing on robust solutions for real-world applications like machine learning, robotics, and adversarial attacks on Convolutional Neural Networks (CNNs).
+  -
+    place: "[National University of Singapore](http://www.nus.edu.sg/)"
+    item: Bachelor of Computing (Computer Science)
+    grade: Graduated With Honours (Highest Distinction) in Computer Science, with Turing Programme
+    date: \mydate\formatdate{12}{8}{2013} - \mydate\formatdate{31}{1}{2018}
+    # info:
+    #   - Completed the Turing Programme, which nurture students who aspire to engage research careers.
+  -
+    place: "[USC Viterbi School of Engineering](https://www.usc.edu/)"
+    item: Student Exchange
+    grade: "Grade Point Average (4.0/4.0); Best student in CSCI 420."
+    date: \mdate\formatdate{11}{1}{2016} - \mydate\formatdate{11}{5}{2016}
+
+achievement:
+  - type: "Awards"
+    items:
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Full-Time Teaching Assistant Award 
+        date: \dmydate\formatdate{21}{04}{2023}
+        info: Recognition of the high level of commitment to, and achievement of good teaching.
+      # -
+      #   place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+      #   item: NS Excellence Award (NSEA)
+      #   date: \dmydate\formatdate{7}{3}{2023}
+      #   info: Top 10% of performers during ICT and training courses.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Certificate of Accomplishment
+        date: \dmydate\formatdate{1}{2}{2022}
+        info: Long Service Award; In appreciation of the 5 years of service as a Graduate Tutor.
+      # -
+      #   place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+      #   item: NS Excellence Award (NSEA)
+      #   date: \dmydate\formatdate{28}{1}{2022}
+      #   info: Top 10% of performers during ICT and training courses.
+      # -
+      #   place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+      #   item: NS Excellence Award (NSEA)
+      #   date: \dmydate\formatdate{25}{10}{2019}
+      #   info: Top 10% of performers during ICT and training courses.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Outstanding Undergraduate Researcher Prize 2017/18
+        date: \dmydate\formatdate{21}{6}{2018}
+        info: Individual prize; Final Year Project - Feature Subset Selection using Reinforcement Learning.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Certificate of Merit in Algo. \& Theory Focus Area
+        date: \dmydate\formatdate{29}{1}{2018}
+        info: Awarded for meritorious performance in the focus area.
+      -
+        place: "[National University of Singapore](http://www.nus.edu.sg/)"
+        item: Dean's List Recipient
+        date: \dmydate\formatdate{15}{1}{2018}
+        info: Named to Dean's List for meritorious performance in S1 AY17/18.
+      # -
+      #   place: "[Singapore Army, Ministry of Defence](https://www.mindef.gov.sg)"
+      #   item: NS Excellence Award (NSEA)
+      #   date: \dmydate\formatdate{9}{12}{2016}
+      #   info: Top 10% of performers during ICT and training courses.
+  - type: "Scholarships"
+    items:
+      -
+        place: "[Agency for Science, Technology and Research](https://www.a-star.edu.sg/)"
+        item: A*STAR Undergraduate Scholarship
+        date: \dmydate\formatdate{25}{7}{2012}
+        info: Prestigious scholarship awarded to budding scientists.
+
+research:
+  - type: Peer-Reviewed Conference Publications
+    items:
+      # - 
+      #   title: Structured Dimensionality Reduction Methods for Black-Box Adversarial Attacks with Bayesian Optimization
+      #   author: "*Eric Han*, Jonathan Scarlett"
+      #   place: Ongoing Work
+      #   date: \mydate\formatdate{17}{7}{2022}
+      #   twopage: true
+      #   academic: true
+      #   resume: true
+      -
+        title: Adversarial Attacks on Gaussian Process Bandits
+        author: "*Eric Han*, Jonathan Scarlett"
+        place: Proceedings of the 39th International Conference on Machine Learning
+        date: \mydate\formatdate{17}{7}{2022}
+        twopage: true
+        academic: true
+        resume: true
+        fcitekey: pmlr-v162-han22f
+      -
+        title: High-Dimensional Bayesian Optimization via Tree-Structured Additive Models
+        author: "*Eric Han*, Ishank Arora, Jonathan Scarlett"
+        place: Proceedings of the 35th AAAI Conference on Artificial Intelligence
+        date: \mydate\formatdate{2}{2}{2021}
+        fsummary: "Bayesian Optimization (BO) has shown significant success in tackling expensive low-dimensional black-box optimization problems. Many optimization problems of interest are high-dimensional, and scaling BO to such settings remains an important challenge. In this paper, we consider generalized additive models in which low-dimensional functions with overlapping subsets of variables are composed to model a high-dimensional target function. Our goal is to lower the computational resources required and facilitate faster model learning by reducing the model complexity while retaining the sample-efficiency of existing methods. Specifically, we constrain the underlying dependency graphs to tree structures in order to facilitate both the structure learning and optimization of the acquisition function. For the former, we propose a hybrid graph learning algorithm based on Gibbs sampling and mutation. In addition, we propose a novel zooming-based algorithm that permits generalized additive models to be employed more efficiently in the case of continuous domains. We demonstrate and discuss the efficacy of our approach via a range of experiments on synthetic functions and real-world datasets."
+        twopage: true
+        academic: true
+        resume: true
+        fcitekey: Han_Arora_Scarlett_2021
+  # - type: Summer School
+  #   items:
+  #     -
+  #       title: The Gaussian Process Summer School, 2019
+  #       date: \mydate\formatdate{12}{9}{2019} # \ddate\formatdate{9}{9}{2019}-\dmydate\formatdate{12}{9}{2019}
+  #       place: The University Of Sheffield, Sheffield, United Kingdom
+  #       twopage: true
+  #       academic: true
+  #       resume: true
+
+teaching:
+  - course: CS2109s -- Introduction to AI and Machine Learning
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials; Ongoing Semester."
+        date: AY23/24 S2
+      -
+        tasks: "Teach tutorials, grading, designing exam questions."
+        date: AY23/24 S1
+  - course: CS3243 -- Introduction to Artificial Intelligence
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials, review of learning materials, designing exam questions."
+        date: AY22/23 S1
+      -
+        tasks: "Teach tutorials, grading, organize tutors for assignment grading, designing assignment grading rubrics, designing exam questions."
+        date: AY21/22 S2
+  - course: CS3217 -- Software Engineering on Modern App. Platforms  
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Teach tutorials."
+        date: AY21/22 S2
+  - course: CS3203 -- Software Engineering Project
+    type: Undergrad.
+    credits: 8 credits
+    items:
+      -
+        tasks: "Support lectures, teach consultations, organize tutors, grading, improve grading rubrics and improve testing tools."
+        date: AY21/22 S1
+      - 
+        tasks: "Support lectures, teach consultations, organize tutors, grading, maintain testing tools."
+        date: AY20/21 S2
+      -
+        tasks: "Support lectures, teach consultations and develop testing tools."
+        date: AY19/20 S2
+      - 
+        tasks: "Teach tutorials, consultations and support lectures."
+        date: AY18/19 S2
+      - 
+        tasks: "Teach tutorials and consultations."
+        date: AY18/19 S1
+  - course: CS2030/CS2030S -- Programming Methodology II 
+    type: Undergrad.
+    credits: 4 credits
+    items:
+      -
+        tasks: "Support labs and develop sub-flavor of Fedora Linux for virtual exam needs due to COVID-19."
+        date: AY20/21 S1
+service:
+-
+  type: "Service to Research Community"
+  gigs:
+    -
+      item: Student Volunteer for [34th International Conference on Algorithmic Learning Theory](http://algorithmiclearningtheory.org/alt2023/).
+      date: \dmydate\formatdate{23}{2}{2023}
+      twopage: true
+    -
+      item: Session Chair for [Workshop on Information Theory and Data Science Workshop](https://ims.nus.edu.sg/events/information-theory-and-data-science-workshop/).
+      date: \dmydate\formatdate{20}{1}{2023}
+      twopage: true
+    -
+      item: Reviewer for [39th International Conference on Machine Learning](https://icml.cc/Conferences/2022).
+      date: \dmydate\formatdate{11}{4}{2022}
+      twopage: true
+-
+  type: "Service to [National University of Singapore](http://www.nus.edu.sg/)"
+  gigs:
+    -
+      item: Admission reviewer for Master of Computing applicants (Aug 2022).
+      date: \dmydate\formatdate{8}{4}{2022}
+      twopage: true
+    -
+      item: Featured in a PhD programme marketing video.
+      date: \dmydate\formatdate{29}{9}{2021}
+    -
+      item: Program Committee for NUS Computing Research Week 2021.
+      date: \ddate\formatdate{3}{8}{2021} - \dmydate\formatdate{5}{8}{2021}
+      twopage: true
+      info: Moderator of the technical panel discussion titled 'Heterogeneity in Federated Learning'.
+    -
+      item: Admission reviewer for Master of Computing applicants (August 2021).
+      date: \dmydate\formatdate{26}{4}{2021}
+      twopage: true
+    -
+      item: Admission reviewer for Master of Computing applicants (Jan 2021).
+      date: \dmydate\formatdate{18}{10}{2020}
+      twopage: true
+-
+  type: "Service to [Agency for Science, Technology and Research](https://www.a-star.edu.sg/ihpc)"
+  gigs:
+    - 
+      item: "Guidance to junior scholar -- sharing of experiences."
+      date: \mydate\formatdate{27}{6}{2019}
+    - 
+      item: "Invited Speaker for A*STAR Scholarships Seminar for Undergraduate Studies."
+      date: \dmydate\formatdate{4}{12}{2015}
+    -
+      item: "Volunteer at A*STAR booth at NUS Open Day 2015 -- Outreach and promotion."
+      date: \dmydate\formatdate{14}{3}{2015}
+-
+  type: "Service to [Pioneer Junior College](http://www.pioneerjc.moe.edu.sg)"
+  gigs:
+    -
+      item: "Teaching and sharing on 'Computational Thinking' to junior college students."
+      date: \mdate\formatdate{18}{5}{2015} - \mydate\formatdate{15}{6}{2015}
+-
+  type: "Service to [Impact Life Church](https://www.impactlife.sg/)"
+  gigs:
+    - 
+      item: "Head Of Information Technology -- Lead a team of >15 volunteers."
+      date: \mydate\formatdate{8}{3}{2018} - \mydate\formatdate{31}{12}{2023}
+      info: Responsible for IT infra., purchasing, software development of Church applications, etc.
+    - 
+      item: "Cell Group Leader -- Build strong communities and healthy Christians."
+      date: \mydate\formatdate{1}{10}{2017} - \mydate\formatdate{31}{12}{2023}
+    - 
+      item: "Tutor - Teach tuition classes."
+      info: "GCE 'A' lvl: Math, Physics & Economics; GCE 'O' lvl: Principles of Accounting, Physics."
+      date: \mydate\formatdate{1}{1}{2012} - \formatdate{1}{12}{2018}
+
+personal_projects:
+-
+  type: Curated Personal Projects
+  items:
+    - item: Automation of trading activities on FTX/Acala (Python, Javascript)
+      info: "Updates lending offers on FTX and executes arbitrage strategies on Acala blockchain."
+    - item: Ethereum Wallet Security (CUDA, C++)
+      info: "Adapted/fixed performance code that computes elliptic curve cryptography on CPUs / GPUs."
+
+competencies:
+-
+  type: Computing Platforms
+  items:
+    - item: Programming Languages
+      info: "Python (also sci. pkgs., ie. SciPy), C++, Java, HTML/CSS, Java/Typescript, Bash."
+    - item: Databases
+      info: "Firebase, SQL, MongoDB."
+    - item: Typesetting / Presentation Tools
+      info: LaTex, Markdown, Microsoft Office, Google Workspace.
+    - item: Tools / Platforms
+      info: "Git, Mlflow, Plotly, Matplotlib, Slurm, Jira, Google Cloud Platform."
+    - item: Operating Systems
+      info: Linux (Fedora; daily driver), *nix administration, Windows, macOS.
+-
+  type: Language Proficiency
+  items: 
+    - item: English (Native) and Chinese (Intermediate).
+...

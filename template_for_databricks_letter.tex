@@ -1,0 +1,66 @@
+\documentclass[11pt, a4paper]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+% \usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+% \usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{$address$}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\github{$github$}
+\subject{}
+
+\newcommand{\commonspace}{2ex}
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\begin{minipage}[t]{0.49\textwidth} 
+  To: {\bf Databricks} \\
+  {
+    Hiring Manager\\
+    Singapore\\
+    Databricks Inc.
+  }
+\end{minipage}\hfill\begin{minipage}[t]{0.49\textwidth}
+  \begin{flushright}\today\end{flushright}
+\end{minipage}
+
+\vspace{2em}
+
+Dear Sir/Mdm, \\[1em]
+\hfill\begin{minipage}[t]{0.95\textwidth}\justifying{\noindent
+  I am writing to express my interest for the Specialist Solutions Architect (SSA) position at Databricks, where I believe my combination of technical expertise, proven teaching ability, and hands-on experience with critical tools like MLflow positions me as an strong candidate. My journey in Computer Science, focusing on AI/ML, has been complemented by significant achievements, including receiving the Full-Time Teaching Assistant Award from the National University of Singapore (NUS).
+  \\[.5em]
+  This award recognized my dedication to and effectiveness in teaching complex technical subjects, managing and mentoring teams of tutors, and developing educational materials that have positively impacted students across multiple levels. It underscores my capability to not only grasp and apply sophisticated technologies but also to simplify and communicate these concepts, facilitating learning and application for others. This skill is particularly relevant to the role at Databricks, which involves guiding customers through the intricacies of big data solutions.
+  \\[.5em]
+  During my PhD (Computer Science, AI/ML), I have been using MLflow, since version 0.9.1 almost 5 years ago, to streamline the machine learning lifecycle, especially experiment tracking. While using MLflow, I have participated in the tool's development community, identifying and addressing issues to enhance its functionality, which cumulated in pull request \url{https://github.com/mlflow/mlflow/pull/1500}. This experience, combined with my practical work at Agency for Science, Technology and Research (A*STAR), Institute of High Performance Computing (IHPC), and with deploying Python applications on GCP for Impact Life Church, showcases my comprehensive ability to architect, deploy, and optimize scalable solutions in production environments.
+  \\[.5em]
+  My enthusiasm for the SSA role is further fueled by the prospect of engaging directly with customers and the community, leveraging my technical knowledge and communication skills to foster successful implementations and adoption. I am also fully prepared and excited about the opportunity to travel 20\%-30\% of the time, as required by the role, to support Databricks' customers across the Asean and Greater China Region.
+  \\[.5em]
+  I am eager to bring my unique blend of academic excellence, practical engineering experience, and passion for teaching and mentorship to Databricks. I look forward to the possibility of discussing how I can contribute to your team and help your customers leverage the full power of the Databricks platform.
+  \\[.5em]
+  I am grateful for your consideration of my application.
+}\end{minipage}\\[1em]
+
+Warm Regards,\\
+Eric Han\\
+
+\end{document}
